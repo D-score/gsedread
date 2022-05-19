@@ -4,50 +4,60 @@
 # gsedread
 
 <!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-The goal of gsedread is to …
+The goal of gsedread is to read validation data of the project Global
+Scales for Early Development (GSED).
 
 ## Installation
 
-You can install the development version of gsedread like so:
+You can install the development version from
+[GitHub](https://github.com/) with:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+install.packages("remotes")
+remotes::install_github("d-score/gsedread")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+You need access to the WHO SharePoint site and sync the data to a local
+OneDrive. In the file `.Renviron` in your home directory add a line
+specifying the location of your synced OneDrive, e.g.,
+
+    ONEDRIVE_GSED='/Users/username/Library/CloudStorage/OneDrive-Sharedlibraries-WorldHealthOrganization/CAVALLERA, Vanessa - GSED Validation 2021_phase I'
+
+After setting the environmental variable `ONEDRIVE_GSED`, restart R, and
+manually check whether you are able to read the OneDrive directory.
+
+``` r
+dir(Sys.getenv("ONEDRIVE_GSED"))
+#>  [1] "Bangladesh Validation"                             
+#>  [2] "Baseline Analysis - OLD - NOV 2021"                
+#>  [3] "Final Phase 1 Data - May 10th 2022"                
+#>  [4] "GSED Final Collated Phase 1 Data Files 18_05_22"   
+#>  [5] "GSED PHASE 1 DATA COLLECTED LOG"                   
+#>  [6] "GSED_data_quality_1_output_LF_TEST.csv"            
+#>  [7] "GSED_data_quality_1_output.csv"                    
+#>  [8] "GSED_phase1_merged_11_11_21.csv"                   
+#>  [9] "interim DAZ values combined.csv"                   
+#> [10] "Interim validation data_phase I_May2021"           
+#> [11] "Master_data_dictionary_MAIN_v0.9.1_2021.04.22.xlsx"
+#> [12] "Pakistan Validation"                               
+#> [13] "Pemba Validation"                                  
+#> [14] "QUALITATIVE DATA PHASE 1 MAY 2022"                 
+#> [15] "Stop rule change exploration"
+```
+
+The following script reads all SF data from
+`GSED Final Collated Phase 1 Data Files 18_05_22` directory and returns
+a tibble with one record per administration.
 
 ``` r
 library(gsedread)
-## basic example code
+data <- read_sf(path = "GSED Final Collated Phase 1 Data Files 18_05_22")
+head(data, 2)
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist    
-#>  Min.   : 4.0   Min.   :  2  
-#>  1st Qu.:12.0   1st Qu.: 26  
-#>  Median :15.0   Median : 36  
-#>  Mean   :15.4   Mean   : 43  
-#>  3rd Qu.:19.0   3rd Qu.: 56  
-#>  Max.   :25.0   Max.   :120
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/v1/examples>.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
