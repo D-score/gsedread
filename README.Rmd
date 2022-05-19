@@ -44,10 +44,28 @@ After setting the environmental variable `ONEDRIVE_GSED`, restart R, and manuall
 dir(Sys.getenv("ONEDRIVE_GSED"))
 ```
 
-The following script reads all SF data from `GSED Final Collated Phase 1 Data Files 18_05_22` directory and returns a tibble with one record per administration.
+The following commands reads all SF data from `GSED Final Collated Phase 1 Data Files 18_05_22` directory and returns a tibble with one record per administration.
 
-```{r read_sf, eval = FALSE}
+```{r read_sf}
 library(gsedread)
-data <- read_sf(path = "GSED Final Collated Phase 1 Data Files 18_05_22")
-head(data, 2)
+data <- read_sf()
+dim(data)
 ```
+
+Count the number of records per file:
+
+```{r}
+table(data$file)
+```
+
+## Operations
+
+The package reads and processes GSED data. It does not store data. The `read_sf()` function takes the following actions:
+
+1. Constructs the paths to the files OneDrive sync file;
+2. Reads all specified datasets in a list;
+3. Internally specifies the desired format for each column;
+4. Specifies the available date and data-time formats per file;
+5. Recodes empty, `NA`, `-8888`, `-8,888.00` and `-9999` values as `NA`;
+6. Repairs problems with mixed data-time formats in the adaptive Pakistan data;
+7. Stacks the datasets to one tibble with an extra column called `file`.

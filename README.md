@@ -52,12 +52,46 @@ dir(Sys.getenv("ONEDRIVE_GSED"))
 #> [15] "Stop rule change exploration"
 ```
 
-The following script reads all SF data from
+The following commands reads all SF data from
 `GSED Final Collated Phase 1 Data Files 18_05_22` directory and returns
 a tibble with one record per administration.
 
 ``` r
 library(gsedread)
-data <- read_sf(path = "GSED Final Collated Phase 1 Data Files 18_05_22")
-head(data, 2)
+data <- read_sf()
+dim(data)
+#> [1] 6350  159
 ```
+
+Count the number of records per file:
+
+``` r
+table(data$file)
+#> 
+#>                ban_sf_2021_11_03 ban_sf_new_enrollment_17_05_2022 
+#>                             1543                               72 
+#>     ban_sf_predictive_17_05_2022                pak_sf_2022_05_17 
+#>                              473                             1761 
+#> pak_sf_new_enrollment_2022_05_17     pak_sf_predictive_2022_05_17 
+#>                               72                              459 
+#>                tza_sf_2021_11_01 tza_sf_new_enrollment_10_05_2022 
+#>                             1427                               74 
+#>     tza_sf_predictive_10_05_2022 
+#>                              469
+```
+
+## Operations
+
+The package reads and processes GSED data. It does not store data. The
+`read_sf()` function takes the following actions:
+
+1.  Constructs the paths to the files OneDrive sync file;
+2.  Reads all specified datasets in a list;
+3.  Internally specifies the desired format for each column;
+4.  Specifies the available date and data-time formats per file;
+5.  Recodes empty, `NA`, `-8888`, `-8,888.00` and `-9999` values as
+    `NA`;
+6.  Repairs problems with mixed data-time formats in the adaptive
+    Pakistan data;
+7.  Stacks the datasets to one tibble with an extra column called
+    `file`.
