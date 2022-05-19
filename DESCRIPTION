@@ -1,11 +1,15 @@
-Package: gsedreader
-Type: Package
-Title: What the Package Does (Title Case)
+Package: gsedread
+Title: Tools for reading the GSED validation data
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: GSED Team
+Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
+Description: Contains tools to read validation phase I data of the 
+    project Global Scales for Early Development (GSED).
+License: file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 2.10)
+Imports: 
+    readr
+RoxygenNote: 7.1.2
