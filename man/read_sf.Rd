@@ -2,7 +2,7 @@
 % Please edit documentation in R/read_sf.R
 \name{read_sf}
 \alias{read_sf}
-\title{Read fixed type sf data}
+\title{Read sf data}
 \usage{
 read_sf(
   type = c("fixed", "adaptive"),
@@ -24,5 +24,5 @@ columns, with one test administration per row. If `type == "adaptive"`, a tibble
 with 14 columns, with one item administration per row.
 }
 \description{
-Read fixed type sf data
+Read sf data
 }

@@ -1,4 +1,4 @@
-#' Read fixed type sf data
+#' Read sf data
 #'
 #' @param type Character, either "fixed" or "adaptive"
 #' @param onedrive Character, the location of the local OneDrive sync
