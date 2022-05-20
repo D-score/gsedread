@@ -1,17 +1,16 @@
 #' Define column types for data reading
 #'
 #' @param ins Character, the instrument
-#' @param form Character, fixed or adaptive
+#' @param type Character, fixed or adaptive
 #' @param date_format Specification how to read the date field
 #' @param datetime_format Specification how to read the datetime field
-#' @export
-define_col_type <- function(ins = c("sf", "lf"),
-                            form = c("fixed", "adaptive"),
-                            date_format = "",
-                            datetime_format = "") {
+define_col <- function(ins = c("sf", "lf"),
+                       type = c("fixed", "adaptive"),
+                       date_format = "",
+                       datetime_format = "") {
   ins <- match.arg(ins)
-  form <- match.arg(form)
-  if (ins == "sf" && form == "fixed") {
+  type <- match.arg(type)
+  if (ins == "sf" && type == "fixed") {
     spec <- cols(
       GSED_ID = col_character(),
       `Ma_SF_Parent ID` = col_character(),
@@ -173,8 +172,8 @@ define_col_type <- function(ins = c("sf", "lf"),
       Ma_SF_C139 = col_integer())
   }
 
-  if (ins == "sf" && form == "adaptive") {
-  spec <- cols(
+  if (ins == "sf" && type == "adaptive") {
+    spec <- cols(
       GSED_ID = col_character(),
       parent_study_id = col_character(),
       Ma_SF_DOB = col_date(format = date_format),
@@ -189,6 +188,13 @@ define_col_type <- function(ins = c("sf", "lf"),
       Ma_SF_d = col_double(),
       Ma_SF_sem = col_double()
     )
+  }
+
+  if (ins == "lf" && type == "fixed") {
+    spec <- NULL
+  }
+  if (ins == "lf" && type == "adaptive") {
+    spec <- NULL
   }
   spec
 }

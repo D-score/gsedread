@@ -45,7 +45,7 @@ read_sf_fixed <- function(onedrive, path) {
                     "%d/%m/%Y", "%d/%m/%Y", "%d/%m/%Y",
                     "%m/%d/%Y", "%m/%d/%Y", "%m/%d/%Y")
   for (i in 1:length(files)) {
-    spec <- define_col_type("sf", "fixed", date_formats[i])
+    spec <- define_col("sf", "fixed", date_formats[i])
     data[[i]] <- readr::read_csv(files[i],
                                  col_types = spec,
                                  na = c("", "NA", "-8888", "-8,888.00", "-9999"),
@@ -77,8 +77,8 @@ read_sf_adaptive <- function(onedrive, path) {
                         "%d-%m-%Y %H:%M:%S", "%d/%m/%Y %H:%M",
                         "%d-%m-%Y %H:%M:%S", "%d-%m-%Y %H:%M:%S")
   for (i in 1:length(files)) {
-    spec <- define_col_type("sf", "adaptive", date_formats[i],
-                            datetime_format = datetime_formats[i])
+    spec <- define_col("sf", "adaptive", date_formats[i],
+                       datetime_format = datetime_formats[i])
     data[[i]] <- readr::read_csv(files[i],
                                  col_types = spec,
                                  na = c("", "NA", "-8888", "-8,888.00", "-9999"),
@@ -88,8 +88,8 @@ read_sf_adaptive <- function(onedrive, path) {
   # repair mixed time stamp format in pak_sf_adaptive_2022_05_17 and
   # pak_sf_new_adaptive_2022_05_17 (about 15% of the values).
   for (i in 5:6) {
-    spec <- define_col_type("sf", "adaptive", date_formats[i],
-                            datetime_format = "%m/%d/%Y %H:%M")
+    spec <- define_col("sf", "adaptive", date_formats[i],
+                       datetime_format = "%m/%d/%Y %H:%M")
     tmp <- readr::read_csv(files[i],
                            col_types = spec,
                            na = c("", "NA", "-8888", "-8,888.00", "-9999"),
