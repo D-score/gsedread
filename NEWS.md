@@ -1,3 +1,8 @@
+# gsedread 0.3.0
+
+* Adds `read_lf()` for reading directly observed data
+* Improve README with more detailed installation instructions
+
 # gsedread 0.2.1
 
 * Renames `define_col_type()`  to `define_col()` for clarity
