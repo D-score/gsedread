@@ -14,8 +14,17 @@ Scales for Early Development (GSED).
 
 ## Installation
 
-You can install the development version from
-[GitHub](https://github.com/) with:
+If you have been marked as a collaborator on GitHub for this repository,
+generate a personal access token as in
+<https://github.com/settings/tokens>. Add a line
+
+``` r
+GITHUB_PAT=ghp_vC82.....................
+```
+
+with your token in the file `.Renviron` in your home directory.
+Restarting R adds the environmental variable GITHUB_PAT to your session.
+Then install the `gsedread` package from GitHub as follows:
 
 ``` r
 install.packages("remotes")
