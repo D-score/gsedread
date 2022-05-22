@@ -1,3 +1,7 @@
+# gsedread 0.3.1
+
+* Stops `read_csv()` babbling by `verbose`, `progress` and `warnings`
+
 # gsedread 0.3.0
 
 * Adds `read_lf()` for reading directly observed data

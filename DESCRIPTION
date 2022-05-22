@@ -1,6 +1,6 @@
 Package: gsedread
 Title: Tools for reading the GSED validation data
-Version: 0.3.0
+Version: 0.3.1
 Author: GSED Team
 Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
 Description: Contains tools to read validation phase I data of the 
