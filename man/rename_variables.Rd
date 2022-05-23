@@ -6,7 +6,7 @@
 \usage{
 rename_variables(
   from,
-  trans = c("original", "sequence", "connect", "extend"),
+  trans = c("extend", "original", "sequence", "connect"),
   lowercase = TRUE,
   underscore = TRUE,
   trim = TRUE
@@ -40,8 +40,8 @@ data <- read_sf()
 from <- colnames(data)
 idx <- c(1:3, 19, 21:23)
 from[idx]
-to <- rename_variables(from, "sequence", lowercase = FALSE)
+to <- rename_variables(from)
 to[idx]
-to <- rename_variables(from, "extend")
+to <- rename_variables(from, "sequence", lowercase = FALSE)
 to[idx]
 }
