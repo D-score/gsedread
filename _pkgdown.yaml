@@ -13,8 +13,9 @@ development:
 reference:
   - title: "Main user functions"
     desc: >
-      Functions to read and process GSED data.
+      Functions to read and process GSED validation data.
     contents:
+      - read_bsid
       - read_lf
       - read_sf
   - title: "Helper functions"
