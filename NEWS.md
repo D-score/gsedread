@@ -1,3 +1,7 @@
+# gsedread 0.3.2
+
+* Adds `rename_variables()` to obtain user-friendly variable names and to connect or create a 9-position lexicon for item names (#4)
+
 # gsedread 0.3.1
 
 * Stops `read_csv()` babbling by `verbose`, `progress` and `warnings`

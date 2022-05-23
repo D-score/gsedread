@@ -69,7 +69,7 @@ a tibble with one record per administration.
 library(gsedread)
 data <- read_sf()
 dim(data)
-#> [1] 6350  159
+#> [1] 6228  159
 ```
 
 Count the number of records per file:
@@ -78,7 +78,7 @@ Count the number of records per file:
 table(data$file)
 #> 
 #>                ban_sf_2021_11_03 ban_sf_new_enrollment_17_05_2022 
-#>                             1543                               72 
+#>                             1421                               72 
 #>     ban_sf_predictive_17_05_2022                pak_sf_2022_05_17 
 #>                              473                             1761 
 #> pak_sf_new_enrollment_2022_05_17     pak_sf_predictive_2022_05_17 
@@ -89,10 +89,19 @@ table(data$file)
 #>                              469
 ```
 
+Process variable names user-friendly alternative:
+
+``` r
+v <- rename_variables(colnames(data), "extend")
+v[c(1:3, 19, 21:25)]
+#> [1] "file"         "gsed_id"      "sf_parent_id" "sf_date"      "gpalac001"   
+#> [6] "gpacgc002"    "gpafmc003"    "gpasec004"    "gpamoc005"
+```
+
 ## Operations
 
 The package reads and processes GSED data. It does not store data. The
-`read_sf()` function takes the following actions:
+`read_sf()` and `read_lf()` functions takes the following actions:
 
 1.  Constructs the paths to the files OneDrive sync file;
 2.  Reads all specified datasets in a list;
@@ -103,4 +112,9 @@ The package reads and processes GSED data. It does not store data. The
 6.  Repairs problems with mixed data-time formats in the adaptive
     Pakistan data;
 7.  Stacks the datasets to one tibble with an extra column called
-    `file`.
+    `file`;
+8.  Removes records without a `GSED_ID`.
+
+Item renaming with `rename_variables()` relies on the item translation
+table at
+<https://github.com/D-score/gsedread/blob/main/inst/extdata/itemnames_translate.tsv>.
