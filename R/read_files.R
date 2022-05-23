@@ -1,9 +1,11 @@
-read_files <- function(test, type, files, idx,
+read_files <- function(test, types, files, idx,
                        date_formats, datetime_formats,
                        verbose, progress, warnings) {
   stopifnot(length(files) == length(date_formats))
   if (is.null(datetime_formats)) datetime_formats <- rep("", length(files))
   stopifnot(length(files) == length(datetime_formats))
+
+  if (length(types) == 1L) types <- rep(types, length(files))
 
   data <- vector(mode = "list", length = length(files))
   nm <- tolower(gsub("-", "_", basename(files)))
@@ -11,6 +13,7 @@ read_files <- function(test, type, files, idx,
 
   for (i in idx) {
     fn <- files[i]
+    type <- types[i]
     if (!file.exists(fn)) stop("File not found:", fn)
     spec <- define_col(test, type,
                        date_formats[i],

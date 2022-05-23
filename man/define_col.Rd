@@ -5,8 +5,8 @@
 \title{Define column types for data reading}
 \usage{
 define_col(
-  ins = c("sf", "lf"),
-  type = c("fixed", "adaptive"),
+  ins = c("sf", "lf", "bsid"),
+  type = c("fixed", "adaptive", "tan", "pak", "ban"),
   date_format = "",
   datetime_format = ""
 )
