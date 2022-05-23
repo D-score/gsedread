@@ -25,7 +25,7 @@ Ma_SF_C23	C23	Does your child laugh?	croclc006	Does your child laugh?	gpaclc023
 Ma_SF_C24	C24	Can your child hold his/her head steady for at least a few seconds, without it flopping to the side?	iyomoc004	Can your child hold his/her head steady for at least a few seconds, without it flopping to the side?	gpamoc024
 Ma_SF_C25	C25	Does your child move excitedly, kick legs, move arms or trunk, or make coo noises when a known person enters the room or speaks to them?	iyosec005	Does your child move excitedly, kick legs, move arms or trunk, or make coo noises when a known person enters the room or speaks to them?	gpasec025
 Ma_SF_C26	C26	Does your child grasp onto a small object (e.g., your finger, a spoon) when put in his/her hand?	cromoc006	Does your child grasp onto a small object when put in his/her hand?	gpamoc026
-Ma_SF_C27	C27	Does your child make single sounds like buh or duh or muh?	iyolgc004	Does your child make single sounds like buh or duh or muh?	gpalgc027
+Ma_SF_C27	C27	Does your child make single sounds like "buh" or "duh" or "muh"?	iyolgc004	Does your child make single sounds like "buh" or "duh" or "muh"?	gpalgc027
 Ma_SF_C28	C28	Does your child try to reach for objects that are in front of him/her by extending one or both arms?	iyomoc006	Does your child try to reach for objects that are in front of him/her by extending one or both arms?	gpamoc028
 Ma_SF_C29	C29	When he/she is on his/her tummy, can your child hold his/her head straight up, looking around for more than a few seconds? He/she can rest on his/her arms while doing this.	iyomoc005	When he/she is on his/her tummy, can your child hold his/her head straight up, looking around for more than a few seconds?	gpamoc029
 Ma_SF_C30	C30	Can your child roll from his/her back to stomach or stomach to his/her side?	gsdgmc007	Can your child roll from his/her back to stomach or stomach to his/her side?	gpagmc030
@@ -57,7 +57,7 @@ Ma_SF_C55	C55	While holding onto furniture, does your child bend down and pick u
 Ma_SF_C56	C56	Can your child pull themselves up from the floor while holding onto something? For example, can they pull themselves up using a chair, a person, or some other object?	iyomoc016	Can your child pull themselves up from the floor while holding onto something?	gpamoc056
 Ma_SF_C57	C57	While holding onto furniture, does your child squat with control (without falling or flopping down)?	aqigmc020	While holding onto furniture, does your child squat with control (without falling or flopping down)?	gpagmc057
 Ma_SF_C58	C58	Can your child pick up and drop a small object (e.g., a small toy or small stone) into a bucket or bowl while sitting?	cromoc022	Can your child pick up and drop a small object into a bucket or bowl while sitting?	gpamoc058
-Ma_SF_C59	C59	Does your child stop what he/she is doing when you say Stop! even if just for a second?	mdtlgd008	Does your child stop what he/she is doing when you say Stop! even if just for a second?	gpalgc059
+Ma_SF_C59	C59	Does your child stop what he/she is doing when you say "Stop!" even if just for a second?	mdtlgd008	Does your child stop what he/she is doing when you say "Stop!" even if just for a second?	gpalgc059
 Ma_SF_C60	C60	Can your child walk several steps while holding on to a person or object (e.g., wall or furniture)?	cromoc018	Can your child walk several steps while holding on to a person or object (e.g., wall or furniture)?	gpamoc060
 Ma_SF_C61	C61	Can your child stand up without holding onto anything, even if just for a few seconds?	iyomoc020	Can your child stand up without holding onto anything, even if just for a few seconds?	gpamoc061
 Ma_SF_C62	C62	Can your child maintain a standing position on his/her own, without holding on or receiving support?	cromoc017	Can your child maintain a standing position on his/her own, without holding on or receiving support?	gpamoc062
@@ -66,7 +66,7 @@ Ma_SF_C64	C64	Can your child pick up small bits of food and feed him/her-self us
 Ma_SF_C65	C65	Can your child climb onto an object (rock, porch, step, chair, bed, low table, etc.)?	iyomoc022	Can your child climb onto an object (rock, porch, step, chair, bed, low table, etc.)?	gpamoc065
 Ma_SF_C66	C66	Can your child take several steps (3-5) forward without holding onto any person or object, even if they fall down immediately afterward?	iyomoc024	Can your child take several steps (3-5) forward without holding onto any person or object, even if they fall down immediately afterward?	gpamoc066
 Ma_SF_C67	C67	Can your child move around by walking, rather than by crawling on his hands and knees?	aqigmc027	Can your child move around by walking, rather than by crawling on his hands and knees?	gpagmc067
-Ma_SF_C68	C68	Does your child make a gesture to indicate No (e.g., shaking head)?	mdtlgd009	Does your child make a gesture to indicate No?	gpalgc068
+Ma_SF_C68	C68	Does your child make a gesture to indicate "No" (e.g., shaking head)?	mdtlgd009	Does your child make a gesture to indicate "No"?	gpalgc068
 Ma_SF_C69	C69	Can your child stand up from sitting by himself and take several steps forward?	aqigmc026	Can your child stand up from sitting by himself and take several steps forward?	gpagmc069
 Ma_SF_C70	C70	Can your child bend down or squat to pick up an object from the floor and then stand up again, without help from a person or object?	iyomoc023	Can your child bend down or squat to pick up an object from the floor and then stand up again, without help from a person or object?	gpamoc070
 Ma_SF_C71	C71	Can your child make a scribble on paper, or in dirt, in a back and forth manner? For example, can he or she move the pen or pencil or stick back and forth?	iyomoc025	Can your child make a scribble on paper, or in dirt, in a back and forth manner?	gpamoc071
@@ -86,43 +86,43 @@ Ma_SF_C84	C84	Can your child run well, without falling or bumping into objects?	
 Ma_SF_C85	C85	Can your child greet people either by giving his/her hand or saying Hello?	mdtsed017	Can your child greet people either by giving his/her hand or saying Hello?	gpasec085
 Ma_SF_C86	C86	Does your child share with others (e.g., food)?	mdtsed018	Does your child share with others?	gpasec086
 Ma_SF_C87	C87	Does your child dry hands by herself/himself after you have washed them?	vinxxc021	Does your child dry hands by herself/himself after you have washed them?	gpaxxc087
-Ma_SF_C89	C89	Can your child say five or more separate words (e.g., names like ""Mama"" or objects like ""ball"")? 	croclc023	Can your child say five or more separate words?	gpaclc088
+Ma_SF_C89	C89	Can your child say five or more separate words (e.g., names like "Mama" or objects like "ball")? 	croclc023	Can your child say five or more separate words?	gpaclc088
 Ma_SF_C88	C88	Is your child able to go poo or pee without having accidents (wetting or soiling themselves)?	mdtsed019	Is your child able to go poo or pee without having accidents?	gpasec089
-Ma_SF_C90	C90	Can your child say ten or more words in addition to ""Mama"" and ""Dada""? 	aqicmc033	Can your child say ten or more words in addition to ""Mama"" and ""Dada""?	gpacmc090
-Ma_SF_C91	C91	Can your child speak using short sentences of two words that go together (e.g., 'Mama go' or ""Dada eat'?	croclc024	Can your child speak using short sentences of two words that go together?	gpaclc091
+Ma_SF_C90	C90	Can your child say ten or more words in addition to "Mama" and "Dada"? 	aqicmc033	Can your child say ten or more words in addition to "Mama" and "Dada"?	gpacmc090
+Ma_SF_C91	C91	Can your child speak using short sentences of two words that go together (e.g., 'Mama go' or "Dada eat'?	croclc024	Can your child speak using short sentences of two words that go together?	gpaclc091
 Ma_SF_C92	C92	Can your child wash hands by him/herself?	vinxxc048	Can your child wash hands by him/herself?	gpaxxc092
 Ma_SF_C93	C93	Can your child ask for something (e.g., food, water) by name when he/she wants it?	croclc025	Can your child ask for something by name when he/she wants it?	gpaclc093
 Ma_SF_C94	C94	Can your child break off pieces of food and feed them to him/her-self?	mdtsed021	Can your child break off pieces of food and feed them to him/her-self?	gpasec094
 Ma_SF_C95	C95	Does your child show independence (e.g., wants to go and visit a friends house)?	mdtsed023	Does your child show independence?	gpasec095
 Ma_SF_C96	C96	Can your child correctly name at least one family member other than mom and dad (e.g., name of brother, sister, aunt, uncle)?	croclc028	Can your child correctly name at least one family member other than mom and dad?	gpaclc096
 Ma_SF_C97	C97	Can your child walk on an uneven surface (e.g., a bumpy or steep road) without falling?	cromoc031	Can your child walk on an uneven surface without falling?	gpamoc097
-Ma_SF_C98	C98	When looking at pictures, if you say to your child ""what is this?"", can they say the name of the object that you point to?	iyolgc021	When looking at pictures, if you say to your child ""what is this?"", can they say the name of the object that you point to?	gpalgc098
+Ma_SF_C98	C98	When looking at pictures, if you say to your child "what is this?", can they say the name of the object that you point to?	iyolgc021	When looking at pictures, if you say to your child "what is this?", can they say the name of the object that you point to?	gpalgc098
 Ma_SF_C99	C99	Can your child identify at least seven objects? For example, when you ask 'where is the ball/spoon/cup/cloth/door/plate/bucket etc.' does your child look at or point to (or even name) the objects?	iyolgc022	Can your child identify at least seven objects?	gpalgc099
 Ma_SF_C100	C100	Can your child name at least two body parts (e.g., arm, eye, or nose)?	croclc038	Can your child name at least two body parts?	gpaclc100
 Ma_SF_C101	C101	If you show your child an object he/she knows well (e.g., a cup or animal), can he/she consistently name it?	croclc034	If you show your child an object he/she knows well, can he/she consistently name it?	gpaclc101
 Ma_SF_C102	C102	Does your child usually communicate with words what he/she wants in a way that is understandable to others?	iyolgc023	Does your child usually communicate with words what he/she wants in a way that is understandable to others?	gpalgc102
 Ma_SF_C103	C103	Can your child draw a straight line?	iyomoc037	Can your child draw a straight line?	gpamoc103
 Ma_SF_C104	C104	Can your child remove an item of clothing (e.g., take off his/her shirt)?	cromoc035	Can your child remove an item of clothing?	gpamoc104
-Ma_SF_C105	C105	Can your child say 15 or more separate words (e.g., names like ""Mama"" or objects like ""ball"")? 	croclc027	Can your child say ten or more separate words?	gpaclc105
+Ma_SF_C105	C105	Can your child say 15 or more separate words (e.g., names like "Mama" or objects like "ball")? 	croclc027	Can your child say ten or more separate words?	gpaclc105
 Ma_SF_C106	C106	Can your child jump with both feet leaving the ground?	cromoc034	Can your child jump with both feet leaving the ground?	gpamoc106
 Ma_SF_C107	C107	Can your child sing a short song or repeat parts of a rhyme from memory by him/herself?	croclc037	Can your child sing a short song or repeat parts of a rhyme from memory by him/herself?	gpaclc107
 Ma_SF_C108	C108	Can your child tell you or someone familiar his/her own name [nickname] when asked to?	croclc032	Can your child tell you or someone familiar his/her own name [nickname] when asked to?	gpaclc108
 Ma_SF_C109	C109	Can your child  put on at least one piece of clothing by himself?	mdtsed026	Can your child  put on at least one piece of clothing by himself?	gpasec109
 Ma_SF_C110	C110	Can your child unscrew the lid from a bottle or jar?	cromoc033	Can your child unscrew the lid from a bottle or jar?	gpamoc110
-Ma_SF_C111	C111	Does your child know the difference between the words ""big"" and ""small""? For example, if you ask, ""Give me the big spoon"" can your child understand which one to give if there are two different sizes?	iyolgc026	Does your child know the difference between the words ""big"" and ""small""?	gpalgc111
-Ma_SF_C112	C112	Can your child speak using sentences of three or more words that go together (e.g., ""I want water"" or ""The house is big"")?	croclc029	Can your child speak using sentences of three or more words that go together?	gpaclc112
-Ma_SF_C113	C113	Can your child correctly use any of the words ""I,"" ""you,"" ""she,"" or ""he"" (e.g., ""I go to store,"" or ""He eats rice"")? 	croclc031	Can your child correctly use any of the words ""I,"" ""you,"" ""she,"" or ""he""? 	gpaclc113
-Ma_SF_C114	C114	Can your child say what he/she likes or dislikes (e.g., ""I like sweets"")? 	crosec042	Can your child say what he/she likes or dislikes?	gpasec114
-Ma_SF_C115	C115	Can your child correctly ask questions using any of the words ""what,"" ""which,"" ""where,"" or ""who""? 	croclc042	Can your child correctly ask questions using any of the words ""what,"" ""which,"" ""where,"" or ""who""? 	gpaclc115
+Ma_SF_C111	C111	Does your child know the difference between the words "big" and "small"? For example, if you ask, "Give me the big spoon" can your child understand which one to give if there are two different sizes?	iyolgc026	Does your child know the difference between the words "big" and "small"?	gpalgc111
+Ma_SF_C112	C112	Can your child speak using sentences of three or more words that go together (e.g., "I want water" or "The house is big")?	croclc029	Can your child speak using sentences of three or more words that go together?	gpaclc112
+Ma_SF_C113	C113	Can your child correctly use any of the words "I," "you," "she," or "he" (e.g., "I go to store," or "He eats rice")? 	croclc031	Can your child correctly use any of the words "I," "you," "she," or "he"? 	gpaclc113
+Ma_SF_C114	C114	Can your child say what he/she likes or dislikes (e.g., "I like sweets")? 	crosec042	Can your child say what he/she likes or dislikes?	gpasec114
+Ma_SF_C115	C115	Can your child correctly ask questions using any of the words "what," "which," "where," or "who"? 	croclc042	Can your child correctly ask questions using any of the words "what," "which," "where," or "who"? 	gpaclc115
 Ma_SF_C116	C116	Does your child pronounce most of his/her words correctly?	croclc046	Does your child pronounce most of his/her words correctly?	gpaclc116
 Ma_SF_C117	C117	If you show your child two objects or people of different size, can he/she tell you which one is the big one and which is the small one?	croclc035	If you show your child two objects or people of different size, can he/she tell you which one is the big one and which is the small one?	gpaclc117
 Ma_SF_C118	C118	Can your child count objects up to five  (e.g., fingers, people)?	croclc041	Can your child count objects up to five (e.g., fingers, people)?	gpaclc118
 Ma_SF_C119	C119	Can your child explain in words what common objects like a cup or chair are used for?	croclc039	Can your child explain in words what common objects like a cup or chair are used for?	gpaclc119
-Ma_SF_C120	C120	If you point to an object, can your child correctly use the words ""on,"" ""in,"" or ""under"" to describe where it is (e.g., ""The cup is on the table"" instead of ""The cup is in the table."")	croclc049	If you point to an object, can your child correctly use the words ""on,"" ""in,"" or ""under"" to describe where it is?	gpaclc120
-Ma_SF_C121	C121	Does your child regularly use describing words such as ""fast,"" ""short,"" ""hot,"" ""fat,"" or ""beautiful"" correctly? 	croclc050	Does your child regularly use describing words such as ""fast,"" ""short,"" ""hot,"" ""fat,"" or ""beautiful"" correctly? 	gpaclc121
+Ma_SF_C120	C120	If you point to an object, can your child correctly use the words "on," "in," or "under" to describe where it is (e.g., "The cup is on the table" instead of "The cup is in the table.")	croclc049	If you point to an object, can your child correctly use the words "on," "in," or "under" to describe where it is?	gpaclc120
+Ma_SF_C121	C121	Does your child regularly use describing words such as "fast," "short," "hot," "fat," or "beautiful" correctly? 	croclc050	Does your child regularly use describing words such as "fast," "short," "hot," "fat," or "beautiful" correctly? 	gpaclc121
 Ma_SF_C122	C122	Can the child name at least one color (e.g., red, blue, yellow)?	croclc044	Can the child name at least one color?	gpaclc122
 Ma_SF_C123	C123	Does your child know to keep quiet when the situation requires it? (e.g., at ceremonies, when someone is asleep)	mdtsed028	Does your child know to keep quiet when the situation requires it? (e.g., at ceremonies, when someone is asleep)	gpasec123
-Ma_SF_C124	C124	Does your child ask ""why"" questions (e.g., ""Why are you tall?"")? 	croclc051	Does your child ask ""why"" questions? 	gpaclc124
+Ma_SF_C124	C124	Does your child ask "why" questions (e.g., "Why are you tall?")? 	croclc051	Does your child ask "why" questions? 	gpaclc124
 Ma_SF_C125	C125	Can your child tell you when he/she is happy, angry, or sad?	crosec049	Can your child tell you when he/she is happy, angry, or sad?	gpasec125
 Ma_SF_C126	C126	If you ask your child to give you three objects (e.g., stones, beans), does the child give you the correct amount?	croclc043	If you ask your child to give you three objects (e.g., stones, beans), does the child give you the correct amount?	gpaclc126
 Ma_SF_C127	C127	Can your child tell a story?	iyolgc030	Can your child tell a story?	gpalgc127
@@ -134,10 +134,10 @@ Ma_SF_C132	C132	Can the child fasten and unfasten buttons without help?	cromoc03
 Ma_SF_C133	C133	If you draw a circle can your child do it, just as you did?	iyomoc038	If you draw a circle can your child do it, just as you did?	gpamoc133
 Ma_SF_C134	C134	Can your child go to the toilet by him/her-self?	mdtsed033	Can your child go to the toilet by him/her-self?	gpasec134
 Ma_SF_C135	C135	Can your child stand on one foot WITHOUT any support for at least a few seconds?	iyomoc039	Can your child stand on one foot WITHOUT any support for at least a few seconds?	gpamoc135
-Ma_SF_C136	C136	Can your child say what others like or dislike (e.g., ""Mama doesn't like fruit,"" Papa likes football)?	crosec051	Can your child say what others like or dislike?	gpasec136
+Ma_SF_C136	C136	Can your child say what others like or dislike (e.g., "Mama doesn't like fruit," Papa likes football)?	crosec051	Can your child say what others like or dislike?	gpasec136
 Ma_SF_C137	C137	Does your child show respect around elders?	mdtsed032	Does your child show respect around elders?	gpasec137
-Ma_SF_C138	C138	Can your child talk about things that have happened in the past using correct language (e.g., ""Yesterday I played with my friend"" or ""Last week she went to the market"")?	croclc045	Can your child talk about things that have happened in the past using correct language?	gpaclc138
-Ma_SF_C139	C139	Can your child talk about things that will happen in the future using correct language (e.g., ""Tomorrow he will attend school"" or ""Next week we will go to the market"")? 	croclc048	Can your child talk about things that will happen in the future using correct language?	gpaclc139
+Ma_SF_C138	C138	Can your child talk about things that have happened in the past using correct language (e.g., "Yesterday I played with my friend" or "Last week she went to the market")?	croclc045	Can your child talk about things that have happened in the past using correct language?	gpaclc138
+Ma_SF_C139	C139	Can your child talk about things that will happen in the future using correct language (e.g., "Tomorrow he will attend school" or "Next week we will go to the market")? 	croclc048	Can your child talk about things that will happen in the future using correct language?	gpaclc139
 Ma_LF_A01	A01	Lifts head in prone 45 degrees	ddigmd057	Lifts head in prone 45 degrees	gtogmd001
 Ma_LF_A02	A02	Frolics alone - moving body, kicking legs.	mdtsed004	Frolics alone - moving body, kicking legs.	gtogmd002
 Ma_LF_A03	A03	Frolics with mother or caregiver responsively	mdtsed003	Frolics with mother or caregiver responsively	gtogmd003
@@ -229,9 +229,9 @@ Ma_LF_B39	B39	Logical response to a question	teplgd281	Logical response to a que
 Ma_LF_B40	B40	Child is able to categorize things	mdtlgd024	Child is able to categorize things.	gtolgd040
 Ma_LF_B41	B41	Child describes picture	teplgd035	Child describes picture	gtolgd041
 Ma_LF_B42	B42	Identifies 2 or more colors	teplgd032	Identifies >2 colors	gtolgd042
-Ma_LF_B43	B43	Understands adjective ""faster""	mdtlgd029	Understands adjective ""faster""	gtolgd043
+Ma_LF_B43	B43	Understands adjective "faster"	mdtlgd029	Understands adjective "faster"	gtolgd043
 Ma_LF_B44	B44	Knows use of objects	grihsd303	Knows use of objects	gtolgd044
-Ma_LF_B45	B45	Understands ""more and less""	teplgd018	Understands ""more and less""	gtolgd045
+Ma_LF_B45	B45	Understands "more and less"	teplgd018	Understands "more and less"	gtolgd045
 Ma_LF_B46	B46	Identifies at least 2 shapes	teplgd034	Identifies at least 2 shapes	gtolgd046
 Ma_LF_B47	B47	Names at least 2 colours	teplgd031	Names at least 2 colours	gtolgd047
 Ma_LF_B48	B48	Matches 3 colors	by3cgd068	Matches 3 colors	gtolgd048
@@ -267,12 +267,12 @@ Ma_LF_C25	C25	Dumps blocks out of jar purposefully. (2x)	mdtfmd017	Dumps blocks 
 Ma_LF_C26	C26	Finds object under 2 alternating cups	by1mdd131	Finds 2 objects	gtofmd026
 Ma_LF_C27	C27	Uses objects in play by themselves (2x)	by3cgd048	Uses objects in play by themselves	gtofmd027
 Ma_LF_C28	C28	Builds tower of 3 blocks (2x)	by1mdd119	Builds tower of 3 blocks	gtofmd028
-Ma_LF_C29	C29	Understands the concept of ""one"" (2x)	mdtfmd022	Understands the concept of ""one""	gtofmd029
+Ma_LF_C29	C29	Understands the concept of "one" (2x)	mdtfmd022	Understands the concept of "one"	gtofmd029
 Ma_LF_C30	C30	Scribbles on paper (circular scribble)	mdtfmd019	Scribbles on paper (circular scribble).	gtofmd030
 Ma_LF_C31	C31	Uses objects in play with someone	by3cgd053	Uses objects in play with someone	gtofmd031
 Ma_LF_C32	C32	Puts pegs in board <= 2 minutes. (2x)	mdtfmd021	Puts pegs in board <= 2 minutes.	gtofmd032
 Ma_LF_C33	C33	2 shapes in board complete (2x)	gricgd213	2 shapes in board complete	gtofmd033
-Ma_LF_C34	C34	Understands ""more""	by3cgd089	Understands ""more"" (2 cups)	gtofmd034
+Ma_LF_C34	C34	Understands "more"	by3cgd089	Understands "more" (2 cups)	gtofmd034
 Ma_LF_C35	C35	3 shapes in board complete 2 minutes (2x)	by3cgd056	3 shapes in board complete 2 mins	gtofmd035
 Ma_LF_C36	C36	3 shape board 2 minutes rotated (2x)	by3cgd060	3 shape board 2 mins rotated	gtofmd036
 Ma_LF_C37	C37	Builds tower of 6 blocks. (2x)	mdtfmd023	Builds tower of 6 blocks.	gtofmd037
