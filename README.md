@@ -14,22 +14,20 @@ Scales for Early Development (GSED).
 
 ## Installation
 
-If you have been marked as a collaborator on GitHub for this repository,
-generate a personal access token as in
-<https://github.com/settings/tokens>. Add a line
+<!-- If you have been marked as a collaborator on GitHub for this repository, generate a personal access token as in <https://github.com/settings/tokens>. Add a line  -->
+<!-- ```{r eval=FALSE} -->
+<!-- GITHUB_PAT=ghp_vC82..................... -->
+<!-- ``` -->
+<!-- with your token in the file `.Renviron` in your home directory. Restarting R adds the environmental variable GITHUB_PAT to your session. Then install the `gsedread` package from GitHub as follows:  -->
 
-``` r
-GITHUB_PAT=ghp_vC82.....................
-```
-
-with your token in the file `.Renviron` in your home directory.
-Restarting R adds the environmental variable GITHUB_PAT to your session.
-Then install the `gsedread` package from GitHub as follows:
+Install the `gsedread` package from GitHub as follows:
 
 ``` r
 install.packages("remotes")
 remotes::install_github("d-score/gsedread")
 ```
+
+There is no CRAN version.
 
 ## Example
 
