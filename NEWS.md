@@ -1,3 +1,7 @@
+# gsedread 0.5.0
+
+* Adds `read_bsid()` for reading Bayley III data
+
 # gsedread 0.4.0
 
 * Adds site documentation for github-pages
