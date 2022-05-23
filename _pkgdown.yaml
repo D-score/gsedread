@@ -1,0 +1,26 @@
+destination: docs
+title: gsedread
+url: https://D-score.org/gsedread
+template:
+  bootstrap: 5
+  params:
+    bootswatch: lumen
+authors:
+  Stef van Buuren:
+    href: https://stefvanbuuren.name
+development:
+  mode: auto
+
+reference:
+  - title: "Main user functions"
+    desc: >
+      Functions to read and process GSED data.
+    contents:
+      - read_lf
+      - read_sf
+  - title: "Helper functions"
+    desc: >
+      Functions to set details of the data set.
+    contents:
+      - define_col
+      - rename_variables
