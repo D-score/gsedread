@@ -1,5 +1,6 @@
 #' Rename variables
 #'
+#' Supports translation of item names for SF, LF and BSID.
 #' @param from     A character vector with column names
 #' @param trans    One of "original", "sequence", "connect" or "extend". Desired
 #' transformation of `from`. "original" and "sequence" preserve the original item

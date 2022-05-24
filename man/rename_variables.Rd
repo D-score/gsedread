@@ -33,7 +33,7 @@ A character vector of the same length as `from` with processed
 names.
 }
 \description{
-Rename variables
+Supports translation of item names for SF, LF and BSID.
 }
 \examples{
 data <- read_sf()
