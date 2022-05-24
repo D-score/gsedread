@@ -293,3 +293,329 @@ Ma_LF_C51	C51	Understands concept of size	by3cgd073	Understands concept of size	
 Ma_LF_C52	C52	Draws 3 or more body parts	denfmd024	Draws 3 or more body parts	gtofmd052
 Ma_LF_C53	C53	Copies a square (2x)	mdtfmd034	Copies a square	gtofmd053
 Ma_LF_C54	C54	Can count 3 + objects.	mdtlgd033	Can count 3 + objects.	gtofmd054
+bsid_cog01	cog01	Calms when picked up	by3cgd001	Calms when picked up	by3cgd001
+bsid_cog02	cog02	Responds to surroundings: inspects	by3cgd002	Responds to surroundings: inspects	by3cgd002
+bsid_cog03	cog03	Regards 3 sec	by3cgd003	Regards 3 sec	by3cgd003
+bsid_cog04	cog04	Habituates rattle	by3cgd004	Habituates rattle	by3cgd004
+bsid_cog05	cog05	Discriminates between obj	by3cgd005	Discriminates between obj	by3cgd005
+bsid_cog06	cog06	Recog caregiver	by3cgd006	Recog caregiver	by3cgd006
+bsid_cog07	cog07	Becomes excited antic	by3cgd007	Becomes excited antic	by3cgd007
+bsid_cog08	cog08	Regards object 5 sec	by3cgd008	Regards object 5 sec	by3cgd008
+bsid_cog09	cog09	Reacts disappear face	by3cgd009	Reacts disappear face	by3cgd009
+bsid_cog10	cog10	Shifts attention	by3cgd010	Shifts attention	by3cgd010
+bsid_cog11	cog11	Shows visual pref	by3cgd011	Shows visual pref	by3cgd011
+bsid_cog12	cog12	Habituates to object	by3cgd012	Habituates to object	by3cgd012
+bsid_cog13	cog13	Prefers novel obj	by3cgd013	Prefers novel obj	by3cgd013
+bsid_cog14	cog14	Habituates pict - balloons	by3cgd014	Habituates pict - balloons	by3cgd014
+bsid_cog15	cog15	Prefers novel pict	by3cgd015	Prefers novel pict	by3cgd015
+bsid_cog16	cog16	Explores object	by3cgd016	Explores object	by3cgd016
+bsid_cog17	cog17	Carries object to mouth	by3cgd017	Carries object to mouth	by3cgd017
+bsid_cog18	cog18	Inspects own hand	by3cgd018	Inspects own hand	by3cgd018
+bsid_cog19	cog19	Mirror Image Series: Approaches	by3cgd019	Mirror Image Series: Approaches	by3cgd019
+bsid_cog20	cog20	"Responds to surroundings; awareness of novelty"	by3cgd020	"Responds to surroundings; awareness of novelty"	by3cgd020
+bsid_cog21	cog21	Persistent reach	by3cgd021	Persistent reach	by3cgd021
+bsid_cog22	cog22	Mirror Image Series: Responds positively	by3cgd022	Mirror Image Series: Responds positively	by3cgd022
+bsid_cog23	cog23	Plays with string	by3cgd023	Plays with string	by3cgd023
+bsid_cog24	cog24	Bangs in play	by3cgd024	Bangs in play	by3cgd024
+bsid_cog25	cog25	Searches for fallen object	by3cgd025	Searches for fallen object	by3cgd025
+bsid_cog26	cog26	Bell Series: Manipulates	by3cgd026	Bell Series: Manipulates	by3cgd026
+bsid_cog27	cog27	Picks Up Block Series: Reaches for second block	by3cgd027	Picks Up Block Series: Reaches for second block	by3cgd027
+bsid_cog28	cog28	Pulls cloth to obtain object	by3cgd028	Pulls cloth to obtain object	by3cgd028
+bsid_cog29	cog29	Pulls string adaptively	by3cgd029	Pulls string adaptively	by3cgd029
+bsid_cog30	cog30	Retains both blocks	by3cgd030	Retains both blocks	by3cgd030
+bsid_cog31	cog31	Bell Series: Rings purposely	by3cgd031	Bell Series: Rings purposely	by3cgd031
+bsid_cog32	cog32	Looks at pictures	by3cgd032	Looks at pictures	by3cgd032
+bsid_cog33	cog33	Picks Up Block Series: Retains 2 of 3 blocks	by3cgd033	Picks Up Block Series: Retains 2 of 3 blocks	by3cgd033
+bsid_cog34	cog34	Searches for missing objects	by3cgd034	Searches for missing objects	by3cgd034
+bsid_cog35	cog35	Takes blocks out of cup	by3cgd035	Takes blocks out of cup	by3cgd035
+bsid_cog36	cog36	Block Series: 1 Block	by3cgd036	Block Series: 1 Block	by3cgd036
+bsid_cog37	cog37	Picks up Block Series: 3 blocks	by3cgd037	Picks up Block Series: 3 blocks	by3cgd037
+bsid_cog38	cog38	Explores holes in pegboard	by3cgd038	Explores holes in pegboard	by3cgd038
+bsid_cog39	cog39	Pushes car	by3cgd039	Pushes car	by3cgd039
+bsid_cog40	cog40	Finds hidden object	by3cgd040	Finds hidden object	by3cgd040
+bsid_cog41	cog41	Suspends ring	by3cgd041	Suspends ring	by3cgd041
+bsid_cog42	cog42	Removes pellet	by3cgd042	Removes pellet	by3cgd042
+bsid_cog43	cog43	Clear Box: Front	by3cgd043	Clear Box: Front	by3cgd043
+bsid_cog44	cog44	Squeezes object	by3cgd044	Squeezes object	by3cgd044
+bsid_cog45	cog45	Finds hidden object (Reversed)	by3cgd045	Finds hidden object (Reversed)	by3cgd045
+bsid_cog46	cog46	Removes lid from bottle	by3cgd046	Removes lid from bottle	by3cgd046
+bsid_cog47	cog47	Pegboard Series: 2 holes	by3cgd047	Pegboard Series: 2 holes	by3cgd047
+bsid_cog48	cog48	Relational Play Series: Self	by3cgd048	Relational Play Series: Self	by3cgd048
+bsid_cog49	cog49	Pink Board Series: 1 piece	by3cgd049	Pink Board Series: 1 piece	by3cgd049
+bsid_cog50	cog50	Finds hidden object (Visible Displacement)	by3cgd050	Finds hidden object (Visible Displacement)	by3cgd050
+bsid_cog51	cog51	Blue Board Series: 1 piece	by3cgd051	Blue Board Series: 1 piece	by3cgd051
+bsid_cog52	cog52	Clear Box: Sides	by3cgd052	Clear Box: Sides	by3cgd052
+bsid_cog53	cog53	Relational Play Series: Others	by3cgd053	Relational Play Series: Others	by3cgd053
+bsid_cog54	cog54	Block Series: 9 Blocks	by3cgd054	Block Series: 9 Blocks	by3cgd054
+bsid_cog55	cog55	Pegboard Series: 6 Pegs	by3cgd055	Pegboard Series: 6 Pegs	by3cgd055
+bsid_cog56	cog56	Pink Board Series: Completes	by3cgd056	Pink Board Series: Completes	by3cgd056
+bsid_cog57	cog57	Uses pencil to obtain object	by3cgd057	Uses pencil to obtain object	by3cgd057
+bsid_cog58	cog58	Blue Board Series: 4 Pieces	by3cgd058	Blue Board Series: 4 Pieces	by3cgd058
+bsid_cog59	cog59	Attends to story	by3cgd059	Attends to story	by3cgd059
+bsid_cog60	cog60	Rotated pink board	by3cgd060	Rotated pink board	by3cgd060
+bsid_cog61	cog61	Object assembly (Ball)	by3cgd061	Object assembly (Ball)	by3cgd061
+bsid_cog62	cog62	Completes Pegboard: 25 Seconds	by3cgd062	Completes Pegboard: 25 Seconds	by3cgd062
+bsid_cog63	cog63	Object assembly (Ice Cream Cone)	by3cgd063	Object assembly (Ice Cream Cone)	by3cgd063
+bsid_cog64	cog64	Matches pictures	by3cgd064	Matches pictures	by3cgd064
+bsid_cog65	cog65	Representational play	by3cgd065	Representational play	by3cgd065
+bsid_cog66	cog66	Blue Board Series: Completes (75 seconds)	by3cgd066	Blue Board Series: Completes (75 seconds)	by3cgd066
+bsid_cog67	cog67	Imitates a two-step action.	by3cgd067	Imitates a two-step action.	by3cgd067
+bsid_cog68	cog68	Matches 3 colors	by3cgd068	Matches 3 colors	by3cgd068
+bsid_cog69	cog69	Imaginary play	by3cgd069	Imaginary play	by3cgd069
+bsid_cog70	cog70	Understands concept of one	by3cgd070	Understands concept of one	by3cgd070
+bsid_cog71	cog71	Multischeme combination play	by3cgd071	Multischeme combination play	by3cgd071
+bsid_cog72	cog72	Concept Grouping: colour	by3cgd072	Concept Grouping: colour	by3cgd072
+bsid_cog73	cog73	Concept Grouping: Size	by3cgd073	Concept Grouping: Size	by3cgd073
+bsid_cog74	cog74	Compares masses	by3cgd074	Compares masses	by3cgd074
+bsid_cog75	cog75	Matches size	by3cgd075	Matches size	by3cgd075
+bsid_cog76	cog76	Discriminates pictures	by3cgd076	Discriminates pictures	by3cgd076
+bsid_cog77	cog77	Simple pattern	by3cgd077	Simple pattern	by3cgd077
+bsid_cog78	cog78	Sorts pegs by colour	by3cgd078	Sorts pegs by colour	by3cgd078
+bsid_cog79	cog79	Counts (One-to-one correspondence)	by3cgd079	Counts (One-to-one correspondence)	by3cgd079
+bsid_cog80	cog80	Discriminates size	by3cgd080	Discriminates size	by3cgd080
+bsid_cog81	cog81	Identifies 3 incomplete pictures	by3cgd081	Identifies 3 incomplete pictures	by3cgd081
+bsid_cog82	cog82	Object assembly (Dog)	by3cgd082	Object assembly (Dog)	by3cgd082
+bsid_cog83	cog83	Discriminates patterns	by3cgd083	Discriminates patterns	by3cgd083
+bsid_cog84	cog84	Spatial memory	by3cgd084	Spatial memory	by3cgd084
+bsid_cog85	cog85	Counts (Cardinally)	by3cgd085	Counts (Cardinally)	by3cgd085
+bsid_cog86	cog86	Number constancy	by3cgd086	Number constancy	by3cgd086
+bsid_cog87	cog87	Laces card	by3cgd087	Laces card	by3cgd087
+bsid_cog88	cog88	Classifies objects	by3cgd088	Classifies objects	by3cgd088
+bsid_cog89	cog89	Understands concept of more	by3cgd089	Understands concept of more	by3cgd089
+bsid_cog90	cog90	Repeats number sequences	by3cgd090	Repeats number sequences	by3cgd090
+bsid_cog91	cog91	Completes patterns	by3cgd091	Completes patterns	by3cgd091
+bsid_rc01	rc01	Regards person momentarily	by3red001	Regards person momentarily	by3red001
+bsid_rc02	rc02	Tolerates attention	by3red002	Tolerates attention	by3red002
+bsid_rc03	rc03	Calms when spoken to	by3red003	Calms when spoken to	by3red003
+bsid_rc04	rc04	Reacts to sound in environment	by3red004	Reacts to sound in environment	by3red004
+bsid_rc05	rc05	Responds to voice	by3red005	Responds to voice	by3red005
+bsid_rc06	rc06	Searches with head turn	by3red006	Searches with head turn	by3red006
+bsid_rc07	rc07	Discriminates sounds	by3red007	Discriminates sounds	by3red007
+bsid_rc08	rc08	Sustained play with objects	by3red008	Sustained play with objects	by3red008
+bsid_rc09	rc09	Responds to name	by3red009	Responds to name	by3red009
+bsid_rc10	rc10	Interrupts activity	by3red010	Interrupts activity	by3red010
+bsid_rc11	rc11	Recognizes 2 familiar words	by3red011	Recognizes 2 familiar words	by3red011
+bsid_rc12	rc12	Responds to no-no	by3red012	Responds to no-no	by3red012
+bsid_rc13	rc13	Attends to other's play routine	by3red013	Attends to other's play routine	by3red013
+bsid_rc14	rc14	Responds to request for social routines	by3red014	Responds to request for social routines	by3red014
+bsid_rc15	rc15	Identifies Object Series: 1 correct	by3red015	Identifies Object Series: 1 correct	by3red015
+bsid_rc16	rc16	Identifies object in the environment	by3red016	Identifies object in the environment	by3red016
+bsid_rc17	rc17	Identifies Picture Series: 1 correct	by3red017	Identifies Picture Series: 1 correct	by3red017
+bsid_rc18	rc18	Understands inhibitory words	by3red018	Understands inhibitory words	by3red018
+bsid_rc19	rc19	Identifies Object Series: 3 correct	by3red019	Identifies Object Series: 3 correct	by3red019
+bsid_rc20	rc20	Follows one-part directions	by3red020	Follows one-part directions	by3red020
+bsid_rc21	rc21	Identifies Picture Series: 3 Correct	by3red021	Identifies Picture Series: 3 Correct	by3red021
+bsid_rc22	rc22	Identifies 3 clothing items	by3red022	Identifies 3 clothing items	by3red022
+bsid_rc23	rc23	Identifies Action Picture Series: 1 correct	by3red023	Identifies Action Picture Series: 1 correct	by3red023
+bsid_rc24	rc24	Identifies 5 parts of the body	by3red024	Identifies 5 parts of the body	by3red024
+bsid_rc25	rc25	Follows two-part directions	by3red025	Follows two-part directions	by3red025
+bsid_rc26	rc26	Identifies Action Picture Series: 3 correct	by3red026	Identifies Action Picture Series: 3 correct	by3red026
+bsid_rc27	rc27	Understands use of objects	by3red027	Understands use of objects	by3red027
+bsid_rc28	rc28	Understands part/whole relationships	by3red028	Understands part/whole relationships	by3red028
+bsid_rc29	rc29	Identifies Action Picture Series: 5 correct	by3red029	Identifies Action Picture Series: 5 correct	by3red029
+bsid_rc30	rc30	Understands pronouns (him, me, my, you, your)	by3red030	Understands pronouns (him, me, my, you, your)	by3red030
+bsid_rc31	rc31	Understands labels for sizes	by3red031	Understands labels for sizes	by3red031
+bsid_rc32	rc32	Understands Preposition Series: 2 correct	by3red032	Understands Preposition Series: 2 correct	by3red032
+bsid_rc33	rc33	Understands possessives	by3red033	Understands possessives	by3red033
+bsid_rc34	rc34	Understands verb +ing	by3red034	Understands verb +ing	by3red034
+bsid_rc35	rc35	Identifies colours	by3red035	Identifies colours	by3red035
+bsid_rc36	rc36	Understands label of one	by3red036	Understands label of one	by3red036
+bsid_rc37	rc37	Understands pronouns (they, he, she)	by3red037	Understands pronouns (they, he, she)	by3red037
+bsid_rc38	rc38	Understands pronouns (his, her)	by3red038	Understands pronouns (his, her)	by3red038
+bsid_rc39	rc39	Understands plurals	by3red039	Understands plurals	by3red039
+bsid_rc40	rc40	Understands more	by3red040	Understands more	by3red040
+bsid_rc41	rc41	Understands most	by3red041	Understands most	by3red041
+bsid_rc42	rc42	Understands Preposition Series: 4 correct	by3red042	Understands Preposition Series: 4 correct	by3red042
+bsid_rc43	rc43	Understands negatives in sentences	by3red043	Understands negatives in sentences	by3red043
+bsid_rc44	rc44	Understands past tense	by3red044	Understands past tense	by3red044
+bsid_rc45	rc45	Understands labels for mass	by3red045	Understands labels for mass	by3red045
+bsid_rc46	rc46	Understands least	by3red046	Understands least	by3red046
+bsid_rc47	rc47	Understands less	by3red047	Understands less	by3red047
+bsid_rc48	rc48	Understands descriptive labels	by3red048	Understands descriptive labels	by3red048
+bsid_rc49	rc49	Identifies categories of objects	by3red049	Identifies categories of objects	by3red049
+bsid_ec01	ec01	Undifferentiated throaty sounds	by3exd001	Undifferentiated throaty sounds	by3exd001
+bsid_ec02	ec02	Social smile	by3exd002	Social smile	by3exd002
+bsid_ec03	ec03	Vocalizes mood	by3exd003	Vocalizes mood	by3exd003
+bsid_ec04	ec04	Undifferentiated nasal sounds	by3exd004	Undifferentiated nasal sounds	by3exd004
+bsid_ec05	ec05	Social vocalization or laughing	by3exd005	Social vocalization or laughing	by3exd005
+bsid_ec06	ec06	2 Vowel sounds	by3exd006	2 Vowel sounds	by3exd006
+bsid_ec07	ec07	Gets attention	by3exd007	Gets attention	by3exd007
+bsid_ec08	ec08	2 Consonant sounds	by3exd008	2 Consonant sounds	by3exd008
+bsid_ec09	ec09	Uses gestures	by3exd009	Uses gestures	by3exd009
+bsid_ec10	ec10	Consonant-Vowel Combination Series: 1 Combination	by3exd010	Consonant-Vowel Combination Series: 1 Combination	by3exd010
+bsid_ec11	ec11	Participates in play routine	by3exd011	Participates in play routine	by3exd011
+bsid_ec12	ec12	Jabbers expressively	by3exd012	Jabbers expressively	by3exd012
+bsid_ec13	ec13	Consonant-Vowel Combination Series: 4 Combination	by3exd013	Consonant-Vowel Combination Series: 4 Combination	by3exd013
+bsid_ec14	ec14	Uses one-word approximations	by3exd014	Uses one-word approximations	by3exd014
+bsid_ec15	ec15	Directs attention of other	by3exd015	Directs attention of other	by3exd015
+bsid_ec16	ec16	Imitates word	by3exd016	Imitates word	by3exd016
+bsid_ec17	ec17	Initiates play interaction	by3exd017	Initiates play interaction	by3exd017
+bsid_ec18	ec18	Uses Words Appropriately Series: 2 words	by3exd018	Uses Words Appropriately Series: 2 words	by3exd018
+bsid_ec19	ec19	Uses word to make wants known	by3exd019	Uses word to make wants known	by3exd019
+bsid_ec20	ec20	Names Object Series: 1 Object	by3exd020	Names Object Series: 1 Object	by3exd020
+bsid_ec21	ec21	Combines word and gesture	by3exd021	Combines word and gesture	by3exd021
+bsid_ec22	ec22	Names Picture Series: 1 Picture	by3exd022	Names Picture Series: 1 Picture	by3exd022
+bsid_ec23	ec23	Uses Words Appropriately Series: 8 words	by3exd023	Uses Words Appropriately Series: 8 words	by3exd023
+bsid_ec24	ec24	Answers yes or no verbally in response to questions	by3exd024	Answers yes or no verbally in response to questions	by3exd024
+bsid_ec25	ec25	Imitates a two-word utterance	by3exd025	Imitates a two-word utterance	by3exd025
+bsid_ec26	ec26	Uses a two-word utterance	by3exd026	Uses a two-word utterance	by3exd026
+bsid_ec27	ec27	Names Object Series: 3 Object	by3exd027	Names Object Series: 3 Object	by3exd027
+bsid_ec28	ec28	Names Picture Series: 5 Pictures	by3exd028	Names Picture Series: 5 Pictures	by3exd028
+bsid_ec29	ec29	Uses multiple-word utterances	by3exd029	Uses multiple-word utterances	by3exd029
+bsid_ec30	ec30	Uses pronouns	by3exd030	Uses pronouns	by3exd030
+bsid_ec31	ec31	Names Action Picture Series: 1 Picture	by3exd031	Names Action Picture Series: 1 Picture	by3exd031
+bsid_ec32	ec32	Poses multiple-word questions	by3exd032	Poses multiple-word questions	by3exd032
+bsid_ec33	ec33	Makes a contingent utterance	by3exd033	Makes a contingent utterance	by3exd033
+bsid_ec34	ec34	Uses verb +ing	by3exd034	Uses verb +ing	by3exd034
+bsid_ec35	ec35	Names Action Picture Series: 3 Pictures	by3exd035	Names Action Picture Series: 3 Pictures	by3exd035
+bsid_ec36	ec36	Uses different word combinations	by3exd036	Uses different word combinations	by3exd036
+bsid_ec37	ec37	Names Action Picture Series: 5 Pictures	by3exd037	Names Action Picture Series: 5 Pictures	by3exd037
+bsid_ec38	ec38	Uses plurals	by3exd038	Uses plurals	by3exd038
+bsid_ec39	ec39	Answers what or where questions	by3exd039	Answers what or where questions	by3exd039
+bsid_ec40	ec40	Uses possessives	by3exd040	Uses possessives	by3exd040
+bsid_ec41	ec41	Names 4 colours	by3exd041	Names 4 colours	by3exd041
+bsid_ec42	ec42	Answers questions logically (Related to functions)	by3exd042	Answers questions logically (Related to functions)	by3exd042
+bsid_ec43	ec43	Tells how an object is used	by3exd043	Tells how an object is used	by3exd043
+bsid_ec44	ec44	Uses prepositions	by3exd044	Uses prepositions	by3exd044
+bsid_ec45	ec45	Uses present progressive form	by3exd045	Uses present progressive form	by3exd045
+bsid_ec46	ec46	Describes Pictures Series: Uses 4-5 word sentences	by3exd046	Describes Pictures Series: Uses 4-5 word sentences	by3exd046
+bsid_ec47	ec47	Describes Pictures Series: Uses past tense	by3exd047	Describes Pictures Series: Uses past tense	by3exd047
+bsid_ec48	ec48	Describes Pictures Series: Uses future tense	by3exd048	Describes Pictures Series: Uses future tense	by3exd048
+bsid_fm01	fm01	Hands are fisted	by3fmd001	Hands are fisted	by3fmd001
+bsid_fm02	fm02	Eyes follow  moving person	by3fmd002	Eyes follow  moving person	by3fmd002
+bsid_fm03	fm03	Eyes follow ring horizontal	by3fmd003	Eyes follow ring horizontal	by3fmd003
+bsid_fm04	fm04	Eyes follow ring vertical	by3fmd004	Eyes follow ring vertical	by3fmd004
+bsid_fm05	fm05	Attempts to bring hand to mouth	by3fmd005	Attempts to bring hand to mouth	by3fmd005
+bsid_fm06	fm06	Retains ring	by3fmd006	Retains ring	by3fmd006
+bsid_fm07	fm07	Eyes follow ring circular	by3fmd007	Eyes follow ring circular	by3fmd007
+bsid_fm08	fm08	Head follow ring	by3fmd008	Head follow ring	by3fmd008
+bsid_fm09	fm09	Eyes follow rolling ball	by3fmd009	Eyes follow rolling ball	by3fmd009
+bsid_fm10	fm10	Keeps hand open	by3fmd010	Keeps hand open	by3fmd010
+bsid_fm11	fm11	Rotates wrist	by3fmd011	Rotates wrist	by3fmd011
+bsid_fm12	fm12	Grasps suspended ring	by3fmd012	Grasps suspended ring	by3fmd012
+bsid_fm13	fm13	Blocks series reaches for block	by3fmd013	Blocks series reaches for block	by3fmd013
+bsid_fm14	fm14	Touches block	by3fmd014	Touches block	by3fmd014
+bsid_fm15	fm15	Block Series: Whole hand grasp	by3fmd015	Block Series: Whole hand grasp	by3fmd015
+bsid_fm16	fm16	Reaches unilaterally	by3fmd016	Reaches unilaterally	by3fmd016
+bsid_fm17	fm17	Food Pellet Series: Raking grasp	by3fmd017	Food Pellet Series: Raking grasp	by3fmd017
+bsid_fm18	fm18	Block Series: Partial thumb opposition	by3fmd018	Block Series: Partial thumb opposition	by3fmd018
+bsid_fm19	fm19	Transfers ring	by3fmd019	Transfers ring	by3fmd019
+bsid_fm20	fm20	Food Pellet Series: Whole hand grasp	by3fmd020	Food Pellet Series: Whole hand grasp	by3fmd020
+bsid_fm21	fm21	Transfers block	by3fmd021	Transfers block	by3fmd021
+bsid_fm22	fm22	Block Series: Thumb-fingertip grasp	by3fmd022	Block Series: Thumb-fingertip grasp	by3fmd022
+bsid_fm23	fm23	Brings spoons or blocks to midline	by3fmd023	Brings spoons or blocks to midline	by3fmd023
+bsid_fm24	fm24	Food Pellet Series: Partial thumb opposition	by3fmd024	Food Pellet Series: Partial thumb opposition	by3fmd024
+bsid_fm25	fm25	Lifts cup by the handle	by3fmd025	Lifts cup by the handle	by3fmd025
+bsid_fm26	fm26	Food Pellet Series: Thumb-fingertip grasp	by3fmd026	Food Pellet Series: Thumb-fingertip grasp	by3fmd026
+bsid_fm27	fm27	Turns pages of books	by3fmd027	Turns pages of books	by3fmd027
+bsid_fm28	fm28	Grasp series: Palmar grasp	by3fmd028	Grasp series: Palmar grasp	by3fmd028
+bsid_fm29	fm29	Isolates extended ring finger	by3fmd029	Isolates extended ring finger	by3fmd029
+bsid_fm30	fm30	Scribbles spontaneously	by3fmd030	Scribbles spontaneously	by3fmd030
+bsid_fm31	fm31	Block Stacking Series: 2 blocks	by3fmd031	Block Stacking Series: 2 blocks	by3fmd031
+bsid_fm32	fm32	Imitates Stroke Series: Random	by3fmd032	Imitates Stroke Series: Random	by3fmd032
+bsid_fm33	fm33	Places 10 pellets in bottle (60 seconds)	by3fmd033	Places 10 pellets in bottle (60 seconds)	by3fmd033
+bsid_fm34	fm34	Grasp series: Transitional grasp	by3fmd034	Grasp series: Transitional grasp	by3fmd034
+bsid_fm35	fm35	Coins in slot	by3fmd035	Coins in slot	by3fmd035
+bsid_fm36	fm36	Connecting Blocks: Apart	by3fmd036	Connecting Blocks: Apart	by3fmd036
+bsid_fm37	fm37	Grasp Series: Intermediate (Tripod) grasp	by3fmd037	Grasp Series: Intermediate (Tripod) grasp	by3fmd037
+bsid_fm38	fm38	Block stacking Series: 6 blocks	by3fmd038	Block stacking Series: 6 blocks	by3fmd038
+bsid_fm39	fm39	Uses hand to hold paper in place	by3fmd039	Uses hand to hold paper in place	by3fmd039
+bsid_fm40	fm40	Imitates Strokes Series: Horizontal	by3fmd040	Imitates Strokes Series: Horizontal	by3fmd040
+bsid_fm41	fm41	Imitates Strokes Series: Vertical	by3fmd041	Imitates Strokes Series: Vertical	by3fmd041
+bsid_fm42	fm42	Connecting Blocks: Together	by3fmd042	Connecting Blocks: Together	by3fmd042
+bsid_fm43	fm43	Imitates Strokes Series: Circular	by3fmd043	Imitates Strokes Series: Circular	by3fmd043
+bsid_fm44	fm44	Builds train of blocks	by3fmd044	Builds train of blocks	by3fmd044
+bsid_fm45	fm45	Strings 3 blocks	by3fmd045	Strings 3 blocks	by3fmd045
+bsid_fm46	fm46	Imitates hand movements	by3fmd046	Imitates hand movements	by3fmd046
+bsid_fm47	fm47	Snips paper	by3fmd047	Snips paper	by3fmd047
+bsid_fm48	fm48	Grasp Series: Dynamic grasp	by3fmd048	Grasp Series: Dynamic grasp	by3fmd048
+bsid_fm49	fm49	Tactilely discriminates shapes	by3fmd049	Tactilely discriminates shapes	by3fmd049
+bsid_fm50	fm50	Builds wall	by3fmd050	Builds wall	by3fmd050
+bsid_fm51	fm51	Cuts paper	by3fmd051	Cuts paper	by3fmd051
+bsid_fm52	fm52	Builds bridge	by3fmd052	Builds bridge	by3fmd052
+bsid_fm53	fm53	Imitates plus sign	by3fmd053	Imitates plus sign	by3fmd053
+bsid_fm54	fm54	Block stacking Series: 8 blocks	by3fmd054	Block stacking Series: 8 blocks	by3fmd054
+bsid_fm55	fm55	Cuts on line	by3fmd055	Cuts on line	by3fmd055
+bsid_fm56	fm56	Builds T	by3fmd056	Builds T	by3fmd056
+bsid_fm57	fm57	Buttons 1 button	by3fmd057	Buttons 1 button	by3fmd057
+bsid_fm58	fm58	Builds steps	by3fmd058	Builds steps	by3fmd058
+bsid_fm59	fm59	Traces designs	by3fmd059	Traces designs	by3fmd059
+bsid_fm60	fm60	Imitates square	by3fmd060	Imitates square	by3fmd060
+bsid_fm61	fm61	Copies plus sign	by3fmd061	Copies plus sign	by3fmd061
+bsid_fm62	fm62	Tapbs fingers	by3fmd062	Tapbs fingers	by3fmd062
+bsid_fm63	fm63	Places 20 pellets in bottle	by3fmd063	Places 20 pellets in bottle	by3fmd063
+bsid_fm64	fm64	Cuts circle	by3fmd064	Cuts circle	by3fmd064
+bsid_fm65	fm65	Cuts square	by3fmd065	Cuts square	by3fmd065
+bsid_fm66	fm66	Copies square	by3fmd066	Copies square	by3fmd066
+bsid_gsm01	gsm01	Thursts legs in play	by3gmd001	Thursts legs in play	by3gmd001
+bsid_gsm02	gsm02	Thrusts arms in play	by3gmd002	Thrusts arms in play	by3gmd002
+bsid_gsm03	gsm03	Controls head while upright series: lifts head	by3gmd003	Controls head while upright series: lifts head	by3gmd003
+bsid_gsm04	gsm04	Controls head while upright series: 3 secs	by3gmd004	Controls head while upright series: 3 secs	by3gmd004
+bsid_gsm05	gsm05	Turns head to side	by3gmd005	Turns head to side	by3gmd005
+bsid_gsm06	gsm06	Makes crawling movements	by3gmd006	Makes crawling movements	by3gmd006
+bsid_gsm07	gsm07	Controls head in dorsal suspension	by3gmd007	Controls head in dorsal suspension	by3gmd007
+bsid_gsm08	gsm08	Controls head in ventral suspension	by3gmd008	Controls head in ventral suspension	by3gmd008
+bsid_gsm09	gsm09	Controls head while upright Series: 15 seconds	by3gmd009	Controls head while upright Series: 15 seconds	by3gmd009
+bsid_gsm10	gsm10	Holds head in midline	by3gmd010	Holds head in midline	by3gmd010
+bsid_gsm11	gsm11	Holds head upright while carried	by3gmd011	Holds head upright while carried	by3gmd011
+bsid_gsm12	gsm12	Controls head while prone Series: 45 degrees	by3gmd012	Controls head while prone Series: 45 degrees	by3gmd012
+bsid_gsm13	gsm13	Rights head	by3gmd013	Rights head	by3gmd013
+bsid_gsm14	gsm14	Rolls from side to back	by3gmd014	Rolls from side to back	by3gmd014
+bsid_gsm15	gsm15	Elevates trunk while Prone Series: Elbows and forearms	by3gmd015	Elevates trunk while Prone Series: Elbows and forearms	by3gmd015
+bsid_gsm16	gsm16	Sits with Support Series: Briefly	by3gmd016	Sits with Support Series: Briefly	by3gmd016
+bsid_gsm17	gsm17	Controls head while prone Series: 90 degrees	by3gmd017	Controls head while prone Series: 90 degrees	by3gmd017
+bsid_gsm18	gsm18	Elevates trunk while prone	by3gmd018	Elevates trunk while prone	by3gmd018
+bsid_gsm19	gsm19	Sits with Support Series: 30 seconds	by3gmd019	Sits with Support Series: 30 seconds	by3gmd019
+bsid_gsm20	gsm20	Rolls from back to sides	by3gmd020	Rolls from back to sides	by3gmd020
+bsid_gsm21	gsm21	Elevates Trunk while Prone Series: Extended arms	by3gmd021	Elevates Trunk while Prone Series: Extended arms	by3gmd021
+bsid_gsm22	gsm22	Sits with Support Series: 5 seconds	by3gmd022	Sits with Support Series: 5 seconds	by3gmd022
+bsid_gsm23	gsm23	Pulls up to sit	by3gmd023	Pulls up to sit	by3gmd023
+bsid_gsm24	gsm24	Grasps foot with hands	by3gmd024	Grasps foot with hands	by3gmd024
+bsid_gsm25	gsm25	Rolls from back to stomach	by3gmd025	Rolls from back to stomach	by3gmd025
+bsid_gsm26	gsm26	Sits without Support Series: 30 seconds	by3gmd026	Sits without Support Series: 30 seconds	by3gmd026
+bsid_gsm27	gsm27	Sits without support and holds objects	by3gmd027	Sits without support and holds objects	by3gmd027
+bsid_gsm28	gsm28	Rotates trunk while seated	by3gmd028	Rotates trunk while seated	by3gmd028
+bsid_gsm29	gsm29	Makes stepping movements	by3gmd029	Makes stepping movements	by3gmd029
+bsid_gsm30	gsm30	Crawls Series: On stomach	by3gmd030	Crawls Series: On stomach	by3gmd030
+bsid_gsm31	gsm31	Crawls Series: Crawl position	by3gmd031	Crawls Series: Crawl position	by3gmd031
+bsid_gsm32	gsm32	Moves from sitting to hands and knees	by3gmd032	Moves from sitting to hands and knees	by3gmd032
+bsid_gsm33	gsm33	Supports weight	by3gmd033	Supports weight	by3gmd033
+bsid_gsm34	gsm34	Crawls Series: Crawl movement	by3gmd034	Crawls Series: Crawl movement	by3gmd034
+bsid_gsm35	gsm35	Raises self to standing position	by3gmd035	Raises self to standing position	by3gmd035
+bsid_gsm36	gsm36	Bounces while standing	by3gmd036	Bounces while standing	by3gmd036
+bsid_gsm37	gsm37	Walks Series: With support	by3gmd037	Walks Series: With support	by3gmd037
+bsid_gsm38	gsm38	Walks sideways with support	by3gmd038	Walks sideways with support	by3gmd038
+bsid_gsm39	gsm39	Sits down with control	by3gmd039	Sits down with control	by3gmd039
+bsid_gsm40	gsm40	Stands alone	by3gmd040	Stands alone	by3gmd040
+bsid_gsm41	gsm41	Stands up Series: Alone	by3gmd041	Stands up Series: Alone	by3gmd041
+bsid_gsm42	gsm42	Walks Series: Alone	by3gmd042	Walks Series: Alone	by3gmd042
+bsid_gsm43	gsm43	Walks Series: Alone with coordination	by3gmd043	Walks Series: Alone with coordination	by3gmd043
+bsid_gsm44	gsm44	Throws ball	by3gmd044	Throws ball	by3gmd044
+bsid_gsm45	gsm45	Squats without support	by3gmd045	Squats without support	by3gmd045
+bsid_gsm46	gsm46	Stands up Series: Mature	by3gmd046	Stands up Series: Mature	by3gmd046
+bsid_gsm47	gsm47	Walks Up Stairs Series: Both feet on each step, with support.	by3gmd047	Walks Up Stairs Series: Both feet on each step, with support.	by3gmd047
+bsid_gsm48	gsm48	Walks backward 2 steps	by3gmd048	Walks backward 2 steps	by3gmd048
+bsid_gsm49	gsm49	Walks Down Stairs Series: Both feet on each step, with support	by3gmd049	Walks Down Stairs Series: Both feet on each step, with support	by3gmd049
+bsid_gsm50	gsm50	Runs with coordination	by3gmd050	Runs with coordination	by3gmd050
+bsid_gsm51	gsm51	Balances on Right Foot Series: With support	by3gmd051	Balances on Right Foot Series: With support	by3gmd051
+bsid_gsm52	gsm52	Balances on Left Foot Series: With support	by3gmd052	Balances on Left Foot Series: With support	by3gmd052
+bsid_gsm53	gsm53	Walks sideways without support	by3gmd053	Walks sideways without support	by3gmd053
+bsid_gsm54	gsm54	Jumps from bottom step	by3gmd054	Jumps from bottom step	by3gmd054
+bsid_gsm55	gsm55	Kicks ball	by3gmd055	Kicks ball	by3gmd055
+bsid_gsm56	gsm56	Walks forward on path	by3gmd056	Walks forward on path	by3gmd056
+bsid_gsm57	gsm57	Walks Up Stairs Series: Both feet on each step, alone.	by3gmd057	Walks Up Stairs Series: Both feet on each step, alone.	by3gmd057
+bsid_gsm58	gsm58	Walks Down Stairs Series: Both feet on each step, alone	by3gmd058	Walks Down Stairs Series: Both feet on each step, alone	by3gmd058
+bsid_gsm59	gsm59	Jumps Forward Series: 4 inches	by3gmd059	Jumps Forward Series: 4 inches	by3gmd059
+bsid_gsm60	gsm60	Balances on right Foot Series: 2 seconds, alone	by3gmd060	Balances on right Foot Series: 2 seconds, alone	by3gmd060
+bsid_gsm61	gsm61	Balances on Left Foot Series: 2 seconds, alone	by3gmd061	Balances on Left Foot Series: 2 seconds, alone	by3gmd061
+bsid_gsm62	gsm62	Walks on tiptoes 4 steps	by3gmd062	Walks on tiptoes 4 steps	by3gmd062
+bsid_gsm63	gsm63	Walks backward close to path	by3gmd063	Walks backward close to path	by3gmd063
+bsid_gsm64	gsm64	Walks Up Stairs Series: Alternating feet, alone	by3gmd064	Walks Up Stairs Series: Alternating feet, alone	by3gmd064
+bsid_gsm65	gsm65	Imitates postures	by3gmd065	Imitates postures	by3gmd065
+bsid_gsm66	gsm66	Stops from a full run	by3gmd066	Stops from a full run	by3gmd066
+bsid_gsm67	gsm67	Walks Down Stairs Series: Alternating feet, alone	by3gmd067	Walks Down Stairs Series: Alternating feet, alone	by3gmd067
+bsid_gsm68	gsm68	Hops 5 feet	by3gmd068	Hops 5 feet	by3gmd068
+bsid_gsm69	gsm69	Balances on Right Foot Series: 8 seconds, alone	by3gmd069	Balances on Right Foot Series: 8 seconds, alone	by3gmd069
+bsid_gsm70	gsm70	Balances on Left Foot Series: 8 seconds, alone	by3gmd070	Balances on Left Foot Series: 8 seconds, alone	by3gmd070
+bsid_gsm71	gsm71	Walks heel to toe	by3gmd071	Walks heel to toe	by3gmd071
+bsid_gsm72	gsm72	Jumps Forward Series: 24 inches	by3gmd072	Jumps Forward Series: 24 inches	by3gmd072
