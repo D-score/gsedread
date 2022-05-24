@@ -1,3 +1,7 @@
+# gsedread 0.5.1
+
+* Adds support for renaming items from BSID
+
 # gsedread 0.5.0
 
 * Adds `read_bsid()` for reading Bayley III data
