@@ -49,7 +49,7 @@ rename_vector <- function(input,
   if (colin  == "notfound") stop("Lexicon not found: ", lexin)
   if (colout == "notfound") stop("Lexicon not found: ", lexout)
   output <- input
-  v <- mt[match(input, dplyr::pull(mt, colin)), colout, drop = TRUE]
+  v <- mt[match(input, pull(mt, colin)), colout, drop = TRUE]
   output[!is.na(v)] <- v[!is.na(v)]
   if (is.na(notfound[1L]) || notfound[1L] != "copy") output[is.na(v)] <- notfound[1L]
 
