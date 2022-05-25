@@ -14,32 +14,30 @@
 #' @return A character vector of the same length as `from` with processed
 #' names.
 #' @examples
-#' data <- read_sf()
-#' from <- colnames(data)
-#' idx <- c(1:3, 19, 21:23)
-#' from[idx]
-#' to <- rename_variables(from)
-#' to[idx]
-#' to <- rename_variables(from, "sequence", lowercase = FALSE)
-#' to[idx]
+#' \dontrun{
+#' from <- c("file", "GSED_ID", "Ma_SF_Parent ID", "Ma_SF_C01", "Ma_SF_C02")
+#' rename_variables(from)
+#' rename_variables(from, "sequence", lowercase = FALSE)
+#' }
 #' @export
 rename_variables <- function(from,
                              trans = c("extend", "original", "sequence", "connect"),
                              lowercase = TRUE,
                              underscore = TRUE,
                              trim = TRUE) {
+  .Deprecated("rename_vector", msg = "Use 'rename_vector() instead.'")
   trans <- match.arg(trans)
   to <- from
 
   # rename itemnames
   fn <- system.file("extdata", "itemnames_translate.tsv", package = "gsedread")
-  mt <- readr::read_tsv(fn, col_types = "cccccc")
+  mt <- readr::read_tsv(fn, col_types = "cccccc", progress = FALSE)
   col <- switch(trans,
-                original = "local_name",
-                sequence = "local_number",
-                connect = "connect_name",
-                extend = "extend_name")
-  v <- mt[match(from, mt$local_name), col, drop = TRUE]
+                original = "Ma_",
+                sequence = "sequential",
+                connect = "gsed",
+                extend = "gsed2")
+  v <- mt[match(from, mt$Ma_), col, drop = TRUE]
   to[!is.na(v)] <- v[!is.na(v)]
 
   # prettify

@@ -36,12 +36,9 @@ names.
 Supports translation of item names for SF, LF and BSID.
 }
 \examples{
-data <- read_sf()
-from <- colnames(data)
-idx <- c(1:3, 19, 21:23)
-from[idx]
-to <- rename_variables(from)
-to[idx]
-to <- rename_variables(from, "sequence", lowercase = FALSE)
-to[idx]
+\dontrun{
+from <- c("file", "GSED_ID", "Ma_SF_Parent ID", "Ma_SF_C01", "Ma_SF_C02")
+rename_variables(from)
+rename_variables(from, "sequence", lowercase = FALSE)
+}
 }
