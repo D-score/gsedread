@@ -1,3 +1,8 @@
+# gsedread 0.6.0
+
+* Replaces `rename_variables()` by the more versatile `rename_vector()`
+* Redefines the column names of the translation table
+
 # gsedread 0.5.1
 
 * Adds support for renaming items from BSID

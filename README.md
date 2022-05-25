@@ -90,10 +90,9 @@ table(data$file)
 Process variable names user-friendly alternative:
 
 ``` r
-v <- rename_variables(colnames(data), "extend")
-v[c(1:3, 19, 21:25)]
-#> [1] "file"         "gsed_id"      "sf_parent_id" "sf_date"      "gpalac001"   
-#> [6] "gpacgc002"    "gpafmc003"    "gpasec004"    "gpamoc005"
+rename_vector(colnames(data)[c(1:3, 19, 21:25)], lexout = "gsed2", trim = "Ma_SF_")
+#> [1] "file"      "gsed_id"   "parent_id" "date"      "gpalac001" "gpacgc002"
+#> [7] "gpafmc003" "gpasec004" "gpamoc005"
 ```
 
 ## Operations
