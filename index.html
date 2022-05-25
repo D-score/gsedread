@@ -28,7 +28,7 @@
     
     <a class="navbar-brand me-2" href="index.html">gsedread</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.5.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.6.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,10 +121,9 @@
 <span class="co">#&gt;                              469</span></code></pre></div>
 <p>Process variable names user-friendly alternative:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">v</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/rename_variables.html">rename_variables</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>, <span class="st">"extend"</span><span class="op">)</span>
-<span class="va">v</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">19</span>, <span class="fl">21</span><span class="op">:</span><span class="fl">25</span><span class="op">)</span><span class="op">]</span>
-<span class="co">#&gt; [1] "file"         "gsed_id"      "sf_parent_id" "sf_date"      "gpalac001"   </span>
-<span class="co">#&gt; [6] "gpacgc002"    "gpafmc003"    "gpasec004"    "gpamoc005"</span></code></pre></div>
+<code class="sourceCode R"><span class="fu"><a href="reference/rename_vector.html">rename_vector</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">19</span>, <span class="fl">21</span><span class="op">:</span><span class="fl">25</span><span class="op">)</span><span class="op">]</span>, lexout <span class="op">=</span> <span class="st">"gsed2"</span>, trim <span class="op">=</span> <span class="st">"Ma_SF_"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "file"      "gsed_id"   "parent_id" "date"      "gpalac001" "gpacgc002"</span>
+<span class="co">#&gt; [7] "gpafmc003" "gpasec004" "gpamoc005"</span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="operations">Operations<a class="anchor" aria-label="anchor" href="#operations"></a>
