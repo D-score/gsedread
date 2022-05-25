@@ -6,36 +6,36 @@
 \usage{
 rename_vector(
   input,
-  lexin = c("Ma_", "sequential", "gsed", "gsed2"),
-  lexout = c("gsed2", "Ma_", "sequential", "gsed"),
-  lowercase = TRUE,
+  lexin = c("original", "sequential", "gsed", "gsed2"),
+  lexout = c("gsed2", "original", "sequential", "gsed"),
+  notfound = "copy",
   underscore = TRUE,
-  trim = TRUE,
-  notfound = "copy"
+  trim = "Ma_",
+  lowercase = TRUE
 )
 }
 \arguments{
 \item{input}{A character vector with names to be translated}
 
-\item{lexin}{A string indicating the input lexicon. One of "Ma_",
-"sequential", "gsed" or "gsed2". Default is "Ma_".}
+\item{lexin}{A string indicating the input lexicon. One of "original",
+"sequential", "gsed" or "gsed2". Default is "original".}
 
-\item{lexout}{A string indicating the output lexicon. One of "Ma_",
+\item{lexout}{A string indicating the output lexicon. One of "original",
 "sequential", "gsed" or "gsed2". Default is "gsed2".}
 
-\item{lowercase}{Sets all variables in lower case.}
+\item{notfound}{A string indicating what to do some input value is not found}
 
 \item{underscore}{Replaces space (" ") and dash ("-") by underscore ("_")}
 
-\item{trim}{Removes the "Ma_" string}
+\item{trim}{A substring to be removed from `input`. Defaults to "Ma_".}
 
-\item{notfound}{A string indicating what to do some input value is not found
+\item{lowercase}{Sets all variables in lower case.
 in `lexin`? The default `notfound = "copy"` copies the input values into the
 output value. In other cases (e.g. `""` or `NA_character_`), the function
 uses the string specified in `notfound` as a replacement value.}
 }
 \value{
-A character vector of the same length as `from` with processed
+A character vector of the same length as `input` with processed
 names.
 }
 \description{
@@ -44,5 +44,6 @@ Translates names between different lexicons (naming schema).
 \examples{
 input <- c("file", "GSED_ID", "Ma_SF_Parent ID", "Ma_SF_C01", "Ma_SF_C02")
 rename_vector(input)
-rename_vector(input, "Ma_", "sequential", lowercase = FALSE)
+rename_vector(input, lexout = "sequential", lowercase = FALSE)
+rename_vector(input, lexout = "gsed", trim = "Ma_SF_")
 }

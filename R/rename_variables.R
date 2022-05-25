@@ -33,7 +33,7 @@ rename_variables <- function(from,
   fn <- system.file("extdata", "itemnames_translate.tsv", package = "gsedread")
   mt <- readr::read_tsv(fn, col_types = "cccccc", progress = FALSE)
   col <- switch(trans,
-                original = "Ma_",
+                original = "original",
                 sequence = "sequential",
                 connect = "gsed",
                 extend = "gsed2")
