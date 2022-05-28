@@ -1,3 +1,7 @@
+# gsedread 0.7.1
+
+* Removes variables `form`, `type` and `vist_type` from BSID data
+
 # gsedread 0.7.0
 
 * Changes the variables names of data read by `read_bsid()` to ease combining with other data
