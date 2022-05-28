@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">gsedread</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.6.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.6.1</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,8 +79,9 @@ Defaults to `FALSE`.</p></dd>
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>A tibble with the original data and one new column named `file`
-containing the original file name. If `type == "fixed"` a tibble with 159
+    <p>A tibble with the original data and two column names: `file`
+(containing the original file name) and `type` (fixed or adaptive).
+If `type == "fixed"` a tibble with 159
 columns, with one test administration per row. If `type == "adaptive"`, a tibble
 with 14 columns, with one item administration per row.</p>
     </div>

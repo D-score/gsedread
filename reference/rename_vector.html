@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">gsedread</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.6.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.6.1</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,6 +56,7 @@
   lexin <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"original"</span>, <span class="st">"sequential"</span>, <span class="st">"gsed"</span>, <span class="st">"gsed2"</span><span class="op">)</span>,
   lexout <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"gsed2"</span>, <span class="st">"original"</span>, <span class="st">"sequential"</span>, <span class="st">"gsed"</span><span class="op">)</span>,
   notfound <span class="op">=</span> <span class="st">"copy"</span>,
+  contains <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">""</span>, <span class="st">"Ma_SF_"</span>, <span class="st">"Ma_LF_"</span>, <span class="st">"bsid_"</span><span class="op">)</span>,
   underscore <span class="op">=</span> <span class="cn">TRUE</span>,
   trim <span class="op">=</span> <span class="st">"Ma_"</span>,
   lowercase <span class="op">=</span> <span class="cn">TRUE</span>
@@ -74,6 +75,9 @@
 "sequential", "gsed" or "gsed2". Default is "gsed2".</p></dd>
 <dt>notfound</dt>
 <dd><p>A string indicating what to do some input value is not found</p></dd>
+<dt>contains</dt>
+<dd><p>A string to filter the translation table prior to matching.
+Needed to prevent double matches. The default ("") does not filter.</p></dd>
 <dt>underscore</dt>
 <dd><p>Replaces space (" ") and dash ("-") by underscore ("_")</p></dd>
 <dt>trim</dt>
