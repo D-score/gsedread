@@ -1,3 +1,7 @@
+# gsedread 0.7.0
+
+* Changes the variables names of data read by `read_bsid()` to ease combining with other data
+
 # gsedread 0.6.1
 
 * Adds a new argument `contains` to `rename_vector()` to pre-select the translation table. This argument should be used if `lexin = "gsed"` to evade incorrect name matches from duplicate "gsed" item names.
