@@ -108,8 +108,7 @@ The package reads and processes GSED data. It does not store data. The
     `NA`;
 6.  Repairs problems with mixed data-time formats in the adaptive
     Pakistan data;
-7.  Stacks the datasets to one tibble and adds columns `file` and
-    `type`;
+7.  Stacks the datasets to one tibble and adds columns `file` and `adm`;
 8.  Removes records without a `GSED_ID`.
 
 Item renaming with `rename_variables()` relies on the item translation
