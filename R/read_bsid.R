@@ -58,6 +58,19 @@ read_bsid <- function(onedrive = Sys.getenv("ONEDRIVE_GSED"),
   data %>%
     bind_rows(.id = "file") %>%
     filter(!is.na(.data$GSED_ID)) %>%
-    select(!.data$Exaname) %>%
-    mutate(type = "fixed")
+    mutate(
+      vist_type = 1L,
+      form = "bsid",
+      type = "fixed"
+    ) %>%
+    rename(
+      age = .data$visit_age_bsid,
+      date = .data$date_of_visit,
+      worker_code = .data$ra_code_bsid,
+      parent_id = .data$Parent_study_ID) %>%
+    select(.data$GSED_ID, .data$age, .data$vist_type, .data$form, .data$type,
+           .data$file, .data$parent_id, .data$worker_code, .data$date,
+           .data$age_adj_premature,
+           contains("bsid"), -contains("raw"), -contains("comment")) %>%
+    arrange(.data$GSED_ID, .data$age, .data$vist_type)
 }
