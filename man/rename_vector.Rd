@@ -9,6 +9,7 @@ rename_vector(
   lexin = c("original", "sequential", "gsed", "gsed2"),
   lexout = c("gsed2", "original", "sequential", "gsed"),
   notfound = "copy",
+  contains = c("", "Ma_SF_", "Ma_LF_", "bsid_"),
   underscore = TRUE,
   trim = "Ma_",
   lowercase = TRUE
@@ -24,6 +25,9 @@ rename_vector(
 "sequential", "gsed" or "gsed2". Default is "gsed2".}
 
 \item{notfound}{A string indicating what to do some input value is not found}
+
+\item{contains}{A string to filter the translation table prior to matching.
+Needed to prevent double matches. The default ("") does not filter.}
 
 \item{underscore}{Replaces space (" ") and dash ("-") by underscore ("_")}
 

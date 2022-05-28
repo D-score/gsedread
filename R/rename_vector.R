@@ -7,6 +7,8 @@
 #' @param lexout   A string indicating the output lexicon. One of "original",
 #'  "sequential", "gsed" or "gsed2". Default is "gsed2".
 #' @param notfound A string indicating what to do some input value is not found
+#' @param contains A string to filter the translation table prior to matching.
+#' Needed to prevent double matches. The default ("") does not filter.
 #' @param underscore Replaces space (" ") and dash ("-") by underscore ("_")
 #' @param trim A substring to be removed from `input`. Defaults to "Ma_".
 #' @param lowercase Sets all variables in lower case.
@@ -25,15 +27,18 @@ rename_vector <- function(input,
                           lexin = c("original", "sequential", "gsed", "gsed2"),
                           lexout = c("gsed2", "original", "sequential", "gsed"),
                           notfound = "copy",
+                          contains = c("", "Ma_SF_", "Ma_LF_", "bsid_"),
                           underscore = TRUE,
                           trim = "Ma_",
                           lowercase = TRUE) {
   lexin <- match.arg(lexin)
   lexout <- match.arg(lexout)
+  contains <- match.arg(contains)
 
   # rename itemnames
   fn <- system.file("extdata", "itemnames_translate.tsv", package = "gsedread")
-  mt <- readr::read_tsv(fn, col_types = "cccccc", progress = FALSE)
+  mt <- readr::read_tsv(fn, col_types = "cccccc", progress = FALSE) %>%
+    filter(grepl(contains, .data$original))
   colin <- switch(lexin,
                    original = "original",
                    sequential = "sequential",
