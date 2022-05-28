@@ -6,7 +6,7 @@
 \usage{
 define_col(
   ins = c("sf", "lf", "bsid"),
-  type = c("fixed", "adaptive", "tan", "pak", "ban"),
+  adm = c("fixed", "adaptive", "tan", "pak", "ban"),
   date_format = "",
   datetime_format = ""
 )
@@ -14,7 +14,7 @@ define_col(
 \arguments{
 \item{ins}{Character, the instrument}
 
-\item{type}{Character, fixed or adaptive}
+\item{adm}{Character, fixed or adaptive}
 
 \item{date_format}{Specification how to read the date field}
 

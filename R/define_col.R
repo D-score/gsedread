@@ -1,16 +1,16 @@
 #' Define column types for data reading
 #'
 #' @param ins Character, the instrument
-#' @param type Character, fixed or adaptive
+#' @param adm Character, fixed or adaptive
 #' @param date_format Specification how to read the date field
 #' @param datetime_format Specification how to read the datetime field
 define_col <- function(ins = c("sf", "lf", "bsid"),
-                       type = c("fixed", "adaptive", "tan", "pak", "ban"),
+                       adm = c("fixed", "adaptive", "tan", "pak", "ban"),
                        date_format = "",
                        datetime_format = "") {
   ins <- match.arg(ins)
-  type <- match.arg(type)
-  if (ins == "sf" && type == "fixed") {
+  adm <- match.arg(adm)
+  if (ins == "sf" && adm == "fixed") {
     spec <- cols(
       GSED_ID = col_character(),
       `Ma_SF_Parent ID` = col_character(),
@@ -172,7 +172,7 @@ define_col <- function(ins = c("sf", "lf", "bsid"),
       Ma_SF_C139 = col_integer())
   }
 
-  if (ins == "lf" && type == "fixed") {
+  if (ins == "lf" && adm == "fixed") {
     spec <- cols(
       GSED_ID = col_character(),
       `Ma_LF_Parent ID` = col_character(),
@@ -355,7 +355,7 @@ define_col <- function(ins = c("sf", "lf", "bsid"),
     )
   }
 
-  if (ins == "sf" && type == "adaptive") {
+  if (ins == "sf" && adm == "adaptive") {
     spec <- cols(
       GSED_ID = col_character(),
       parent_study_id = col_character(),
@@ -373,7 +373,7 @@ define_col <- function(ins = c("sf", "lf", "bsid"),
     )
   }
 
-  if (ins == "lf" && type == "adaptive") {
+  if (ins == "lf" && adm == "adaptive") {
     spec <- cols(
       GSED_ID = col_character(),
       parent_study_id = col_character(),
@@ -391,7 +391,7 @@ define_col <- function(ins = c("sf", "lf", "bsid"),
     )
   }
 
-  if (ins == "bsid" && type == "tan") {
+  if (ins == "bsid" && adm == "tan") {
     spec <- cols(
       st_country___bsid = col_integer(),
       GSED_ID = col_character(),
@@ -734,7 +734,7 @@ define_col <- function(ins = c("sf", "lf", "bsid"),
     )
   }
 
-  if (ins == "bsid" && type == "pak") {
+  if (ins == "bsid" && adm == "pak") {
     spec <- cols(
       Study_Country = col_integer(),
       GSED_ID = col_character(),
@@ -1082,7 +1082,7 @@ define_col <- function(ins = c("sf", "lf", "bsid"),
     )
   }
 
-  if (ins == "bsid" && type == "ban") {
+  if (ins == "bsid" && adm == "ban") {
     spec <- cols(
     Exaname = col_character(),
     st_country___bsid = col_integer(),

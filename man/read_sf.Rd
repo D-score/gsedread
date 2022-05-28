@@ -5,7 +5,7 @@
 \title{Read sf data}
 \usage{
 read_sf(
-  type = c("fixed", "adaptive"),
+  adm = c("fixed", "adaptive"),
   onedrive = Sys.getenv("ONEDRIVE_GSED"),
   path = "GSED Final Collated Phase 1 Data Files 18_05_22",
   verbose = FALSE,
@@ -14,7 +14,7 @@ read_sf(
 )
 }
 \arguments{
-\item{type}{Character, either "fixed" or "adaptive"}
+\item{adm}{Character, either "fixed" or "adaptive" administration type}
 
 \item{onedrive}{Character, the location of the local OneDrive sync}
 
@@ -29,9 +29,9 @@ Defaults to `FALSE`.}
 }
 \value{
 A tibble with the original data and two column names: `file`
-(containing the original file name) and `type` (fixed or adaptive).
-If `type == "fixed"` a tibble with 159
-columns, with one test administration per row. If `type == "adaptive"`, a tibble
+(containing the original file name) and `adm` (fixed or adaptive).
+If `adm == "fixed"` a tibble with 159
+columns, with one test administration per row. If `adm == "adaptive"`, a tibble
 with 14 columns, with one item administration per row.
 }
 \description{

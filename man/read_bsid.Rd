@@ -26,7 +26,7 @@ Defaults to `FALSE`.}
 }
 \value{
 A tibble with the original data and two column names: `file`
-(containing the original file name) and `type` (fixed or adaptive).
+(containing the original file name) and `adm` (fixed or adaptive).
 }
 \description{
 Read data from Bayley Scales of Infant Development III
