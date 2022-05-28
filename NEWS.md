@@ -1,3 +1,8 @@
+# gsedread 0.6.1
+
+* Adds a new argument `contains` to `rename_vector()` to pre-select the translation table. This argument should be used if `lexin = "gsed"` to evade incorrect name matches from duplicate "gsed" item names.
+* Adds a column called `type` to the reader functions.
+
 # gsedread 0.6.0
 
 * Replaces `rename_variables()` by the more versatile `rename_vector()`

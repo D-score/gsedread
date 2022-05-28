@@ -67,7 +67,7 @@ a tibble with one record per administration.
 library(gsedread)
 data <- read_sf()
 dim(data)
-#> [1] 6228  159
+#> [1] 6228  160
 ```
 
 Count the number of records per file:
@@ -108,8 +108,8 @@ The package reads and processes GSED data. It does not store data. The
     `NA`;
 6.  Repairs problems with mixed data-time formats in the adaptive
     Pakistan data;
-7.  Stacks the datasets to one tibble with an extra column called
-    `file`;
+7.  Stacks the datasets to one tibble and adds columns `file` and
+    `type`;
 8.  Removes records without a `GSED_ID`.
 
 Item renaming with `rename_variables()` relies on the item translation
