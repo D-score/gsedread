@@ -1,8 +1,9 @@
 #' Read sf data
 #'
 #' @inheritParams read_lf
-#' @return A tibble with the original data and one new column named `file`
-#' containing the original file name. If `type == "fixed"` a tibble with 159
+#' @return A tibble with the original data and two column names: `file`
+#' (containing the original file name) and `type` (fixed or adaptive).
+#' If `type == "fixed"` a tibble with 159
 #' columns, with one test administration per row. If `type == "adaptive"`, a tibble
 #' with 14 columns, with one item administration per row.
 #' @export
@@ -50,7 +51,8 @@ read_sf_fixed <- function(onedrive, path, verbose, progress, warnings) {
   # remove orphan records without a GSED_ID
   data %>%
     bind_rows(.id = "file") %>%
-    filter(!is.na(.data$GSED_ID))
+    filter(!is.na(.data$GSED_ID)) %>%
+    mutate(type = "fixed")
 }
 
 read_sf_adaptive <- function(onedrive, path, verbose, progress, warnings) {
@@ -92,5 +94,6 @@ read_sf_adaptive <- function(onedrive, path, verbose, progress, warnings) {
   # remove orphan records without a GSED_ID
   data %>%
     bind_rows(.id = "file") %>%
-    filter(!is.na(.data$GSED_ID))
+    filter(!is.na(.data$GSED_ID)) %>%
+    mutate(type = "adaptive")
 }

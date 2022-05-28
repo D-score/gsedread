@@ -28,8 +28,9 @@ read_sf(
 Defaults to `FALSE`.}
 }
 \value{
-A tibble with the original data and one new column named `file`
-containing the original file name. If `type == "fixed"` a tibble with 159
+A tibble with the original data and two column names: `file`
+(containing the original file name) and `type` (fixed or adaptive).
+If `type == "fixed"` a tibble with 159
 columns, with one test administration per row. If `type == "adaptive"`, a tibble
 with 14 columns, with one item administration per row.
 }

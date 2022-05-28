@@ -25,8 +25,8 @@ read_bsid(
 Defaults to `FALSE`.}
 }
 \value{
-A tibble with the original data and one new column named `file`
-containing the original file name.
+A tibble with the original data and two column names: `file`
+(containing the original file name) and `type` (fixed or adaptive).
 }
 \description{
 Read data from Bayley Scales of Infant Development III
