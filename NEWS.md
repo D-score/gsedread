@@ -1,3 +1,7 @@
+# gsedread 0.7.2 
+
+* Changes erroneous name `mdtlgd008` (gsed) for item `gpalgc059` (gsed) into `mdtlgc008`
+
 # gsedread 0.7.1
 
 * Removes variables `form`, `type` and `vist_type` from BSID data
