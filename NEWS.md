@@ -1,6 +1,6 @@
 # gsedread 0.7.2 
 
-* Changes erroneous name `mdtlgd008` (gsed) for item `gpalgc059` (gsed) into `mdtlgc008`
+* Translate `gpalgc059` into `crosec014` (instead of `mdtlgd008`)
 
 # gsedread 0.7.1
 
