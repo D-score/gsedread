@@ -138,161 +138,161 @@ Ma_SF_C136	C136	Can your child say what others like or dislike (e.g., 'Mama does
 Ma_SF_C137	C137	Does your child show respect around elders?	mdtsed032	Does your child show respect around elders?	gpasec137
 Ma_SF_C138	C138	Can your child talk about things that have happened in the past using correct language (e.g., 'Yesterday I played with my friend' or 'Last week she went to the market')?	croclc045	Can your child talk about things that have happened in the past using correct language?	gpaclc138
 Ma_SF_C139	C139	Can your child talk about things that will happen in the future using correct language (e.g., 'Tomorrow he will attend school' or 'Next week we will go to the market')? 	croclc048	Can your child talk about things that will happen in the future using correct language?	gpaclc139
-Ma_LF_A01	A01	Lifts head in prone 45 degrees	ddigmd057	Lifts head in prone 45 degrees	gtogmd001
-Ma_LF_A02	A02	Frolics alone - moving body, kicking legs.	mdtsed004	Frolics alone - moving body, kicking legs.	gtogmd002
-Ma_LF_A03	A03	Frolics with mother or caregiver responsively	mdtsed003	Frolics with mother or caregiver responsively	gtogmd003
-Ma_LF_A04	A04	Pulls to sit - no head lag	mdtgmd004	Pulls to sit - no head lag.	gtogmd004
-Ma_LF_A05	A05	Lifts head, shoulders, chest when prone	mdtgmd005	Lifts head, shoulders, chest when prone.	gtogmd005
-Ma_LF_A06	A06	Hands together in front of face	mdtfmd003	Hands together in front of face	gtogmd006
-Ma_LF_A07	A07	Reach for an object	by1mdd051	Reach for an object	gtogmd007
-Ma_LF_A08	A08	Resist object being taken away	sgrred010	Resist object being taken away	gtogmd008
-Ma_LF_A09	A09	Grasps hold of large thing	mdtfmd006	Grasps hold of large thing.	gtogmd009
-Ma_LF_A10	A10	Carries object to mouth to explore	sgrehd012	Carries object to mouth to explore	gtogmd010
-Ma_LF_A11	A11	Balances head well while sitting	ddigmd061	Balances head well while sitting	gtogmd011
-Ma_LF_A12	A12	Sits supported (with help)	dmcgmd003	Sits supported (with help)	gtogmd012
-Ma_LF_A13	A13	Sits momentarily (on their own)	by1pdd023	Sits momentarily (on their own)	gtogmd013
-Ma_LF_A14	A14	Reaches for a second object	by1mdd064	Reaches for a second object	gtogmd014
-Ma_LF_A15	A15	Rolls from back to stomach	by1pdd028	Rolls from back to stomach	gtogmd015
-Ma_LF_A16	A16	Can see a small object.	mdtfmd008	Can see a small object.	gtogmd016
-Ma_LF_A17	A17	Rake (grasps with four fingers) a small object	denfmd009	Rake a small object	gtogmd017
-Ma_LF_A18	A18	Sits without help (short time)	mdtgmd009	Sits without help (short time).	gtogmd018
-Ma_LF_A19	A19	Can turn on floor	sgrgmd022	Can turn on the floor	gtogmd019
-Ma_LF_A20	A20	Can pick object from ground	mdtfmd007	Can pick object from ground	gtogmd020
-Ma_LF_A21	A21	Shifts object from one hand to another	mdtfmd009	Transfers objects from hand to hand.	gtogmd021
-Ma_LF_A22	A22	Sits by self well	mdtgmd010	Sits by self well.	gtogmd022
-Ma_LF_A23	A23	Crawls	dmcgmd005	Crawls	gtogmd023
-Ma_LF_A24	A24	Stands with Support	kdigmd001	Stands with Support	gtogmd024
-Ma_LF_A25	A25	Picks up small object between thumb and finger	ddifmd010	Picks up small object between thumb and finger	gtogmd025
-Ma_LF_A26	A26	Pulls him or herself up to a standing position	mdtgmd012	Pulls self to stand.	gtogmd026
-Ma_LF_A27	A27	Moves from lying to sitting	kdigmd031	Moves from lying to sitting	gtogmd027
-Ma_LF_A28	A28	Stands alone for 5 secs or more if put in a standing position	dmcgmd009	Stands alone	gtogmd028
-Ma_LF_A29	A29	Walks when one hand held	kdigmd005	Walks when one hand held	gtogmd029
-Ma_LF_A30	A30	Plays 'give and take'	ddifmm012	Plays 'give and take'	gtogmd030
-Ma_LF_A31	A31	Releases ball purposefully	kdifmd002	Releases ball purposefully	gtogmd031
-Ma_LF_A32	A32	Takes few steps alone	grigmd203	Takes few steps alone	gtogmd032
-Ma_LF_A33	A33	Kick a ball from stationary position	kdigmd003	Kick a ball from stationary position	gtogmd033
-Ma_LF_A34	A34	Stoops and recovers	mdtgmd017	Stoops and recovers.	gtogmd034
-Ma_LF_A35	A35	Walks well	mdtgmd018	Walks well	gtogmd035
-Ma_LF_A36	A36	Basic running, may fall over	mdtgmd019	Basic running, may fall over.	gtogmd036
-Ma_LF_A37	A37	Runs well	mdtgmd021	Runs well.	gtogmd037
-Ma_LF_A48	A48	Moves from sitting to standing not using hands	kdigmd034	Moves from sitting to standing not using hands	gtogmd038
-Ma_LF_A38	A38	Runs and kicks a ball well	mdtgmd024	Runs, stops and kick a ball well.	gtogmd039
-Ma_LF_A39	A39	Kneels and gets to standing without using hands	mdtgmd022	Kneels and gets to standing without using hands	gtogmd040
-Ma_LF_A40	A40	Throws beanbag on to a cloth	mdtgmd023	Throws ball into a basket	gtogmd041
-Ma_LF_A41	A41	Jumps with two feet together	kdigmd008	Jumps with two feet together	gtogmd042
-Ma_LF_A42	A42	Jumps over a piece of paper (widthways)	mdtgmd029	Jumps over a piece of paper (widthways).	gtogmd043
-Ma_LF_A43	A43	Stands on one foot ≤ 5 secs	mdtgmd027	Stands on one foot < 5 secs.	gtogmd044
-Ma_LF_A44	A44	Hops forward on one foot 3 steps	mdtgmd031	Hops forward on one foot 3 steps.	gtogmd045
-Ma_LF_A45	A45	Stands on one foot > 5 seconds	mdtgmd032	Stands on one foot > 5 seconds	gtogmd046
-Ma_LF_A46	A46	Walks on tiptoes 6 or more steps	mdtgmd030	Walks on tip toes 6+ steps	gtogmd047
-Ma_LF_A47	A47	Walks along line heel to toe	kdigmd015	Walks along line heel to toe	gtogmd048
-Ma_LF_A49	A49	Throws a ball up into the air and can catch it	mdtgmd033	Trhows a ball up in to the air and can catch it	gtogmd049
-Ma_LF_B01	B1	Reacts when spoken to	ddicmm029	Reacts when spoken to	gtolgd001
-Ma_LF_B02	B2	Smiles in response	ddicmm030	Smiles in response	gtolgd002
-Ma_LF_B03	B3	Happy vocalizing or making sounds	mdtlgd002	Happy vocalizing or making sounds	gtolgd003
-Ma_LF_B04	B4	Laughs	mdtlgd003	Laughs/chuckles.	gtolgd004
-Ma_LF_B05	B5	Calms and quiets with caregivers	mdtsed005	Calms and quiets with caregivers.	gtolgd005
-Ma_LF_B06	B6	Turn to Voice	denlgd007	Turn to Voice	gtolgd006
-Ma_LF_B07	B7	Vocalises when spoken to	sgrred006	Vocalises when spoken to	gtolgd007
-Ma_LF_B08	B8	Repeats syllables	dmclgd002	Repeats syllables	gtolgd008
-Ma_LF_B09	B9	Babbles while playing	ddicmm034	Babbles while playing	gtolgd009
-Ma_LF_B10	B10	Uses 2/4 syllable babble	mdtlgd007	Uses 2/4 syllable babble	gtolgd010
-Ma_LF_B11	B11	Understands when being cautioned	mdtlgd008	Understands when being cautioned.	gtolgd011
-Ma_LF_B12	B12	Uses gestures to communicate	dmclgd005	Uses gestures to communicate	gtolgd012
-Ma_LF_B13	B13	Responds to verbal request	by1mdd089	Responds to verbal request	gtolgd013
-Ma_LF_B14	B14	Uses one definite word	dmclgd006	Uses one definite word	gtolgd014
-Ma_LF_B15	B15	Imitates simple words	by1mdd106	Imitates simple words	gtolgd015
-Ma_LF_B16	B16	Uses 5 clear words	grihsd208	Uses 5 clear words	gtolgd016
-Ma_LF_B17	B17	Identifies 1 clothing item	by1mdd117	Shows shoes, clothing or toy	gtolgd017
-Ma_LF_B18	B18	IDENTIFIES 2 objects you name	ddicmd141	Identifies two named objects	gtolgd018
-Ma_LF_B19	B19	Follows simple commands (1 step)	mdtlgd010	Follows simple commands (1 step)	gtolgd019
-Ma_LF_B20	B20	Points to two pictures	by2mdd099	Points to two pictures	gtolgd020
-Ma_LF_B21	B21	Identifies 3 clothing items	by3red022	Identifies 3 clothing items	gtolgd021
-Ma_LF_B22	B22	Follows 2 step commands	mdtlgd015	Follows 2 step commands.	gtolgd022
-Ma_LF_B23	B23	Interested in story	by3cgd059	Interested in story	gtolgd023
-Ma_LF_B24	B24	Says sentences with 2 words together	ddicmm041	Says sentences with 2 words together	gtolgd024
-Ma_LF_B25	B25	Points at 5 pictures in book	ddicmd044	Points at 5 pictures in book	gtolgd025
-Ma_LF_B26	B26	IDENTIFIES 5 objects you name	mdtlgd016	Child can IDENTIFY (point to or give you) 5 objects you name.	gtolgd026
-Ma_LF_B27	B27	NAMES 5 objects	mdtlgd019	Child can NAME 5 objects	gtolgd027
-Ma_LF_B28	B28	Speaks clearly in sentences	mdtlgd017	Speaks clearly in sentences.	gtolgd028
-Ma_LF_B29	B29	Points to 1+ body parts	mdtlgd018	Points to 2+ body parts	gtolgd029
-Ma_LF_B30	B30	Child can say first name	mdtlgd020	Child can say first name.	gtolgd030
-Ma_LF_B31	B31	Knows actions or function of 3 or more objects	mdtlgd021	Knows actions of 3 or more objects.	gtolgd031
-Ma_LF_B32	B32	Matches pictures	by3cgd064	Matches pictures	gtolgd032
-Ma_LF_B33	B33	Names 4 pictures	grihsd223	Names 4 pictures	gtolgd033
-Ma_LF_B34	B34	Identifies 5 action pictures	by3red029	Identifies 5 action pictures	gtolgd034
-Ma_LF_B35	B35	NAMES 10 objects	mdtlgd023	Names 10 objects	gtolgd035
-Ma_LF_B36	B36	Uses multiple-word utterances	by3exd029	Uses multiple-word utterances	gtolgd036
-Ma_LF_B37	B37	Talks spontaneously on daily events	ddicmm047	Talks spontaneously on daily events	gtolgd037
-Ma_LF_B38	B38	Points to parts of whole objects	by3red028	Points to parts of whole objects	gtolgd038
-Ma_LF_B39	B39	Logical response to a question	teplgd281	Logical response to a question	gtolgd039
-Ma_LF_B40	B40	Child is able to categorize things	mdtlgd024	Child is able to categorize things.	gtolgd040
-Ma_LF_B41	B41	Child describes picture	teplgd035	Child describes picture	gtolgd041
-Ma_LF_B42	B42	Identifies 2 or more colors	teplgd032	Identifies >2 colors	gtolgd042
-Ma_LF_B43	B43	Understands adjective 'faster'	mdtlgd029	Understands adjective 'faster'	gtolgd043
-Ma_LF_B44	B44	Knows use of objects	grihsd303	Knows use of objects	gtolgd044
-Ma_LF_B45	B45	Understands 'more and less'	teplgd018	Understands 'more and less'	gtolgd045
-Ma_LF_B46	B46	Identifies at least 2 shapes	teplgd034	Identifies at least 2 shapes	gtolgd046
-Ma_LF_B47	B47	Names at least 2 colours	teplgd031	Names at least 2 colours	gtolgd047
-Ma_LF_B48	B48	Matches 3 colors	by3cgd068	Matches 3 colors	gtolgd048
-Ma_LF_B49	B49	Names actions (5)	by3exd037	Names actions (5)	gtolgd049
-Ma_LF_B50	B50	Repeats tapping 2 blocks	sbiwmd007	Repeats tapping 2 blocks	gtolgd050
-Ma_LF_B51	B51	Repeats tapping with 4 blocks	sbiwmd008	Repeats tapping with 4 blocks	gtolgd051
-Ma_LF_B52	B52	Repeats tapping with 8 blocks	sbiwmd009	Repeats tapping with 8 blocks	gtolgd052
-Ma_LF_C01	C1	Eyes fixate (2x)	ddifmd001	Eyes fixate	gtofmd001
-Ma_LF_C02	C2	Responds to sound (2x)	mdtlgd001	Responds to sound	gtofmd002
-Ma_LF_C03	C3	Fixes and follows - 180 degrees	mdtfmd002	Fixes and follows - 180 degrees.	gtofmd003
-Ma_LF_C04	C4	Interest in making a sound (2x)	by1mdd072	Interest in making a sound	gtofmd004
-Ma_LF_C05	C5	Discriminates strangers	by1mdd058	Discriminates strangers	gtofmd005
-Ma_LF_C06	C6	Turns head towards fallen object (2x)	by1mdd062	Turns head towards fallen spoon	gtofmd006
-Ma_LF_C07	C7	Manipulates cup OR spoon in play	sgrred018	Manipulates cup or spoon in play	gtofmd007
-Ma_LF_C08	C8	Lifts cup by the handle (2x)	by1mdd073	Lifts cup by the handle	gtofmd008
-Ma_LF_C09	C9	Pulls string to get object (2x)	by1mdd080	Pulls string to get object	gtofmd009
-Ma_LF_C10	C10	Picks up cup to get block	by1mdd088	Picks up cup to get block	gtofmd010
-Ma_LF_C11	C11	Puts block in cup	denfmd014	Puts block in cup	gtofmd011
-Ma_LF_C12	C12	Bang 2 objects together	denfmd013	Bang 2 objects together	gtofmd012
-Ma_LF_C13	C13	Finds toy under cloth (2x)	mdtfmd012	Finds toy under cloth	gtofmd013
-Ma_LF_C14	C14	Pats toy to make noise	by1mdd104	Pats toy to make noise	gtofmd014
-Ma_LF_C15	C15	Puts 3 or more blocks in cup	by1mdd100	Puts 3 + blocks in cup	gtofmd015
-Ma_LF_C16	C16	Repeats something when encouraged (2x)	by1mdd097	Repeats something when encouraged	gtofmd016
-Ma_LF_C17	C17	Makes marks with crayon	dmcfmd009	Makes marks with crayon	gtofmd017
-Ma_LF_C18	C18	Can manage a cup well	dmcsld019	Can manage a cup well.	gtofmd018
-Ma_LF_C19	C19	Holds crayon with fingers not fist (2x)	by1mdd098	Holds crayon with fingers not fist	gtofmd019
-Ma_LF_C20	C20	Scribbles in any way (2x)	denfmd015	Scribbles in any way	gtofmd020
-Ma_LF_C21	C21	Puts 1 peg in again (2x)	by1mdd108	Puts 1 peg in again	gtofmd021
-Ma_LF_C22	C22	Accepts third block without dropping (2x)	gricgd023	Accepts third block without dropping	gtofmd022
-Ma_LF_C23	C23	Puts blocks in jar	mdtfmd016	Puts blocks in jar.	gtofmd023
-Ma_LF_C24	C24	Builds tower of 2 blocks (2x)	ddifmd013	Tower of 2 blocks	gtofmd024
-Ma_LF_C25	C25	Dumps blocks out of jar purposefully. (2x)	mdtfmd017	Dumps blocks out of jar purposefully.	gtofmd025
-Ma_LF_C26	C26	Finds object under 2 alternating cups	by1mdd131	Finds 2 objects	gtofmd026
-Ma_LF_C27	C27	Uses objects in play by themselves (2x)	by3cgd048	Uses objects in play by themselves	gtofmd027
-Ma_LF_C28	C28	Builds tower of 3 blocks (2x)	by1mdd119	Builds tower of 3 blocks	gtofmd028
-Ma_LF_C29	C29	Understands the concept of 'one' (2x)	mdtfmd022	Understands the concept of 'one'	gtofmd029
-Ma_LF_C30	C30	Scribbles on paper (circular scribble)	mdtfmd019	Scribbles on paper (circular scribble).	gtofmd030
-Ma_LF_C31	C31	Uses objects in play with someone	by3cgd053	Uses objects in play with someone	gtofmd031
-Ma_LF_C32	C32	Puts pegs in board <= 2 minutes. (2x)	mdtfmd021	Puts pegs in board <= 2 minutes.	gtofmd032
-Ma_LF_C33	C33	2 shapes in board complete (2x)	gricgd213	2 shapes in board complete	gtofmd033
-Ma_LF_C34	C34	Understands 'more'	by3cgd089	Understands 'more' (2 cups)	gtofmd034
-Ma_LF_C35	C35	3 shapes in board complete 2 minutes (2x)	by3cgd056	3 shapes in board complete 2 mins	gtofmd035
-Ma_LF_C36	C36	3 shape board 2 minutes rotated (2x)	by3cgd060	3 shape board 2 mins rotated	gtofmd036
-Ma_LF_C37	C37	Builds tower of 6 blocks. (2x)	mdtfmd023	Builds tower of 6 blocks.	gtofmd037
-Ma_LF_C38	C38	Puts pegs in board in <=30 seconds. (2x)	mdtfmd024	Puts pegs in board in <=30 seconds.	gtofmd038
-Ma_LF_C39	C39	3 shapes in 15 seconds (2x)	sbivsd003	3 shapes in 15 secs	gtofmd039
-Ma_LF_C40	C40	Unscrews and screws lid of jar (2x)	mdtfmd025	Unscrews and screws lid of jar.	gtofmd040
-Ma_LF_C41	C41	Representational play	by3cgd065	Representational play	gtofmd041
-Ma_LF_C42	C42	Copies 2-part activity (3x)	by3cgd067	Imitates a two-step action.	gtofmd042
-Ma_LF_C43	C43	Builds truck/lorry of blocks (2x)	by3fmd044	Builds train of blocks	gtofmd043
-Ma_LF_C44	C44	Imitates building a bridge (2x)	ddifmd023	Imitates building a bridge	gtofmd044
-Ma_LF_C45	C45	Draws a horizontal line (2x)	griehd301	Draws a horizontal line	gtofmd045
-Ma_LF_C46	C46	Picks longest stick 3 of 3 (3x to 5x)	mdtfmd028	Picks longest stick 3 of 3	gtofmd046
-Ma_LF_C47	C47	Child understands prepositions (2x)	mdtlgd031	Child understands prepositions	gtofmd047
-Ma_LF_C48	C48	Builds wall of blocks (2x)	by3fmd050	Builds wall of blocks	gtofmd048
-Ma_LF_C49	C49	Copies a circle	ddifmd026	Copies a circle	gtofmd049
-Ma_LF_C50	C50	Copies a cross or plus sign (2x)	mdtfmd033	Copies a cross	gtofmd050
-Ma_LF_C51	C51	Understands concept of size	by3cgd073	Understands concept of size	gtofmd051
-Ma_LF_C52	C52	Draws 3 or more body parts	denfmd024	Draws 3 or more body parts	gtofmd052
-Ma_LF_C53	C53	Copies a square (2x)	mdtfmd034	Copies a square	gtofmd053
-Ma_LF_C54	C54	Can count 3 + objects.	mdtlgd033	Can count 3 + objects.	gtofmd054
+Ma_LF_A01	A01	Lifts head in prone 45 degrees	ddigmd057	A1. Lifts head in prone 45 degrees	gtogmd001
+Ma_LF_A02	A02	Frolics alone - moving body, kicking legs.	mdtsed004	A2. Frolics alone - moving body, kicking legs	gtogmd002
+Ma_LF_A03	A03	Frolics with mother or caregiver responsively	mdtsed003	A3. Frolics with mother or caregiver responsively	gtogmd003
+Ma_LF_A04	A04	Hands together in front of face	mdtfmd003	A4. Hands together in front of face	gtogmd004
+Ma_LF_A05	A05	Balances head well while sitting	ddigmd061	A5. Balances head well while suppported	gtogmd005
+Ma_LF_A06	A06	Pulls to sit - no head lag	mdtgmd004	A6. Pulls to sit - no head lag	gtogmd006
+Ma_LF_A07	A07	Lifts head, shoulders, chest when prone	mdtgmd005	A7. Lifts head, shoulders, chest when prone	gtogmd007
+Ma_LF_A08	A08	Reach for an object	by1mdd051	A8. Reach for an object	gtogmd008
+Ma_LF_A09	A09	Resist object being taken away	sgrred010	A9. Resist object being taken away	gtogmd009
+Ma_LF_A10	A10	Grasps hold of large thing	mdtfmd006	A10. Grasps hold of large thing	gtogmd010
+Ma_LF_A11	A11	Carries object to mouth to explore	sgrehd012	A11. Carries object to mouth to explore	gtogmd011
+Ma_LF_A12	A12	Sits supported (with help)	dmcgmd003	A12. Sits supported (with help)	gtogmd012
+Ma_LF_A13	A13	Sits momentarily (on their own)	by1pdd023	A13. Sits momentarily (on their own)	gtogmd013
+Ma_LF_A14	A14	Reaches for a second object	by1mdd064	A14. Reaches for a second object	gtogmd014
+Ma_LF_A15	A15	Rolls from back to stomach	by1pdd028	A15. Rolls from back to stomach	gtogmd015
+Ma_LF_A16	A16	Can see a small object.	mdtfmd008	A16. Can see a small object	gtogmd016
+Ma_LF_A17	A17	Rake (grasps with four fingers) a small object	denfmd009	A17. Rake (grasps with four fingers) a small object	gtogmd017
+Ma_LF_A18	A18	Sits without help (short time)	mdtgmd009	A18. Sits without help (short time)	gtogmd018
+Ma_LF_A19	A19	Can turn on floor	sgrgmd022	A19. Can turn on floor	gtogmd019
+Ma_LF_A20	A20	Can pick object from ground	mdtfmd007	A20. Can pick object from ground	gtogmd020
+Ma_LF_A21	A21	Shifts object from one hand to another	mdtfmd009	A21. Shifts object from one hand to another	gtogmd021
+Ma_LF_A22	A22	Sits by self well	mdtgmd010	A22. Sits by self well	gtogmd022
+Ma_LF_A23	A23	Crawls	dmcgmd005	A23. Crawls	gtogmd023
+Ma_LF_A24	A24	Picks up small object between thumb and finger	ddifmd010	A24. Picks up small object between thumb and finger	gtogmd024
+Ma_LF_A25	A25	Pulls him or herself up to a standing position	mdtgmd012	A25. Pulls him or herself up to a standing position	gtogmd025
+Ma_LF_A26	A26	Moves from lying to sitting	kdigmd031	A26. Moves from lying to sitting	gtogmd026
+Ma_LF_A27	A27	Stands with Support	kdigmd001	A27. Stands with Support	gtogmd027
+Ma_LF_A28	A28	Stands alone for 5 secs or more if put in a standing position	dmcgmd009	A28. Stands alone for 5 secs or more if put in a standing position	gtogmd028
+Ma_LF_A29	A29	Walks when one hand held	kdigmd005	A29. Walks when one hand held	gtogmd029
+Ma_LF_A30	A30	Plays 'give and take'	ddifmm012	"A30. Plays ""give and take"""	gtogmd030
+Ma_LF_A31	A31	Releases ball purposefully	kdifmd002	A31. Releases ball purposefully	gtogmd031
+Ma_LF_A32	A32	Takes few steps alone	grigmd203	A32. Takes few steps alone	gtogmd032
+Ma_LF_A33	A33	Kick a ball from stationary position	kdigmd003	A33. Kick a ball from stationary position	gtogmd033
+Ma_LF_A34	A34	Stoops and recovers	mdtgmd017	A34. Stoops and recovers	gtogmd034
+Ma_LF_A35	A35	Moves from sitting to standing not using hands	kdigmd034	A35. Moves from sitting to standing not using hands	gtogmd035
+Ma_LF_A36	A36	Walks well	mdtgmd018	A36. Walks well	gtogmd036
+Ma_LF_A37	A37	Basic running, may fall over	mdtgmd019	A37. Basic running, may fall over	gtogmd037
+Ma_LF_A48	A48	Runs well	mdtgmd021	A38. Runs well	gtogmd038
+Ma_LF_A38	A38	Runs and kicks a ball well	mdtgmd024	A39. Runs and kicks a ball well	gtogmd039
+Ma_LF_A39	A39	Kneels and gets to standing without using hands	mdtgmd022	A40. Kneels and gets to standing without using hands	gtogmd040
+Ma_LF_A40	A40	Throws beanbag on to a cloth	mdtgmd023	A41. Throws beanbag on to a cloth	gtogmd041
+Ma_LF_A41	A41	Jumps with two feet together	kdigmd008	A42. Jumps with two feet together	gtogmd042
+Ma_LF_A42	A42	Jumps over a piece of paper (widthways)	mdtgmd029	A43. Jumps over a piece of paper (widthways)	gtogmd043
+Ma_LF_A43	A43	Stands on one foot ≤ 5 secs	mdtgmd027	A44. Stands on one foot <= 5 secs	gtogmd044
+Ma_LF_A44	A44	Hops forward on one foot 3 steps	mdtgmd031	A45. Hops forward on one foot 3 steps	gtogmd045
+Ma_LF_A45	A45	Stands on one foot > 5 seconds	mdtgmd032	A46. Stands on one foot > 5 seconds	gtogmd046
+Ma_LF_A46	A46	Walks on tiptoes 6 or more steps	mdtgmd030	A47. Walks on tiptoes 6 or more steps	gtogmd047
+Ma_LF_A47	A47	Walks along line heel to toe	kdigmd015	A48. Walks along line heel to toe	gtogmd048
+Ma_LF_A49	A49	Throws a ball up into the air and can catch it	mdtgmd033	A49. Throws a ball up into the air and can catch it	gtogmd049
+Ma_LF_B01	B1	Reacts when spoken to	ddicmm029	B1. Reacts when spoken to	gtolgd001
+Ma_LF_B02	B2	Smiles in response	ddicmm030	B2. Smiles in response	gtolgd002
+Ma_LF_B03	B3	Calms and quiets with caregivers	mdtsed005	B3. Calms and quiets with caregivers	gtolgd003
+Ma_LF_B04	B4	Happy vocalizing or making sounds	mdtlgd002	B4. Happy vocalizing or making sounds	gtolgd004
+Ma_LF_B05	B5	Turn to Voice	denlgd007	B5. Turn to Voice	gtolgd005
+Ma_LF_B06	B6	Laughs	mdtlgd003	B6. Laughs	gtolgd006
+Ma_LF_B07	B7	Vocalises when spoken to	sgrred006	B7. Vocalises when spoken to	gtolgd007
+Ma_LF_B08	B8	Repeats syllables	dmclgd002	B8. Repeats syllables	gtolgd008
+Ma_LF_B09	B9	Babbles while playing	ddicmm034	B9. Babbles while playing	gtolgd009
+Ma_LF_B10	B10	Uses 2/4 syllable babble	mdtlgd007	B10. Uses 2/4 syllable babble	gtolgd010
+Ma_LF_B11	B11	Understands when being cautioned	mdtlgd008	B11. Understands when being cautioned	gtolgd011
+Ma_LF_B12	B12	Uses gestures to communicate	dmclgd005	B12. Uses gestures to communicate	gtolgd012
+Ma_LF_B13	B13	Responds to verbal request	by1mdd089	B13. Responds to verbal request	gtolgd013
+Ma_LF_B14	B14	Uses one definite word	dmclgd006	B14. Uses one definite word	gtolgd014
+Ma_LF_B15	B15	Imitates simple words	by1mdd106	B15. Imitates simple words	gtolgd015
+Ma_LF_B16	B16	Uses 5 clear words	grihsd208	B16. Uses 5 clear words	gtolgd016
+Ma_LF_B17	B17	Identifies 1 clothing item	by1mdd117	B17. Identifies 1 clothing item	gtolgd017
+Ma_LF_B18	B18	IDENTIFIES 2 objects you name	ddicmd141	B18. Identifies 2 objects you name	gtolgd018
+Ma_LF_B19	B19	Interested in story	by3cgd059	B19. Interested in story	gtolgd019
+Ma_LF_B20	B20	Follows simple commands (1 step)	mdtlgd010	B20. Follows simple commands (1 step)	gtolgd020
+Ma_LF_B21	B21	Points to two pictures	by2mdd099	B21. Points to two pictures	gtolgd021
+Ma_LF_B22	B22	Identifies 3 clothing items	by3red022	B22. Identifies 3 clothing items	gtolgd022
+Ma_LF_B23	B23	Follows 2 step commands	mdtlgd015	B23. Follows 2 step commands	gtolgd023
+Ma_LF_B24	B24	Says sentences with 2 words together	ddicmm041	B24. Says sentences with 2 words together	gtolgd024
+Ma_LF_B25	B25	Points at 5 pictures in book	ddicmd044	B25. Points at 5 pictures in book	gtolgd025
+Ma_LF_B26	B26	IDENTIFIES 5 objects you name	mdtlgd016	B26. Identifies 5 objects you name	gtolgd026
+Ma_LF_B27	B27	NAMES 5 objects	mdtlgd019	B27. Names 5 objects	gtolgd027
+Ma_LF_B28	B28	Speaks clearly in sentences	mdtlgd017	B28. Speaks clearly in sentences	gtolgd028
+Ma_LF_B29	B29	Points to 1+ body parts	mdtlgd018	B29. Points to 1+ or more body parts	gtolgd029
+Ma_LF_B30	B30	Child can say first name	mdtlgd020	B30. Child can say first name	gtolgd030
+Ma_LF_B31	B31	Knows actions or function of 3 or more objects	mdtlgd021	B31. Knows actions or function of 3 or more objects	gtolgd031
+Ma_LF_B32	B32	Matches pictures	by3cgd064	B32. Matches pictures	gtolgd032
+Ma_LF_B33	B33	Names 4 pictures	grihsd223	B33. Names 4 pictures	gtolgd033
+Ma_LF_B34	B34	Identifies 5 action pictures	by3red029	B34. Identifies 5 action pictures	gtolgd034
+Ma_LF_B35	B35	NAMES 10 objects	mdtlgd023	B35. Names 10 objects	gtolgd035
+Ma_LF_B36	B36	Uses multiple-word utterances	by3exd029	B36. Uses multiple-word utterances	gtolgd036
+Ma_LF_B37	B37	Talks spontaneously on daily events	ddicmm047	B37. Talks spontaneously on daily events	gtolgd037
+Ma_LF_B38	B38	Points to parts of whole objects	by3red028	B38. Points to parts of whole objects	gtolgd038
+Ma_LF_B39	B39	Logical response to a question	teplgd281	B39. Logical response to a question	gtolgd039
+Ma_LF_B40	B40	Child is able to categorize things	mdtlgd024	B40. Child is able to categorize things	gtolgd040
+Ma_LF_B41	B41	Matches 3 colors	by3cgd068	B41. Matches 3 colors	gtolgd041
+Ma_LF_B42	B42	Child describes picture	teplgd035	B42. Child describes picture	gtolgd042
+Ma_LF_B43	B43	Identifies 2 or more colors	teplgd032	B43. Identifies 2 or more colors	gtolgd043
+Ma_LF_B44	B44	Understands adjective 'faster'	mdtlgd029	"B44. Understands adjective ""faster"""	gtolgd044
+Ma_LF_B45	B45	Knows use of objects	grihsd303	B45. Knows use of objects	gtolgd045
+Ma_LF_B46	B46	Names actions (5)	by3exd037	B46. Names actions (5)	gtolgd046
+Ma_LF_B47	B47	Understands 'more and less'	teplgd018	"B47. Understands ""more"""	gtolgd047
+Ma_LF_B48	B48	Identifies at least 2 shapes	teplgd034	B48. Identifies at least 2 shapes	gtolgd048
+Ma_LF_B49	B49	Names at least 2 colours	teplgd031	B49. Names at least 2 colours	gtolgd049
+Ma_LF_B50	B50	Repeats tapping 2 blocks	sbiwmd007	B50. Tapping with 2 blocks	gtolgd050
+Ma_LF_B51	B51	Repeats tapping with 4 blocks	sbiwmd008	B51. Tapping with 4 blocks	gtolgd051
+Ma_LF_B52	B52	Repeats tapping with 8 blocks	sbiwmd009	B52. Tapping with 8 blocks	gtolgd052
+Ma_LF_C01	C1	Eyes fixate (2x)	ddifmd001	C1. Eyes fixate	gtofmd001
+Ma_LF_C02	C2	Responds to sound (2x)	mdtlgd001	C2. Responds to sound	gtofmd002
+Ma_LF_C03	C3	Fixes and follows - 180 degrees	mdtfmd002	C3. Fixes and follows - 180 degrees	gtofmd003
+Ma_LF_C04	C4	Interest in making a sound (2x)	by1mdd072	C4. Interest in making a sound	gtofmd004
+Ma_LF_C05	C5	Discriminates strangers	by1mdd058	C5. Discriminates strangers	gtofmd005
+Ma_LF_C06	C6	Turns head towards fallen object (2x)	by1mdd062	C6. Turns head towards fallen spoon	gtofmd006
+Ma_LF_C07	C7	Manipulates cup OR spoon in play	sgrred018	C7. Manipulates cup OR spoon in play	gtofmd007
+Ma_LF_C08	C8	Lifts cup by the handle (2x)	by1mdd073	C8. Lifts cup by the handle	gtofmd008
+Ma_LF_C09	C9	Pulls string to get object (2x)	by1mdd080	C9. Pulls string to get object	gtofmd009
+Ma_LF_C10	C10	Picks up cup to get block	by1mdd088	C10. Picks up cup to get block	gtofmd010
+Ma_LF_C11	C11	Puts block in cup	denfmd014	C11. Puts block in cup	gtofmd011
+Ma_LF_C12	C12	Bang 2 objects together	denfmd013	C12. Bang 2 objects together	gtofmd012
+Ma_LF_C13	C13	Finds toy under cloth (2x)	mdtfmd012	C13. Finds toy under cloth	gtofmd013
+Ma_LF_C14	C14	Pats toy to make noise	by1mdd104	C14. Pats toy to make noise	gtofmd014
+Ma_LF_C15	C15	Puts 3 or more blocks in cup	by1mdd100	C15. Puts 3 or more blocks in cup	gtofmd015
+Ma_LF_C16	C16	Repeats something when encouraged (2x)	by1mdd097	C16. Repeats something when encouraged	gtofmd016
+Ma_LF_C17	C17	Makes marks with crayon	dmcfmd009	C17. Makes marks with crayon	gtofmd017
+Ma_LF_C18	C18	Can manage a cup well	dmcsld019	C18. Can manage a cup well	gtofmd018
+Ma_LF_C19	C19	Holds crayon with fingers not fist (2x)	by1mdd098	C19. Holds crayon with fingers not fist	gtofmd019
+Ma_LF_C20	C20	Scribbles in any way (2x)	denfmd015	C20. Scribbles in any way	gtofmd020
+Ma_LF_C21	C21	Puts 1 peg in again (2x)	by1mdd108	C21. Puts 1 peg in again	gtofmd021
+Ma_LF_C22	C22	Accepts third block without dropping (2x)	gricgd023	C22. Accepts third block without dropping	gtofmd022
+Ma_LF_C23	C23	Puts blocks in jar	mdtfmd016	C23. Puts blocks in jar	gtofmd023
+Ma_LF_C24	C24	Builds tower of 2 blocks (2x)	ddifmd013	C24. Builds tower of 2 blocks	gtofmd024
+Ma_LF_C25	C25	Dumps blocks out of jar purposefully. (2x)	mdtfmd017	C25. Dumps blocks out of jar purposefully	gtofmd025
+Ma_LF_C26	C26	Finds object under 2 alternating cups	by1mdd131	C26. Finds object under 2 alternating cups	gtofmd026
+Ma_LF_C27	C27	Uses objects in play by themselves (2x)	by3cgd048	C27. Uses objects in play by themselves	gtofmd027
+Ma_LF_C28	C28	Builds tower of 3 blocks (2x)	by1mdd119	C28. Builds tower of 3 blocks	gtofmd028
+Ma_LF_C29	C29	Understands the concept of 'one' (2x)	mdtfmd022	"C29. Understands the concept of ""one"""	gtofmd029
+Ma_LF_C30	C30	Scribbles on paper (circular scribble)	mdtfmd019	C30. Scribbles on paper (circular scribble)	gtofmd030
+Ma_LF_C31	C31	Uses objects in play with someone	by3cgd053	C31. Uses objects in play with someone	gtofmd031
+Ma_LF_C32	C32	Puts pegs in board <= 2 minutes. (2x)	mdtfmd021	C32. Puts pegs in board <= 2 minutes.	gtofmd032
+Ma_LF_C33	C33	2 shapes in board complete (2x)	gricgd213	C33. 2 shapes in board complete	gtofmd033
+Ma_LF_C34	C34	Understands 'more'	by3cgd089	"C34. Understands ""more"""	gtofmd034
+Ma_LF_C35	C35	3 shapes in board complete 2 minutes (2x)	by3cgd056	C35. 3 shapes in board complete 2 minutes	gtofmd035
+Ma_LF_C36	C36	3 shape board 2 minutes rotated (2x)	by3cgd060	C36. 3 shape board 2 minutes rotated	gtofmd036
+Ma_LF_C37	C37	Builds tower of 6 blocks. (2x)	mdtfmd023	C37. Builds tower of 6 blocks.	gtofmd037
+Ma_LF_C38	C38	Puts pegs in board in <=30 seconds. (2x)	mdtfmd024	C38. Puts pegs in board in <=30 seconds.	gtofmd038
+Ma_LF_C39	C39	3 shapes in 15 seconds (2x)	sbivsd003	C39. 3 shapes in 15 seconds	gtofmd039
+Ma_LF_C40	C40	Unscrews and screws lid of jar (2x)	mdtfmd025	C40. Unscrews and screws lid of jar	gtofmd040
+Ma_LF_C41	C41	Representational play	by3cgd065	C41. Representational play	gtofmd041
+Ma_LF_C42	C42	Copies 2-part activity (3x)	by3cgd067	C42. Copies 2-part activity	gtofmd042
+Ma_LF_C43	C43	Builds truck/lorry of blocks (2x)	by3fmd044	C43. Builds truck/lorry of blocks	gtofmd043
+Ma_LF_C44	C44	Imitates building a bridge (2x)	ddifmd023	C44. Imitates building a bridge	gtofmd044
+Ma_LF_C45	C45	Draws a horizontal line (2x)	griehd301	C45. Draws a horizontal line	gtofmd045
+Ma_LF_C46	C46	Picks longest stick 3 of 3 (3x to 5x)	mdtfmd028	C46. Picks longest stick 3 of 3	gtofmd046
+Ma_LF_C47	C47	Child understands prepositions (2x)	mdtlgd031	C47. Child understands prepositions	gtofmd047
+Ma_LF_C48	C48	Builds wall of blocks (2x)	by3fmd050	C48. Builds wall of blocks	gtofmd048
+Ma_LF_C49	C49	Copies a circle	ddifmd026	C49. Copies a circle	gtofmd049
+Ma_LF_C50	C50	Copies a cross or plus sign (2x)	mdtfmd033	C50. Copies a cross or a plus sign	gtofmd050
+Ma_LF_C51	C51	Understands concept of size	by3cgd073	C51. Understands concept of size	gtofmd051
+Ma_LF_C52	C52	Draws 3 or more body parts	denfmd024	C52. Draws 3 or more body parts	gtofmd052
+Ma_LF_C53	C53	Copies a square (2x)	mdtfmd034	C53. Copies a square	gtofmd053
+Ma_LF_C54	C54	Can count 3 + objects.	mdtlgd033	C54. Can count 3 + objects	gtofmd054
 bsid_cog01	cog01	Calms when picked up	by3cgd001	Calms when picked up	by3cgd001
 bsid_cog02	cog02	Responds to surroundings: inspects	by3cgd002	Responds to surroundings: inspects	by3cgd002
 bsid_cog03	cog03	Regards 3 sec	by3cgd003	Regards 3 sec	by3cgd003
