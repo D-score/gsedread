@@ -1,3 +1,7 @@
+# gsedread 0.8.0
+
+* Update `itemnames_translate.tsv` with correct LF1 item order
+
 # gsedread 0.7.2 
 
 * Translate `gpalgc059` into `crosec014` (instead of `mdtlgd008`)
