@@ -23,5 +23,4 @@ reference:
       Functions to set details of the data set.
     contents:
       - define_col
-      - rename_variables
       - rename_vector
