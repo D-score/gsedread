@@ -15,4 +15,4 @@ Imports:
     rlang
 URL: https://github.com/D-score/gsedread
 BugReports: https://github.com/D-score/gsedread/issues
-RoxygenNote: 7.2.2
+RoxygenNote: 7.2.3
