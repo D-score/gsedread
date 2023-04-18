@@ -42,24 +42,31 @@ manually check whether you are able to read the OneDrive directory.
 
 ``` r
 dir(Sys.getenv("ONEDRIVE_GSED"))
-#>  [1] "Bangladesh Validation"                             
-#>  [2] "Baseline Analysis - OLD - NOV 2021"                
-#>  [3] "DIF_country.png"                                   
-#>  [4] "Final Phase 1 Data - May 10th 2022"                
-#>  [5] "GSED Final Collated Phase 1 Data Files 18_05_22"   
-#>  [6] "GSED PHASE 1 DATA COLLECTED LOG"                   
-#>  [7] "GSED_data_quality_1_output_LF_TEST.csv"            
-#>  [8] "GSED_data_quality_1_output.csv"                    
-#>  [9] "GSED_phase1_merged_11_11_21.csv"                   
-#> [10] "interim DAZ values combined.csv"                   
-#> [11] "Interim validation data_phase I_May2021"           
-#> [12] "Master_data_dictionary_MAIN_v0.9.1_2021.04.22.xlsx"
-#> [13] "Pakistan Validation"                               
-#> [14] "Pemba Validation"                                  
-#> [15] "QUALITATIVE DATA PHASE 1 MAY 2022"                 
-#> [16] "Rplot.pdf"                                         
-#> [17] "Stop rule change exploration"                      
-#> [18] "t1.Rds"
+#>  [1] "-DESKTOP-GU6P9PF.RData"                            
+#>  [2] "-DESKTOP-GU6P9PF.Rhistory"                         
+#>  [3] "Bangladesh Validation"                             
+#>  [4] "Baseline Analysis - OLD - NOV 2021"                
+#>  [5] "Data Cleaning Script MK1 - Run before merge.R"     
+#>  [6] "Data Merge Script MK1.R"                           
+#>  [7] "Final Phase 1 Data - May 10th 2022"                
+#>  [8] "GSED Final Collated Phase 1 Data Files 18_05_22"   
+#>  [9] "GSED PHASE 1 DATA COLLECTED LOG"                   
+#> [10] "GSED_data_quality_1_output_LF_TEST.csv"            
+#> [11] "GSED_data_quality_1_output.csv"                    
+#> [12] "GSED_phase1_merged_11_11_21.csv"                   
+#> [13] "GSED_phase1_merged_20_07_22.csv"                   
+#> [14] "interim DAZ values combined.csv"                   
+#> [15] "Interim validation data_phase I_May2021"           
+#> [16] "Master_data_dictionary_MAIN_v0.9.1_2021.04.22.xlsx"
+#> [17] "merged_lf.dta"                                     
+#> [18] "Norming work"                                      
+#> [19] "Pakistan Validation"                               
+#> [20] "Pemba Validation"                                  
+#> [21] "Phase 1 Data for Sunil"                            
+#> [22] "PREDICTIVE VALIDITY GSED 2.0"                      
+#> [23] "QUALITATIVE"                                       
+#> [24] "QUALITATIVE DATA PHASE 1 MAY 2022"                 
+#> [25] "Stop rule change exploration"
 ```
 
 The following commands reads all SF data from
@@ -117,3 +124,11 @@ The package reads and processes GSED data. It does not store data. The
 Item renaming with `rename_variables()` relies on the item translation
 table at
 <https://github.com/D-score/gsedread/blob/main/inst/extdata/itemnames_translate.tsv>.
+
+## Acknowledgement
+
+This study was supported by the Bill & Melinda Gates Foundation. The
+contents are the sole responsibility of the authors and may not
+necessarily represent the official views of the Bill & Melinda Gates
+Foundation or other agencies that may have supported the primary data
+studies used in the present study.
