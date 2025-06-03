@@ -51,7 +51,7 @@ ONEDRIVE_GSED='/Users/username/Library/CloudStorage/OneDrive-Sharedlibraries-Wor
 After setting the environmental variable `ONEDRIVE_GSED`, restart R, and manually check whether you are able to read the OneDrive directory.
 
 ```{r}
-dir(Sys.getenv("ONEDRIVE_GSED"))
+dir(Sys.getenv("ONEDRIVE_GSED_PHASE_1_FINAL_ANALYSIS"))
 ```
 
 The following commands reads all SF data from `GSED Final Collated Phase 1 Data Files 18_05_22` directory and returns a tibble with one record per administration.

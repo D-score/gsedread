@@ -15,9 +15,13 @@ Scales for Early Development (GSED).
 ## Installation
 
 <!-- If you have been marked as a collaborator on GitHub for this repository, generate a personal access token as in <https://github.com/settings/tokens>. Add a line  -->
+
 <!-- ```{r eval=FALSE} -->
+
 <!-- GITHUB_PAT=ghp_vC82..................... -->
+
 <!-- ``` -->
+
 <!-- with your token in the file `.Renviron` in your home directory. Restarting R adds the environmental variable GITHUB_PAT to your session. Then install the `gsedread` package from GitHub as follows:  -->
 
 Install the `gsedread` package from GitHub as follows:
@@ -41,32 +45,21 @@ After setting the environmental variable `ONEDRIVE_GSED`, restart R, and
 manually check whether you are able to read the OneDrive directory.
 
 ``` r
-dir(Sys.getenv("ONEDRIVE_GSED"))
-#>  [1] "-DESKTOP-GU6P9PF.RData"                            
-#>  [2] "-DESKTOP-GU6P9PF.Rhistory"                         
-#>  [3] "Bangladesh Validation"                             
-#>  [4] "Baseline Analysis - OLD - NOV 2021"                
-#>  [5] "Data Cleaning Script MK1 - Run before merge.R"     
-#>  [6] "Data Merge Script MK1.R"                           
-#>  [7] "Final Phase 1 Data - May 10th 2022"                
-#>  [8] "GSED Final Collated Phase 1 Data Files 18_05_22"   
-#>  [9] "GSED PHASE 1 DATA COLLECTED LOG"                   
-#> [10] "GSED_data_quality_1_output_LF_TEST.csv"            
-#> [11] "GSED_data_quality_1_output.csv"                    
-#> [12] "GSED_phase1_merged_11_11_21.csv"                   
-#> [13] "GSED_phase1_merged_20_07_22.csv"                   
-#> [14] "interim DAZ values combined.csv"                   
-#> [15] "Interim validation data_phase I_May2021"           
-#> [16] "Master_data_dictionary_MAIN_v0.9.1_2021.04.22.xlsx"
-#> [17] "merged_lf.dta"                                     
-#> [18] "Norming work"                                      
-#> [19] "Pakistan Validation"                               
-#> [20] "Pemba Validation"                                  
-#> [21] "Phase 1 Data for Sunil"                            
-#> [22] "PREDICTIVE VALIDITY GSED 2.0"                      
-#> [23] "QUALITATIVE"                                       
-#> [24] "QUALITATIVE DATA PHASE 1 MAY 2022"                 
-#> [25] "Stop rule change exploration"
+dir(Sys.getenv("ONEDRIVE_GSED_PHASE_1_FINAL_ANALYSIS"))
+#>  [1] "Archive Data dictionaries"                          
+#>  [2] "Data Merge"                                         
+#>  [3] "Final Data Analysis"                                
+#>  [4] "GSED Final Collated Phase 1 Data Files 18_05_22"    
+#>  [5] "GSED odk output shiny linking.csv"                  
+#>  [6] "GSED odk output shiny linking.xlsx"                 
+#>  [7] "Item ordering"                                      
+#>  [8] "item responsmes.csv"                                
+#>  [9] "LF to SF linked items"                              
+#> [10] "Phase 1 DIF analysis"                               
+#> [11] "Phase_1_master_data_dictionary_V1.0_18_10_2023.xlsx"
+#> [12] "Predictive study work"                              
+#> [13] "Raw Data"                                           
+#> [14] "Sorted Data"
 ```
 
 The following commands reads all SF data from
@@ -77,7 +70,7 @@ a tibble with one record per administration.
 library(gsedread)
 data <- read_sf()
 dim(data)
-#> [1] 6228  160
+#> [1] 6350  160
 ```
 
 Count the number of records per file:
@@ -86,7 +79,7 @@ Count the number of records per file:
 table(data$file)
 #> 
 #>                ban_sf_2021_11_03 ban_sf_new_enrollment_17_05_2022 
-#>                             1421                               72 
+#>                             1543                               72 
 #>     ban_sf_predictive_17_05_2022                pak_sf_2022_05_17 
 #>                              473                             1761 
 #> pak_sf_new_enrollment_2022_05_17     pak_sf_predictive_2022_05_17 
