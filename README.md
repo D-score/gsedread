@@ -14,16 +14,6 @@ Scales for Early Development (GSED).
 
 ## Installation
 
-<!-- If you have been marked as a collaborator on GitHub for this repository, generate a personal access token as in <https://github.com/settings/tokens>. Add a line  -->
-
-<!-- ```{r eval=FALSE} -->
-
-<!-- GITHUB_PAT=ghp_vC82..................... -->
-
-<!-- ``` -->
-
-<!-- with your token in the file `.Renviron` in your home directory. Restarting R adds the environmental variable GITHUB_PAT to your session. Then install the `gsedread` package from GitHub as follows:  -->
-
 Install the `gsedread` package from GitHub as follows:
 
 ``` r
@@ -35,36 +25,24 @@ There is no CRAN version.
 
 ## Example
 
-You need access to the WHO SharePoint site and sync the data to a local
-OneDrive. In the file `.Renviron` in your home directory add a line
-specifying the location of your synced OneDrive, e.g.,
+You need access to the proper SharePoint site and sync the data to a
+local OneDrive. In the file `.Renviron` in your home directory add a
+line specifying the location of your synced OneDrive, e.g.,
 
-    ONEDRIVE_GSED='/Users/username/Library/CloudStorage/OneDrive-Sharedlibraries-WorldHealthOrganization/CAVALLERA, Vanessa - GSED Validation 2021_phase I'
+    ONEDRIVE_GSED='/Users/username/Library/CloudStorage/OneDrive-Sharedlibraries-...'
 
 After setting the environmental variable `ONEDRIVE_GSED`, restart R, and
 manually check whether you are able to read the OneDrive directory.
 
 ``` r
-dir(Sys.getenv("ONEDRIVE_GSED_PHASE_1_FINAL_ANALYSIS"))
-#>  [1] "Archive Data dictionaries"                          
-#>  [2] "Data Merge"                                         
-#>  [3] "Final Data Analysis"                                
-#>  [4] "GSED Final Collated Phase 1 Data Files 18_05_22"    
-#>  [5] "GSED odk output shiny linking.csv"                  
-#>  [6] "GSED odk output shiny linking.xlsx"                 
-#>  [7] "Item ordering"                                      
-#>  [8] "item responsmes.csv"                                
-#>  [9] "LF to SF linked items"                              
-#> [10] "Phase 1 DIF analysis"                               
-#> [11] "Phase_1_master_data_dictionary_V1.0_18_10_2023.xlsx"
-#> [12] "Predictive study work"                              
-#> [13] "Raw Data"                                           
-#> [14] "Sorted Data"
+head(dir(Sys.getenv("ONEDRIVE_GSED")), 3)
+#> [1] "Archive Data dictionaries" "Data Merge"               
+#> [3] "Final Data Analysis"
 ```
 
 The following commands reads all SF data from
-`GSED Final Collated Phase 1 Data Files 18_05_22` directory and returns
-a tibble with one record per administration.
+`GSED Final Collated Phase 1 Data Files 18_05_22` Sharepoint directory
+and returns a tibble with one record per administration.
 
 ``` r
 library(gsedread)
