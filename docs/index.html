@@ -55,11 +55,6 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<!-- If you have been marked as a collaborator on GitHub for this repository, generate a personal access token as in <https://github.com/settings/tokens>. Add a line  -->
-<!-- ```{r eval=FALSE} -->
-<!-- GITHUB_PAT=ghp_vC82..................... -->
-<!-- ``` -->
-<!-- with your token in the file `.Renviron` in your home directory. Restarting R adds the environmental variable GITHUB_PAT to your session. Then install the `gsedread` package from GitHub as follows:  -->
 <p>Install the <code>gsedread</code> package from GitHub as follows:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
@@ -69,26 +64,14 @@
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p>You need access to the WHO SharePoint site and sync the data to a local OneDrive. In the file <code>.Renviron</code> in your home directory add a line specifying the location of your synced OneDrive, e.g.,</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>ONEDRIVE_GSED<span class="ot">=</span><span class="st">'/Users/username/Library/CloudStorage/OneDrive-Sharedlibraries-WorldHealthOrganization/CAVALLERA, Vanessa - GSED Validation 2021_phase I'</span></span></code></pre></div>
+<p>You need access to the proper SharePoint site and sync the data to a local OneDrive. In the file <code>.Renviron</code> in your home directory add a line specifying the location of your synced OneDrive, e.g.,</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>ONEDRIVE_GSED<span class="ot">=</span><span class="st">'/Users/username/Library/CloudStorage/OneDrive-Sharedlibraries-...'</span></span></code></pre></div>
 <p>After setting the environmental variable <code>ONEDRIVE_GSED</code>, restart R, and manually check whether you are able to read the OneDrive directory.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/list.files.html" class="external-link">dir</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"ONEDRIVE_GSED_PHASE_1_FINAL_ANALYSIS"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "Archive Data dictionaries"                          </span></span>
-<span><span class="co">#&gt;  [2] "Data Merge"                                         </span></span>
-<span><span class="co">#&gt;  [3] "Final Data Analysis"                                </span></span>
-<span><span class="co">#&gt;  [4] "GSED Final Collated Phase 1 Data Files 18_05_22"    </span></span>
-<span><span class="co">#&gt;  [5] "GSED odk output shiny linking.csv"                  </span></span>
-<span><span class="co">#&gt;  [6] "GSED odk output shiny linking.xlsx"                 </span></span>
-<span><span class="co">#&gt;  [7] "Item ordering"                                      </span></span>
-<span><span class="co">#&gt;  [8] "item responsmes.csv"                                </span></span>
-<span><span class="co">#&gt;  [9] "LF to SF linked items"                              </span></span>
-<span><span class="co">#&gt; [10] "Phase 1 DIF analysis"                               </span></span>
-<span><span class="co">#&gt; [11] "Phase_1_master_data_dictionary_V1.0_18_10_2023.xlsx"</span></span>
-<span><span class="co">#&gt; [12] "Predictive study work"                              </span></span>
-<span><span class="co">#&gt; [13] "Raw Data"                                           </span></span>
-<span><span class="co">#&gt; [14] "Sorted Data"</span></span></code></pre></div>
-<p>The following commands reads all SF data from <code>GSED Final Collated Phase 1 Data Files 18_05_22</code> directory and returns a tibble with one record per administration.</p>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.files.html" class="external-link">dir</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"ONEDRIVE_GSED"</span><span class="op">)</span><span class="op">)</span>, <span class="fl">3</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "Archive Data dictionaries" "Data Merge"               </span></span>
+<span><span class="co">#&gt; [3] "Final Data Analysis"</span></span></code></pre></div>
+<p>The following commands reads all SF data from <code>GSED Final Collated Phase 1 Data Files 18_05_22</code> Sharepoint directory and returns a tibble with one record per administration.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/D-score/gsedread" class="external-link">gsedread</a></span><span class="op">)</span></span>
 <span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/read_sf.html">read_sf</a></span><span class="op">(</span><span class="op">)</span></span>
