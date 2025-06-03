@@ -1,39 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://D-score.org/gsedread/404.html</loc>
-  </url>
-  <url>
-    <loc>https://D-score.org/gsedread/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://D-score.org/gsedread/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://D-score.org/gsedread/index.html</loc>
-  </url>
-  <url>
-    <loc>https://D-score.org/gsedread/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://D-score.org/gsedread/reference/define_col.html</loc>
-  </url>
-  <url>
-    <loc>https://D-score.org/gsedread/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://D-score.org/gsedread/reference/read_bsid.html</loc>
-  </url>
-  <url>
-    <loc>https://D-score.org/gsedread/reference/read_lf.html</loc>
-  </url>
-  <url>
-    <loc>https://D-score.org/gsedread/reference/read_sf.html</loc>
-  </url>
-  <url>
-    <loc>https://D-score.org/gsedread/reference/rename_variables.html</loc>
-  </url>
-  <url>
-    <loc>https://D-score.org/gsedread/reference/rename_vector.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://D-score.org/gsedread/404.html</loc></url>
+<url><loc>https://D-score.org/gsedread/LICENSE-text.html</loc></url>
+<url><loc>https://D-score.org/gsedread/authors.html</loc></url>
+<url><loc>https://D-score.org/gsedread/index.html</loc></url>
+<url><loc>https://D-score.org/gsedread/news/index.html</loc></url>
+<url><loc>https://D-score.org/gsedread/reference/define_col.html</loc></url>
+<url><loc>https://D-score.org/gsedread/reference/index.html</loc></url>
+<url><loc>https://D-score.org/gsedread/reference/read_bsid.html</loc></url>
+<url><loc>https://D-score.org/gsedread/reference/read_lf.html</loc></url>
+<url><loc>https://D-score.org/gsedread/reference/read_sf.html</loc></url>
+<url><loc>https://D-score.org/gsedread/reference/rename_vector.html</loc></url>
 </urlset>
+
