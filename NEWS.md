@@ -1,3 +1,5 @@
+# gsedread 0.10.0
+
 * Adds `force_subjid_agedays` option to `rename_vector()`
 
 # gsedread 0.9.0

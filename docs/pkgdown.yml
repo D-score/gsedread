@@ -1,8 +1,8 @@
 pandoc: '3.4'
-pkgdown: 2.1.2
+pkgdown: 2.1.3
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-06-03T13:56Z
+last_built: 2025-06-20T09:47Z
 urls:
   reference: https://D-score.org/gsedread/reference
   article: https://D-score.org/gsedread/articles
