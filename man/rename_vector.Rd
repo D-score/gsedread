@@ -12,7 +12,8 @@ rename_vector(
   contains = c("", "Ma_SF_", "Ma_LF_", "bsid_"),
   underscore = TRUE,
   trim = "Ma_",
-  lowercase = TRUE
+  lowercase = TRUE,
+  force_subjid_agedays = FALSE
 )
 }
 \arguments{
@@ -37,6 +38,9 @@ Needed to prevent double matches. The default ("") does not filter.}
 in `lexin`? The default `notfound = "copy"` copies the input values into the
 output value. In other cases (e.g. `""` or `NA_character_`), the function
 uses the string specified in `notfound` as a replacement value.}
+
+\item{force_subjid_agedays}{If `TRUE`, forces the output to have `"subjid"`
+and `"agedays"` as names for the `"ID"` and `"age"`, respectively.}
 }
 \value{
 A character vector of the same length as `input` with processed

@@ -1,3 +1,5 @@
+* Adds `force_subjid_agedays` option to `rename_vector()`
+
 # gsedread 0.9.0
 
 * Adds `Correct-Phase-2-Item-order-to-Stef.tsv` (dated 2024-10-22) to the package

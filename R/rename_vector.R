@@ -15,6 +15,8 @@
 #' in `lexin`? The default `notfound = "copy"` copies the input values into the
 #' output value. In other cases (e.g. `""` or `NA_character_`), the function
 #' uses the string specified in `notfound` as a replacement value.
+#' @param force_subjid_agedays If `TRUE`, forces the output to have `"subjid"`
+#' and `"agedays"` as names for the `"ID"` and `"age"`, respectively.
 #' @return A character vector of the same length as `input` with processed
 #' names.
 #' @examples
@@ -30,7 +32,8 @@ rename_vector <- function(input,
                           contains = c("", "Ma_SF_", "Ma_LF_", "bsid_"),
                           underscore = TRUE,
                           trim = "Ma_",
-                          lowercase = TRUE) {
+                          lowercase = TRUE,
+                          force_subjid_agedays = FALSE) {
   lexin <- match.arg(lexin)
   lexout <- match.arg(lexout)
   contains <- match.arg(contains)
@@ -65,6 +68,12 @@ rename_vector <- function(input,
   }
   output <- sub(trim, "", output)
   if (lowercase) output <- tolower(output)
+
+  # force subjid and agedays names
+  if (force_subjid_agedays) {
+    output <- sub("gsed_id", "subjid", output)
+    output <- sub("age", "agedays", output)
+  }
 
   output
 }
