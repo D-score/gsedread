@@ -1,3 +1,7 @@
+# gsedread 0.11.0
+
+* Defines Phase 2 source file names and date formats in `read_sf()` and `read_lf()` functions
+
 # gsedread 0.10.0
 
 * Adds `force_subjid_agedays` option to `rename_vector()`
