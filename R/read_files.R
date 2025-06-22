@@ -14,7 +14,7 @@ read_files <- function(test, types, files, idx,
   for (i in idx) {
     fn <- files[i]
     type <- types[i]
-    if (!file.exists(fn)) stop("File not found:", fn)
+    if (!file.exists(fn)) next
     spec <- define_col(test, type,
                        date_formats[i],
                        datetime_format = datetime_formats[i])

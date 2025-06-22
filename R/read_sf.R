@@ -36,13 +36,21 @@ read_sf_fixed <- function(onedrive, path, verbose, progress, warnings) {
     "ban/ban_sf_new_enrollment_17_05_2022.csv",
     "pak/pak_sf_2022_05_17.csv",
     "pak/pak_sf_predictive_2022_05_17.csv",
-    "pak/pak_sf_new_enrollment_2022_05_17.csv")
+    "pak/pak_sf_new_enrollment_2022_05_17.csv",
+    "bra/br-sf-2025-06-23.csv",
+    "chn/chn-sf-2025-06-23.csv",
+    "civ/cdi-sf-2025-06-23.csv",
+    "nld/nl-sf-2025-06-23.csv")
 
   # read
   files <- file.path(onedrive, path, files_fixed)
   date_formats <- c("%Y-%m-%d", "%d-%m-%Y", "%d-%m-%Y",
                     "%d/%m/%Y", "%d/%m/%Y", "%d/%m/%Y",
-                    "%m/%d/%Y", "%m/%d/%Y", "%m/%d/%Y")
+                    "%m/%d/%Y", "%m/%d/%Y", "%m/%d/%Y",
+                    "%d/%m/%Y",
+                    "%Y/%m/%d",
+                    "%d/%m/%Y",
+                    "%d-%m-%Y")
   data <- read_files("sf", "fixed", files, 1:length(files),
                      date_formats, NULL,
                      verbose, progress, warnings)

@@ -48,7 +48,11 @@ read_lf_fixed <- function(onedrive, path, verbose, progress, warnings) {
     "ban/ban_lf_new_enrollment_17_05_2022.csv",
     "pak/pak_lf_2022_05_17.csv",
     "pak/pak_lf_predictive_2022_05_17.csv",
-    "pak/pak_lf_new_enrollment_2022_05_17.csv"
+    "pak/pak_lf_new_enrollment_2022_05_17.csv",
+    "bra/br-lf-2025-06-23.csv",
+    "chn/chn-lf-2025-06-23.csv",
+    "civ/cdi-lf-2025-06-23.csv",
+    "nld/nl-lf-2025-06-23.csv"
   )
 
   # read
@@ -56,8 +60,13 @@ read_lf_fixed <- function(onedrive, path, verbose, progress, warnings) {
   date_formats <- c(
     "%Y-%m-%d", "%d-%m-%Y", "%d-%m-%Y",
     "%d/%m/%Y", "%d/%m/%Y", "%d/%m/%Y",
-    "%m/%d/%Y", "%m/%d/%Y", "%m/%d/%Y"
+    "%m/%d/%Y", "%m/%d/%Y", "%m/%d/%Y",
+    "%d/%m/%Y",  # bra
+    "%Y/%m/%d",  # chn
+    "%d/%m/%Y",  # civ
+    "%d-%m-%Y"   # nld
   )
+
   data <- read_files("lf", "fixed", files, 1:length(files),
                      date_formats, NULL,
                      verbose, progress, warnings)
