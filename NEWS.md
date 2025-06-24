@@ -1,3 +1,4 @@
+* Specify `Latin1` format to read CSV files in `read_sf()`
 * Extends `rename_vector()` with an option to translate SF/LF phase 2 names
 
 # gsedread 0.11.0

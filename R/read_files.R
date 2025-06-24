@@ -24,14 +24,16 @@ read_files <- function(test, types, files, idx,
                                      col_types = spec,
                                      na = c("", "NA", "-8888", "-8,888.00", "-9999"),
                                      show_col_types = verbose,
-                                     progress = progress)
+                                     progress = progress,
+                                     locale = locale(encoding = "Latin1"))
       )
     } else {
       data[[i]] <- readr::read_csv(fn,
                                    col_types = spec,
                                    na = c("", "NA", "-8888", "-8,888.00", "-9999"),
                                    show_col_types = verbose,
-                                   progress = progress)
+                                   progress = progress,
+                                   locale = locale(encoding = "Latin1"))
     }
   }
   data
