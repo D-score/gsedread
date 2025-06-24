@@ -1,4 +1,5 @@
 # Builds database with item responses for GSED Phase 1 and 2 validation data
+# Fixed administration only
 #
 # Assumed environmental variables, specified in .Renviron:
 # - ONEDRIVE_GSED
@@ -28,27 +29,39 @@ if (!requireNamespace(pkg, quietly = TRUE) && interactive()) {
   if (answer) remotes::install_github("d-score/gsedread")
 }
 require(gsedread, quietly = TRUE, warn.conflicts = FALSE)
-if (packageVersion("gsedread") < "0.10.0") stop("Needs gsedread 0.10.0")
+if (packageVersion("gsedread") < "0.12.0") stop("Needs gsedread 0.12.0")
 
 # Set paths and filenames
 onedrive <- Sys.getenv("ONEDRIVE_GSED")
 path_phase1 <- file.path("GSED Phase 1 Final Analysis",
                          "GSED Final Collated Phase 1 Data Files 18_05_22")
-# temporary
-path_phase2 <- "GSED Final Collated Phase 2 Files 02_06_25/Temp Clean LF_ SF_ to add once China data is cleaned"
-output_phase1 <- file.path(Sys.getenv("LOCAL_DUCKDB"), "phase1.duckdb")
-output_phase2 <- file.path(Sys.getenv("LOCAL_DUCKDB"), "phase2.duckdb")
-output_db <- file.path(Sys.getenv("LOCAL_DUCKDB"), "validation.duckdb")
+path_phase2 <- "GSED Final Collated Phase 2 Files 02_06_25/Temp Clean LF_ SF_ to add once China data is cleaned" # temporary
+output_fixed <- file.path(Sys.getenv("LOCAL_DUCKDB"), "fixed.duckdb")
 
-# Create DuckDB database for Phase 1
-gsedread:::store_as_database(onedrive = onedrive,
-                             path = path_phase1,
-                             output_db = output_phase1,
-                              phase = 1)
+# Read Phase 1 data
+phase1 <- gsedread:::read_gsed_fixed(onedrive = onedrive,
+                                     path = path_phase1,
+                                     phase = 1)
 
-# Create DuckDB database for Phase 2
-gsedread:::store_as_database(onedrive = onedrive,
-                             path = path_phase2,
-                             output_db = output_phase2,
-                             phase = 2)
+# Read Phase 2 data
+phase2 <- gsedread:::read_gsed_fixed(onedrive = onedrive,
+                                      path = path_phase2,
+                                      phase = 2)
 
+# Combine Phase 1 and Phase 2 data
+responses <- bind_rows(phase1$responses, phase2$responses)
+visits <- bind_rows(phase1$visits, phase2$visits)
+
+#--- Write to DuckDB ---
+message("Writing to DuckDB...")
+if (file.exists(output_fixed)) {
+  message("Removing existing database: ", output_fixed)
+  file.remove(output_fixed)
+}
+con <- dbConnect(duckdb(), dbdir = output_fixed, read_only = FALSE)
+
+dbWriteTable(con, "responses", responses, overwrite = TRUE)
+dbWriteTable(con, "visits", visits,  overwrite = TRUE)
+
+dbDisconnect(con)
+message("Database written to: ", output_fixed)
