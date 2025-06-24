@@ -1,4 +1,4 @@
-store_as_database <- function(onedrive, path, output_db, phase) {
+read_gsed_fixed <- function(onedrive, path, phase) {
 
   # Read data
   sf <- read_sf(onedrive = onedrive, path = path, adm = "fixed", warnings = TRUE)
@@ -141,19 +141,5 @@ store_as_database <- function(onedrive, path, output_db, phase) {
   responses <- responses |>
     filter(response %in% c(0, 1))
 
-  #--- Write to DuckDB ---
-  message("Writing to DuckDB...")
-  if (file.exists(output_db)) {
-    message("Removing existing database: ", output_db)
-    file.remove(output_db)
-  }
-  con <- dbConnect(duckdb(), dbdir = output_db, read_only = FALSE)
-
-  dbWriteTable(con, "responses", responses, overwrite = TRUE)
-  dbWriteTable(con, "visits", visits,  overwrite = TRUE)
-
-  dbDisconnect(con)
-  message("Database written to: ", output_db)
-
-  invisible(output_db)
+  return(list(responses = responses, visits = visits))
 }
