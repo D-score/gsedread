@@ -1,3 +1,4 @@
+* Adds script `data-raw/R/patch_phase2_files.R` to identify and repair problem with Phase 2 LF and SF data
 * Specify `Latin1` format to read CSV files in `read_sf()`
 * Extends `rename_vector()` with an option to translate SF/LF phase 2 names
 
