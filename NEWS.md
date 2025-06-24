@@ -1,3 +1,5 @@
+* Extends `rename_vector()` with an option to translate SF/LF phase 2 names
+
 # gsedread 0.11.0
 
 * Defines Phase 2 source file names and date formats in `read_sf()` and `read_lf()` functions

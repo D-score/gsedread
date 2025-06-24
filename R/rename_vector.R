@@ -3,9 +3,9 @@
 #' Translates names between different lexicons (naming schema).
 #' @param input    A character vector with names to be translated
 #' @param lexin    A string indicating the input lexicon. One of "original",
-#'  "sequential", "gsed" or "gsed2". Default is "original".
+#' "original_phase2", "sequential", "gsed" or "gsed2". Default is "original".
 #' @param lexout   A string indicating the output lexicon. One of "original",
-#'  "sequential", "gsed" or "gsed2". Default is "gsed2".
+#' "original_phase2", "sequential", "gsed" or "gsed2". Default is "gsed2".
 #' @param notfound A string indicating what to do some input value is not found
 #' @param contains A string to filter the translation table prior to matching.
 #' Needed to prevent double matches. The default ("") does not filter.
@@ -24,10 +24,16 @@
 #' rename_vector(input)
 #' rename_vector(input, lexout = "sequential", lowercase = FALSE)
 #' rename_vector(input, lexout = "gsed", trim = "Ma_SF_")
+#'
+#' # SF/LF phase 2 names to default names
+#' input <- c("file", "GSED_ID", "Ma_SF_Parent ID", paste0("Ma_SF_C00", 1:9))
+#' rename_vector(input, lexin = "original_phase2", lowercase = TRUE)
 #' @export
 rename_vector <- function(input,
-                          lexin = c("original", "sequential", "gsed", "gsed2"),
-                          lexout = c("gsed2", "original", "sequential", "gsed"),
+                          lexin = c("original", "original_phase2", "sequential",
+                                    "gsed", "gsed2"),
+                          lexout = c("gsed2", "original", "original_phase2",
+                                     "sequential", "gsed"),
                           notfound = "copy",
                           contains = c("", "Ma_SF_", "Ma_LF_", "bsid_"),
                           underscore = TRUE,
@@ -39,17 +45,19 @@ rename_vector <- function(input,
   contains <- match.arg(contains)
 
   # rename itemnames
-  fn <- system.file("extdata", "itemnames_translate.tsv", package = "gsedread")
-  mt <- readr::read_tsv(fn, col_types = "cccccc", progress = FALSE) %>%
+  fn <- system.file("extdata", "itemnames_translate.txt", package = "gsedread")
+  mt <- readr::read_tsv(fn, col_types = "cccccciicc", progress = FALSE) |>
     filter(grepl(contains, .data$original))
   colin <- switch(lexin,
-                   original = "original",
-                   sequential = "sequential",
+                  original = "original",
+                  original_phase2 = "original_phase2",
+                  sequential = "sequential",
                    gsed = "gsed",
                    gsed2 = "gsed2",
                    "notfound")
   colout <- switch(lexout,
                    original = "original",
+                   original_phase2 = "original_phase2",
                    sequential = "sequential",
                    gsed = "gsed",
                    gsed2 = "gsed2",
