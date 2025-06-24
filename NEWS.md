@@ -1,3 +1,4 @@
+* Adds script `data-raw/R/build_database_sf_lf_bsid.R` to create duckDB datasets
 * Adds internal `store_as_database()` function to create duckDB databases for LF, SF and BSID
 * Removes outdated `data-raw/data/Data_File_Guide.xlsx`
 * Adds script `data-raw/R/patch_phase2_files.R` to identify and repair problem with Phase 2 LF and SF data
