@@ -1,3 +1,5 @@
+# gsedread 0.12.0
+
 * Adds script `data-raw/R/build_database_fixed.R` to create duckDB datasets with fixed LF, SF and BSID administration
 * Adds script `data-raw/R/build_database_adaptive.R` to store adaptive SF and LF (Phase 1 only)
 * Adds internal `read_gsed_fixed()` function to read fixed LF, SF and BSID (Phase 1 and Phase 2) data

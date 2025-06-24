@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">gsedread</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.11.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.12.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,8 +41,8 @@
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">rename_vector</span><span class="op">(</span></span>
 <span>  <span class="va">input</span>,</span>
-<span>  lexin <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"original"</span>, <span class="st">"sequential"</span>, <span class="st">"gsed"</span>, <span class="st">"gsed2"</span><span class="op">)</span>,</span>
-<span>  lexout <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"gsed2"</span>, <span class="st">"original"</span>, <span class="st">"sequential"</span>, <span class="st">"gsed"</span><span class="op">)</span>,</span>
+<span>  lexin <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"original"</span>, <span class="st">"original_phase2"</span>, <span class="st">"sequential"</span>, <span class="st">"gsed"</span>, <span class="st">"gsed2"</span><span class="op">)</span>,</span>
+<span>  lexout <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"gsed2"</span>, <span class="st">"original"</span>, <span class="st">"original_phase2"</span>, <span class="st">"sequential"</span>, <span class="st">"gsed"</span><span class="op">)</span>,</span>
 <span>  notfound <span class="op">=</span> <span class="st">"copy"</span>,</span>
 <span>  contains <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">""</span>, <span class="st">"Ma_SF_"</span>, <span class="st">"Ma_LF_"</span>, <span class="st">"bsid_"</span><span class="op">)</span>,</span>
 <span>  underscore <span class="op">=</span> <span class="cn">TRUE</span>,</span>
@@ -62,12 +62,12 @@
 
 <dt id="arg-lexin">lexin<a class="anchor" aria-label="anchor" href="#arg-lexin"></a></dt>
 <dd><p>A string indicating the input lexicon. One of "original",
-"sequential", "gsed" or "gsed2". Default is "original".</p></dd>
+"original_phase2", "sequential", "gsed" or "gsed2". Default is "original".</p></dd>
 
 
 <dt id="arg-lexout">lexout<a class="anchor" aria-label="anchor" href="#arg-lexout"></a></dt>
 <dd><p>A string indicating the output lexicon. One of "original",
-"sequential", "gsed" or "gsed2". Default is "gsed2".</p></dd>
+"original_phase2", "sequential", "gsed" or "gsed2". Default is "gsed2".</p></dd>
 
 
 <dt id="arg-notfound">notfound<a class="anchor" aria-label="anchor" href="#arg-notfound"></a></dt>
@@ -114,6 +114,13 @@ names.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "file"         "GSED_ID"      "SF_Parent_ID" "C01"          "C02"         </span>
 <span class="r-in"><span><span class="fu">rename_vector</span><span class="op">(</span><span class="va">input</span>, lexout <span class="op">=</span> <span class="st">"gsed"</span>, trim <span class="op">=</span> <span class="st">"Ma_SF_"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "file"      "gsed_id"   "parent_id" "gsdlac001" "gsdcgc002"</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># SF/LF phase 2 names to default names</span></span></span>
+<span class="r-in"><span><span class="va">input</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"file"</span>, <span class="st">"GSED_ID"</span>, <span class="st">"Ma_SF_Parent ID"</span>, <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"Ma_SF_C00"</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">rename_vector</span><span class="op">(</span><span class="va">input</span>, lexin <span class="op">=</span> <span class="st">"original_phase2"</span>, lowercase <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "file"         "gsed_id"      "sf_parent_id" "sf_c001"      "sf_c002"     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [6] "sf_c003"      "sf_c004"      "sf_c005"      "sf_c006"      "sf_c007"     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [11] "sf_c008"      "sf_c009"     </span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

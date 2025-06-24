@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">gsedread</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.11.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.12.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,6 +32,18 @@
       <small>Source: <a href="https://github.com/D-score/gsedread/blob/HEAD/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.12.0" id="gsedread-0120">gsedread 0.12.0<a class="anchor" aria-label="anchor" href="#gsedread-0120"></a></h2>
+<ul><li>Adds script <code>data-raw/R/build_database_fixed.R</code> to create duckDB datasets with fixed LF, SF and BSID administration</li>
+<li>Adds script <code>data-raw/R/build_database_adaptive.R</code> to store adaptive SF and LF (Phase 1 only)</li>
+<li>Adds internal <code>read_gsed_fixed()</code> function to read fixed LF, SF and BSID (Phase 1 and Phase 2) data</li>
+<li>Removes outdated <code>data-raw/data/Data_File_Guide.xlsx</code>
+</li>
+<li>Adds script <code>data-raw/R/patch_phase2_files.R</code> to identify and repair problem with Phase 2 LF and SF data</li>
+<li>Specify <code>Latin1</code> format to read CSV files in <code><a href="../reference/read_sf.html">read_sf()</a></code>
+</li>
+<li>Extends <code><a href="../reference/rename_vector.html">rename_vector()</a></code> with an option to translate SF/LF phase 2 names</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.11.0" id="gsedread-0110">gsedread 0.11.0<a class="anchor" aria-label="anchor" href="#gsedread-0110"></a></h2>
 <ul><li>Defines Phase 2 source file names and date formats in <code><a href="../reference/read_sf.html">read_sf()</a></code> and <code><a href="../reference/read_lf.html">read_lf()</a></code> functions</li>
