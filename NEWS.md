@@ -1,5 +1,6 @@
-* Adds script `data-raw/R/build_database_sf_lf_bsid.R` to create duckDB datasets
-* Adds internal `store_as_database()` function to create duckDB databases for LF, SF and BSID
+* Adds script `data-raw/R/build_database_fixed.R` to create duckDB datasets with fixed LF, SF and BSID administration
+* Adds script `data-raw/R/build_database_adaptive.R` to store adaptive SF and LF (Phase 1 only)
+* Adds internal `read_gsed_fixed()` function to read fixed LF, SF and BSID (Phase 1 and Phase 2) data
 * Removes outdated `data-raw/data/Data_File_Guide.xlsx`
 * Adds script `data-raw/R/patch_phase2_files.R` to identify and repair problem with Phase 2 LF and SF data
 * Specify `Latin1` format to read CSV files in `read_sf()`
