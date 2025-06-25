@@ -57,9 +57,9 @@ read_sf_fixed <- function(onedrive, path, verbose, progress, warnings) {
 
   # bind
   # remove orphan records without a GSED_ID
-  data %>%
-    bind_rows(.id = "file") %>%
-    filter(!is.na(.data$GSED_ID)) %>%
+  data |>
+    bind_rows(.id = "file") |>
+    filter(!is.na(.data$GSED_ID)) |>
     mutate(adm = "fixed")
 }
 
@@ -100,8 +100,8 @@ read_sf_adaptive <- function(onedrive, path, verbose, progress, warnings) {
 
   # bind
   # remove orphan records without a GSED_ID
-  data %>%
-    bind_rows(.id = "file") %>%
-    filter(!is.na(.data$GSED_ID)) %>%
+  data |>
+    bind_rows(.id = "file") |>
+    filter(!is.na(.data$GSED_ID)) |>
     mutate(adm = "adaptive")
 }

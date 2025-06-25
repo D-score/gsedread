@@ -1,4 +1,4 @@
-#' @importFrom dplyr     %>% across arrange bind_rows contains distinct
+#' @importFrom dplyr     across arrange bind_rows contains distinct
 #'                       filter mutate pull
 #'                       rename select starts_with
 #' @importFrom readr     col_character col_date col_datetime col_double

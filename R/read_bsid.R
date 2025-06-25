@@ -33,15 +33,15 @@ read_bsid <- function(onedrive = Sys.getenv("ONEDRIVE_GSED"),
                      verbose, progress, warnings)
 
   # post-process to consistent names
-  data[[1]] <- data[[1]] %>%
+  data[[1]] <- data[[1]] |>
     rename(Study_Country = .data$st_country___bsid,
            date_of_visit = .data$screen_id_bsid,
            Parent_study_ID = .data$screen_no__bsid)
-  data[[2]] <- data[[2]] %>%
+  data[[2]] <- data[[2]] |>
     rename(ra_code_bsid = .data$Researcher_Code,
            date_of_visit = .data$DATE_OF_VISIT,
            visit_age_bsid = .data$Age_at_assessment)
-  data[[3]] <- data[[3]] %>%
+  data[[3]] <- data[[3]] |>
     rename(Study_Country = .data$st_country___bsid,
            Parent_study_ID = .data$screen_no__bsid)
   nm3 <- names(data[[3]])
@@ -55,18 +55,18 @@ read_bsid <- function(onedrive = Sys.getenv("ONEDRIVE_GSED"),
 
   # bind
   # remove orphan records without a GSED_ID
-  data %>%
-    bind_rows(.id = "file") %>%
-    filter(!is.na(.data$GSED_ID)) %>%
+  data |>
+    bind_rows(.id = "file") |>
+    filter(!is.na(.data$GSED_ID)) |>
     rename(
       age = .data$visit_age_bsid,
       date = .data$date_of_visit,
       worker_code = .data$ra_code_bsid,
-      parent_id = .data$Parent_study_ID) %>%
-    mutate(adm = "fixed") %>%
+      parent_id = .data$Parent_study_ID) |>
+    mutate(adm = "fixed") |>
     select(.data$GSED_ID, .data$age,
            .data$file, .data$adm, .data$parent_id, .data$worker_code, .data$date,
            .data$age_adj_premature,
-           contains("bsid"), -contains("raw"), -contains("comment")) %>%
+           contains("bsid"), -contains("raw"), -contains("comment")) |>
     arrange(.data$GSED_ID, .data$age)
 }
