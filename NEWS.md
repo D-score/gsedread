@@ -1,3 +1,8 @@
+# gsedread 0.13.0
+
+* Repairs function imports and pronoun use
+* Replaces dplyr pipe by base R pipe |>
+
 # gsedread 0.12.0
 
 * Adds script `data-raw/R/build_database_fixed.R` to create duckDB datasets with fixed LF, SF and BSID administration
