@@ -1,3 +1,6 @@
+* Adds phase indicator to visits
+* Reorders columns in visits
+
 # gsedread 0.13.0
 
 * Repairs function imports and pronoun use

@@ -45,12 +45,17 @@ phase1 <- gsedread:::read_gsed_fixed(onedrive = onedrive,
 
 # Read Phase 2 data
 phase2 <- gsedread:::read_gsed_fixed(onedrive = onedrive,
-                                      path = path_phase2,
-                                      phase = 2)
+                                     path = path_phase2,
+                                     phase = 2)
 
 # Combine Phase 1 and Phase 2 data
 responses <- bind_rows(phase1$responses, phase2$responses)
-visits <- bind_rows(phase1$visits, phase2$visits)
+visits <- bind_rows(
+  phase1$visits |> mutate(phase = 1L),
+  phase2$visits |> mutate(phase = 2L)) |>
+  select(subjid, agedays, vist_type, phase, date, ins, adm,
+         file, parent_id, worker_code, location, caregiver,
+         agedays_adj_premature, everything())
 
 #--- Write to DuckDB ---
 message("Writing to DuckDB...")
