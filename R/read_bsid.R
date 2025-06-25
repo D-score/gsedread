@@ -22,12 +22,19 @@ read_bsid <- function(onedrive = Sys.getenv("ONEDRIVE_GSED"),
   files_fixed <- c(
     "tan/tza-bsid-iii-2021-11-07.csv",
     "pak/pak_bsid-iii_2022_05_17.csv",
-    "ban/ban-bsid-iii-2022-05-17.csv")
+    "ban/ban-bsid-iii-2022-05-17.csv",
+    "br-bsid-2025-06-03.csv",
+    "cdi-bsid-iii-2023-09-05_clean.csv",
+    # "Griffiths.xlsx",
+    "nl-BSID-2025-15-1.txt")
 
   # read
   files <- file.path(onedrive, path, files_fixed)
-  date_formats <- c("%d-%m-%Y", "%d/%m/%Y", "%Y-%m-%d")
-  types <- c("tan", "pak", "ban")
+  date_formats <- c("%d-%m-%Y", "%d/%m/%Y", "%Y-%m-%d",
+                    "%d/%m/%Y", # bra
+                    "%d-%m-%Y", # cdi as.Date(45019, origin = "1899-12-30")
+                    "%d-%m-%Y") # nl
+  types <- c("tan", "pak", "ban", "br", "cdi", "nl")
   data <- read_files("bsid", types, files, 1:length(files),
                      date_formats, NULL,
                      verbose, progress, warnings)
