@@ -31,32 +31,32 @@ read_gsed_fixed <- function(onedrive, path, phase) {
 
   # Type transformations for efficiency and clarity
   sf <- sf |>
-    mutate(agedays = as.integer(agedays),
-           vist_type = as.integer(vist_type),
+    mutate(agedays = as.integer(.data$agedays),
+           vist_type = as.integer(.data$vist_type),
            ins = "sf")
   lf <- lf |>
-    mutate(agedays = as.integer(agedays),
-           vist_type = as.integer(vist_type),
+    mutate(agedays = as.integer(.data$agedays),
+           vist_type = as.integer(.data$vist_type),
            ins = "lf")
 
   if (phase == 1) {
   bsid <- bsid |>
-    mutate(agedays = as.integer(agedays),
+    mutate(agedays = as.integer(.data$agedays),
            ins = "bsid")
   }
 
   # Remove duplicates and sort
   sf <- sf |>
     distinct(across(-file), .keep_all = TRUE) |>
-    arrange(subjid, agedays, vist_type)
+    arrange(.data$subjid, .data$agedays, .data$vist_type)
   lf <- lf |>
     distinct(across(-file), .keep_all = TRUE) |>
-    arrange(subjid, agedays, vist_type)
+    arrange(.data$subjid, .data$agedays, .data$vist_type)
 
   if (phase == 1) {
   bsid <- bsid |>
     distinct(across(-file), .keep_all = TRUE)  |>
-    arrange(subjid, agedays)
+    arrange(.data$subjid, .data$agedays)
   }
 
   if (phase == 2) {
@@ -72,7 +72,7 @@ read_gsed_fixed <- function(onedrive, path, phase) {
       values_to = "response",
       values_drop_na = TRUE
     ) |>
-    select(subjid, agedays, vist_type, item, response)
+    select(.data$subjid, .data$agedays, .data$vist_type, .data$item, .data$response)
   lf_responses <- lf |>
     pivot_longer(
       cols = starts_with("gto"),
@@ -80,7 +80,7 @@ read_gsed_fixed <- function(onedrive, path, phase) {
       values_to = "response",
       values_drop_na = TRUE
     ) |>
-    select(subjid, agedays, vist_type, item, response)
+    select(.data$subjid, .data$agedays, .data$vist_type, .data$item, .data$response)
   if (phase == 1) {
   bsid_responses <- bsid |>
     pivot_longer(
@@ -89,7 +89,7 @@ read_gsed_fixed <- function(onedrive, path, phase) {
       values_to = "response",
       values_drop_na = TRUE
     ) |>
-    select(subjid, agedays, item, response)
+    select(.data$subjid, .data$agedays, .data$item, .data$response)
   }
 
   # Extact visit tables
@@ -121,7 +121,7 @@ read_gsed_fixed <- function(onedrive, path, phase) {
   #
   # cromoc001	gpamoc008 Clench fist
   responses <- responses |>
-    filter(!item == "gpamoc008")
+    filter(!.data$item == "gpamoc008")
 
   # EDIT 2 Remove responses not relevant for older children
   #
@@ -135,11 +135,11 @@ read_gsed_fixed <- function(onedrive, path, phase) {
   vars <- c("gtolgd002", "gtolgd003", "gtolgd004", "gtolgd006",
             "gtolgd007", "gtolgd008")
   responses <- responses |>
-    filter(!(agedays > 182 & item %in% vars))
+    filter(!(.data$agedays > 182 & .data$item %in% vars))
 
   # EDIT 3 Remove responses that are not 0 or 1
   responses <- responses |>
-    filter(response %in% c(0, 1))
+    filter(.data$response %in% c(0, 1))
 
   return(list(responses = responses, visits = visits))
 }

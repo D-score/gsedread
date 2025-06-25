@@ -8,14 +8,14 @@ Description: Tools to read, clean and store data for the Global Scales for
 License: file LICENSE
 Encoding: UTF-8
 Depends: 
-    R (>= 2.10)
+    R (>= 4.1.0)
 Imports: 
     dplyr,
     readr,
-    rlang
+    rlang,
+    tidyr
 Suggests: 
     duckdb,
-    tidyr
 URL: https://github.com/D-score/gsedread
 BugReports: https://github.com/D-score/gsedread/issues
 RoxygenNote: 7.3.2
