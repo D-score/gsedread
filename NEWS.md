@@ -1,5 +1,10 @@
-* Adds phase indicator to visits
-* Reorders columns in visits
+# gsedread 0.14.0
+
+* Adds `cohort` and `cohortn` variables to `visits`
+* Defines grouping factors for unique visits and responses
+* Deduplicates `visits` and `responses` data frames
+* Adds `phase` indicator
+* Adds a small TODO list to `data-raw/R/build_database_fixed.R`
 
 # gsedread 0.13.0
 

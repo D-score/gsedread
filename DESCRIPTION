@@ -1,6 +1,6 @@
 Package: gsedread
 Title: Tools for reading the GSED validation data
-Version: 0.13.0
+Version: 0.14.0
 Author: GSED Team
 Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
 Description: Tools to read, clean and store data for the Global Scales for 
@@ -16,6 +16,7 @@ Imports:
     tidyr
 Suggests: 
     duckdb,
+    stringr
 URL: https://github.com/D-score/gsedread
 BugReports: https://github.com/D-score/gsedread/issues
 RoxygenNote: 7.3.2
