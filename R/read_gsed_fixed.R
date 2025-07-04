@@ -3,9 +3,9 @@ read_gsed_fixed <- function(onedrive, path, phase) {
   # Read data
   sf <- read_sf(onedrive = onedrive, path = path, adm = "fixed", warnings = TRUE)
   lf <- read_lf(onedrive = onedrive, path = path, adm = "fixed", warnings = TRUE)
-  if (phase == 1) {
+  #if (phase == 1) {
     bsid <- read_bsid(onedrive = onedrive, path = path, warnings = TRUE)
-  }
+  #}
 
   # Rename items into gsed2 lexicon
   lexin <- ifelse(phase == 1, "original", "original_phase2")
@@ -13,10 +13,10 @@ read_gsed_fixed <- function(onedrive, path, phase) {
                                 force_subjid_agedays = TRUE)
   colnames(lf) <- rename_vector(colnames(lf), lexin = lexin, trim = "Ma_LF_",
                                 force_subjid_agedays = TRUE)
-  if (phase == 1) {
-  colnames(bsid) <- rename_vector(colnames(bsid), lexin = lexin,
+ # if (phase == 1) {
+  colnames(bsid) <- rename_vector(colnames(bsid), lexin = "original",
                                   contains = "bsid_", force_subjid_agedays = TRUE)
-  }
+  #}
 
   # vist_type
   # 1=Part/visit 1;
@@ -39,11 +39,11 @@ read_gsed_fixed <- function(onedrive, path, phase) {
            vist_type = as.integer(.data$vist_type),
            ins = "lf")
 
-  if (phase == 1) {
+ # if (phase == 1) {
   bsid <- bsid |>
     mutate(agedays = as.integer(.data$agedays),
            ins = "bsid")
-  }
+  #}
 
   # Remove duplicates and sort
   sf <- sf |>
@@ -53,16 +53,16 @@ read_gsed_fixed <- function(onedrive, path, phase) {
     distinct(across(-file), .keep_all = TRUE) |>
     arrange(.data$subjid, .data$agedays, .data$vist_type)
 
-  if (phase == 1) {
+ # if (phase == 1) {
   bsid <- bsid |>
     distinct(across(-file), .keep_all = TRUE)  |>
     arrange(.data$subjid, .data$agedays)
-  }
+  #}
 
-  if (phase == 2) {
-    bsid_responses <- NULL
-    bsid_visits <- NULL
-  }
+ # if (phase == 2) {
+  #  bsid_responses <- NULL
+   # bsid_visits <- NULL
+  #}
 
   # Extract item responses
   sf_responses <- sf |>
@@ -81,7 +81,7 @@ read_gsed_fixed <- function(onedrive, path, phase) {
       values_drop_na = TRUE
     ) |>
     select(.data$subjid, .data$agedays, .data$vist_type, .data$item, .data$response)
-  if (phase == 1) {
+  #if (phase == 1) {
   bsid_responses <- bsid |>
     pivot_longer(
       cols = starts_with("by3"),
@@ -90,7 +90,7 @@ read_gsed_fixed <- function(onedrive, path, phase) {
       values_drop_na = TRUE
     ) |>
     select(.data$subjid, .data$agedays, .data$item, .data$response)
-  }
+  #}
 
   # Extact visit tables
   sf_visits <- sf |>
@@ -98,10 +98,10 @@ read_gsed_fixed <- function(onedrive, path, phase) {
   lf_visits <- lf |>
     select(-starts_with("gto"))
 
-  if (phase == 1) {
+ # if (phase == 1) {
   bsid_visits <- bsid |>
     select(-starts_with("by3"))
-  }
+  #}
 
   # Combine all responses
   responses <- bind_rows(
