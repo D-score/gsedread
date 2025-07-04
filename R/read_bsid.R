@@ -10,7 +10,7 @@
 #' (containing the original file name) and `adm` (fixed or adaptive).
 #' @export
 read_bsid <- function(onedrive = Sys.getenv("ONEDRIVE_GSED"),
-                      path = "GSED Final Collated Phase 1 Data Files 18_05_22",
+                      path = "GSED Final Collated Phase 2 Files 02_06_25/Temp Clean LF_ SF_ to add once China data is cleaned",
                       verbose = FALSE,
                       progress = FALSE,
                       warnings = FALSE) {
@@ -23,31 +23,37 @@ read_bsid <- function(onedrive = Sys.getenv("ONEDRIVE_GSED"),
     "tan/tza-bsid-iii-2021-11-07.csv",
     "pak/pak_bsid-iii_2022_05_17.csv",
     "ban/ban-bsid-iii-2022-05-17.csv",
-    "br-bsid-2025-06-03.csv",
-    "cdi-bsid-iii-2023-09-05_clean.csv",
+    "BRA/br-bsid-2025-07-04.csv",
+    "civ/cdi-bsid-2025-07-04.csv",
     # "Griffiths.xlsx",
-    "nl-BSID-2025-15-1.txt")
+    "NLD/nl-bsid-2025-07-04.csv")
 
   # read
   files <- file.path(onedrive, path, files_fixed)
   date_formats <- c("%d-%m-%Y", "%d/%m/%Y", "%Y-%m-%d",
-                    "%d/%m/%Y", # bra
-                    "%d-%m-%Y", # cdi as.Date(45019, origin = "1899-12-30")
-                    "%d-%m-%Y") # nl
-  types <- c("tan", "pak", "ban", "br", "cdi", "nl")
+                    "%Y-%m-%d", # bra
+                    "%Y-%m-%d", # cdi as.Date(45019, origin = "1899-12-30")
+                    "%Y-%m-%d") # nl
+  types <- c("tan", "pak", "ban", "bra", "cdi", "nld")
   data <- read_files("bsid", types, files, 1:length(files),
                      date_formats, NULL,
                      verbose, progress, warnings)
 
   # post-process to consistent names
+
+  if(!is.null(data[[1]])){
   data[[1]] <- data[[1]] |>
     rename(Study_Country = .data$st_country___bsid,
            date_of_visit = .data$screen_id_bsid,
            Parent_study_ID = .data$screen_no__bsid)
+  }
+  if(!is.null(data[[2]])){
   data[[2]] <- data[[2]] |>
     rename(ra_code_bsid = .data$Researcher_Code,
            date_of_visit = .data$DATE_OF_VISIT,
            visit_age_bsid = .data$Age_at_assessment)
+  }
+  if(!is.null(data[[3]])){
   data[[3]] <- data[[3]] |>
     rename(Study_Country = .data$st_country___bsid,
            Parent_study_ID = .data$screen_no__bsid)
@@ -59,6 +65,8 @@ read_bsid <- function(onedrive = Sys.getenv("ONEDRIVE_GSED"),
   nm3[196:204] <- paste0("bsid_fm0", 1:9)
   nm3[262:270] <- paste0("bsid_gsm0", 1:9)
   names(data[[3]]) <- nm3
+  }
+
 
   # bind
   # remove orphan records without a GSED_ID
