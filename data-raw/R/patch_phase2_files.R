@@ -83,6 +83,115 @@ problems(data2)
 # we have 27 missing dates
 table(is.na(data2$Ma_LF_Date))
 
+# BRA BSID
+
+
+file <- files[1]
+spec <- gsedread:::define_col(ins = "bsid", adm = "bra", date_format = "%d/%m/%Y")
+cat("File stamp: ", file, as.character(file.info(file.path(path, "BRA", file))$mtime), "\n")
+data <- readr::read_csv(file.path(path, "BRA", file),
+                               col_types = spec,
+                               na = c("", "NA", "-8888", "-8,888.00", "-9999"),
+                               show_col_types = verbose,
+                               progress = progress,
+                               locale = locale(encoding = "Latin1"))
+problems(data)
+
+# File stamp:  br-bsid-2025-06-03.csv 2025-06-17 08:18:00
+#
+# problem 1: rows 110+ date format (MM/DD/YYYY) instead of expected
+#            date format (DD/MM/YYYY)
+# problem 2: delimited by semicolon, not comma
+# problem 3: colnames do not match
+
+#solve 1:
+tofix <- readr::read_csv2(file.path(path, "BRA", file),
+                            na = c("", "NA", "-8888", "-8,888.00", "-9999"),
+                            show_col_types = verbose,
+                            progress = progress,
+                            locale = locale(encoding = "Latin1"))
+
+datfix <-
+  tofix |>  mutate(rn = dplyr::row_number(),
+         date_of_b = as.Date(DatadeAplicação, format = "%d/%m/%Y"), #seems that this is birthdate?
+         date_of_b2 = as.Date(DatadeAplicação, format = "%m/%d/%Y"),
+         date_of_b = dplyr::if_else(rn < 109, date_of_b, date_of_b2),
+         date_of_visit = as.Date(DateofEnrollment, format = "%d/%m/%Y"),
+         Study_Country = 76
+  ) |>
+  select(-DatadeAplicação, -DateofEnrollment, -GENDER, -Aplicador, -rn, -date_of_b, -date_of_b2) |>
+  #solve 3:
+  rename(
+    GSED_ID = GSEDId,
+    Parent_study_ID = ParentId,
+    ra_code_bsid = STRATEGY,
+    visit_age_bsid = AgeatEnrollmentDays
+    ) |>
+  dplyr::rename_with(~paste("bsid", tolower(.x), sep = "_"),
+              .cols = COG1:MOTSCORE) |>
+  dplyr::rename_with(
+    ~ stringr::str_replace_all(.x, c("rlang" = "rc", "elang" = "ec", "gm" = "gsm"))
+  ) |>
+  rename(bsid_cog01 = bsid_cog1,
+         bsid_cog02 = bsid_cog2,
+         bsid_cog03 = bsid_cog3,
+         bsid_cog04 = bsid_cog4,
+         bsid_cog05 = bsid_cog5,
+         bsid_cog06 = bsid_cog6,
+         bsid_cog07 = bsid_cog7,
+         bsid_cog08 = bsid_cog8,
+         bsid_cog09 = bsid_cog9,
+         bsid_rc01 = bsid_rc1,
+         bsid_rc02 = bsid_rc2,
+         bsid_rc03 = bsid_rc3,
+         bsid_rc04 = bsid_rc4,
+         bsid_rc05 = bsid_rc5,
+         bsid_rc06 = bsid_rc6,
+         bsid_rc07 = bsid_rc7,
+         bsid_rc08 = bsid_rc8,
+         bsid_rc09 = bsid_rc9,
+         bsid_ec01 = bsid_ec1,
+         bsid_ec02 = bsid_ec2,
+         bsid_ec03 = bsid_ec3,
+         bsid_ec04 = bsid_ec4,
+         bsid_ec05 = bsid_ec5,
+         bsid_ec06 = bsid_ec6,
+         bsid_ec07 = bsid_ec7,
+         bsid_ec08 = bsid_ec8,
+         bsid_ec09 = bsid_ec9,
+         bsid_fm01 = bsid_fm1,
+         bsid_fm02 = bsid_fm2,
+         bsid_fm03 = bsid_fm3,
+         bsid_fm04 = bsid_fm4,
+         bsid_fm05 = bsid_fm5,
+         bsid_fm06 = bsid_fm6,
+         bsid_fm07 = bsid_fm7,
+         bsid_fm08 = bsid_fm8,
+         bsid_fm09 = bsid_fm9,
+         bsid_gsm01 = bsid_gsm1,
+         bsid_gsm02 = bsid_gsm2,
+         bsid_gsm03 = bsid_gsm3,
+         bsid_gsm04 = bsid_gsm4,
+         bsid_gsm05 = bsid_gsm5,
+         bsid_gsm06 = bsid_gsm6,
+         bsid_gsm07 = bsid_gsm7,
+         bsid_gsm08 = bsid_gsm8,
+         bsid_gsm09 = bsid_gsm9
+  ) |>
+  select(Study_Country, GSED_ID, Parent_study_ID, date_of_visit, ra_code_bsid, visit_age_bsid, everything())
+
+
+
+
+# Check
+readr::write_csv(datfix, file.path(out, file))
+data2 <- readr::read_csv(file.path(out, file))
+
+# zero rows, but..
+problems(data2)
+
+readr::write_csv(data, file.path(out, "br-bsid-2025-07-04.csv"))
+
 
 # --- CIV
 
@@ -155,9 +264,31 @@ problems(data2)
 table(is.na(data2$Ma_LF_Date))
 
 
+
+#BSID
+file <- files[1]
+#spec <- gsedread:::define_col(ins = "bsid", adm = "cdi", date_format = "")
+cat("File stamp: ", file, as.character(file.info(file.path(path, "CIV", file))$mtime), "\n")
+tofix <- readr::read_delim(file.path(path, "CIV", file),
+                          delim = ",",
+                         # col_types = spec,
+                          na = c("", "NA", "-8888", "-8,888.00", "-9999"),
+                          show_col_types = TRUE,
+                          progress = FALSE)
+
+data <- tofix |>
+  mutate(date_of_visit = as.Date(as.numeric(date_of_visit) ,origin = "1899-12-30"))
+
+problems(data)
+
+#no fixes necessary
+
+# Check
+readr::write_csv(data, file.path(out, "cdi-bsid-2025-07-04.csv"))
+
 # --- NLD
 
-files <- list.files(file.path(path, "NLD"), pattern = "\\b(lf|sf|bsid)\\b")
+files <- list.files(file.path(path, "NLD"), pattern = "\\b(lf|sf|bsid|BSID)\\b")
 
 # NLD SF
 file <- files[2]
@@ -229,6 +360,22 @@ problems(data2)
 
 # and no missing dates
 table(is.na(data2$Ma_LF_Date))
+
+
+#bsid
+file <- files[1]
+spec <- gsedread:::define_col(ins = "bsid", adm = "nld", date_format = "%d-%m-%Y")
+cat("File stamp: ", file, as.character(file.info(file.path(path, "NLD", file))$mtime), "\n")
+data <- readr::read_delim(file.path(path, "NLD", file),
+                          delim = "\t",
+                          col_types = spec,
+                          na = c("", "NA", "-8888", "-8,888.00", "-9999"),
+                          show_col_types = TRUE,
+                          progress = FALSE)
+problems(data)
+
+# no problems, but the GSED_ID column is empty and so is visit_age_bsid. So the data is worthless.
+readr::write_csv(data, file.path(out, "nl-bsid-2025-07-04.csv"))
 
 
 # --- CHN
