@@ -7,7 +7,7 @@
 read_lf(
   adm = c("fixed", "adaptive"),
   onedrive = Sys.getenv("ONEDRIVE_GSED"),
-  path = "GSED Final Collated Phase 1 Data Files 18_05_22",
+  path = NULL,
   verbose = FALSE,
   progress = FALSE,
   warnings = FALSE

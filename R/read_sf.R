@@ -9,12 +9,15 @@
 #' @export
 read_sf <- function(adm = c("fixed", "adaptive"),
                     onedrive = Sys.getenv("ONEDRIVE_GSED"),
-                    path = "GSED Final Collated Phase 1 Data Files 18_05_22",
+                    path = NULL,
                     verbose = FALSE,
                     progress = FALSE,
                     warnings = FALSE) {
   if (nchar(onedrive) == 0L) {
     stop("Environmental variable ONEDRIVE_GSED not set.", call. = FALSE)
+  }
+  if (is.null(path)) {
+    stop("Argument `path` not set", call. = FALSE)
   }
   adm <- match.arg(adm)
 

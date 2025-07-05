@@ -1,3 +1,7 @@
+# gsedread 0.15.0
+
+* Adds definitions for reading Phase 2 BSID data
+
 # gsedread 0.14.0
 
 * Adds `cohort` and `cohortn` variables to `visits`
