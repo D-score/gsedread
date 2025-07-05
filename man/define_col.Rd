@@ -6,7 +6,7 @@
 \usage{
 define_col(
   ins = c("sf", "lf", "bsid"),
-  adm = c("fixed", "adaptive", "tan", "pak", "ban"),
+  adm = c("fixed", "adaptive", "tan", "pak", "ban", "bra", "cdi", "nld"),
   date_format = "",
   datetime_format = ""
 )
