@@ -35,7 +35,7 @@ if (!requireNamespace(pkg, quietly = TRUE) && interactive()) {
   if (answer) remotes::install_github("d-score/gsedread")
 }
 require(gsedread, quietly = TRUE, warn.conflicts = FALSE)
-if (packageVersion("gsedread") < "0.14.0") stop("Needs gsedread 0.14.0")
+if (packageVersion("gsedread") < "0.15.0") stop("Needs gsedread 0.15.0")
 
 # Set paths and filenames
 onedrive <- Sys.getenv("ONEDRIVE_GSED")
@@ -45,14 +45,10 @@ path_phase2 <- "GSED Final Collated Phase 2 Files 02_06_25/Temp Clean LF_ SF_ to
 output_fixed <- file.path(Sys.getenv("LOCAL_DUCKDB"), "fixed.duckdb")
 
 # Read Phase 1 data
-phase1 <- gsedread:::read_gsed_fixed(onedrive = onedrive,
-                                     path = path_phase1,
-                                     phase = 1)
+phase1 <- read_gsed_fixed(onedrive = onedrive, path = path_phase1)
 
 # Read Phase 2 data
-phase2 <- gsedread:::read_gsed_fixed(onedrive = onedrive,
-                                     path = path_phase2,
-                                     phase = 2)
+phase2 <- read_gsed_fixed(onedrive = onedrive, path = path_phase2)
 
 # Combine Phase 1 and Phase 2 data
 responses <- bind_rows(phase1$responses, phase2$responses)
