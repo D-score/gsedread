@@ -92,8 +92,8 @@ cat("File stamp: ", file, as.character(file.info(file.path(path, "BRA", file))$m
 data <- readr::read_csv(file.path(path, "BRA", file),
                                col_types = spec,
                                na = c("", "NA", "-8888", "-8,888.00", "-9999"),
-                               show_col_types = verbose,
-                               progress = progress,
+                               show_col_types = TRUE,
+                               progress = TRUE,
                                locale = locale(encoding = "Latin1"))
 problems(data)
 
@@ -107,8 +107,8 @@ problems(data)
 #solve 1:
 tofix <- readr::read_csv2(file.path(path, "BRA", file),
                             na = c("", "NA", "-8888", "-8,888.00", "-9999"),
-                            show_col_types = verbose,
-                            progress = progress,
+                            show_col_types = TRUE,
+                            progress = TRUE,
                             locale = locale(encoding = "Latin1"))
 
 datfix <-
@@ -286,6 +286,15 @@ problems(data)
 # Check
 readr::write_csv(data, file.path(out, "cdi-bsid-2025-07-04.csv"))
 
+# check
+data2 <- readr::read_delim(file.path(out, "cdi-bsid-2025-07-04.csv"),
+                           delim = "\t",
+                           col_types = spec,
+                           na = c("", "NA", "-8888", "-8,888.00", "-9999"),
+                           show_col_types = FALSE,
+                           progress = FALSE)
+
+
 # --- NLD
 
 files <- list.files(file.path(path, "NLD"), pattern = "\\b(lf|sf|bsid|BSID)\\b")
@@ -376,6 +385,14 @@ problems(data)
 
 # no problems, but the GSED_ID column is empty and so is visit_age_bsid. So the data is worthless.
 readr::write_csv(data, file.path(out, "nl-bsid-2025-07-04.csv"))
+
+# check
+data2 <- readr::read_delim(file.path(out, "nl-bsid-2025-07-04.csv"),
+                          delim = "\t",
+                          col_types = spec,
+                          na = c("", "NA", "-8888", "-8,888.00", "-9999"),
+                          show_col_types = TRUE,
+                          progress = FALSE)
 
 
 # --- CHN
