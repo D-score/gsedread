@@ -2732,7 +2732,7 @@ define_col <- function(ins = c("sf", "lf", "bsid"),
     bsid_gsm70 = col_integer(),
     bsid_gsm71 = col_integer(),
     bsid_gsm72 = col_integer(),
-    age_adj_premature = col_integer()
+    age_adj_premature = readr::col_logical()
     )
   }
   return(spec)

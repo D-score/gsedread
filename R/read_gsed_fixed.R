@@ -1,22 +1,45 @@
-read_gsed_fixed <- function(onedrive, path, phase) {
+#' Read the GSED data for SF, LF and BSID (fixed form)
+#'
+#' This function reads the GSED fixed administration data from the specified
+#' OneDrive path. It processes the data to extract item responses and visit
+#' information, renaming columns according to the GSED2 lexicon. The function
+#' also applies specific data edits to ensure the integrity of the dataset.
+#'
+#' @md
+#'
+#' @details
+#' **Requirements:**
+#'
+#' - You must have access to the OneDrive path where the GSED data is stored.
+#' - The `gsedread` package must be installed.
+#' - The system variable `ONEDRIVE_GSED` must be set correctly.
+#'
+#' **Note:** The file names of the source data are hard-coded within this function.
+#'
+#' @param onedrive The OneDrive path where the data is stored.
+#' @param path The path to the GSED fixed administration data.
+#' @return A list containing two data frames: `responses` and `visits`.
+#' @examples
+#' onedrive <- Sys.getenv("ONEDRIVE_GSED")
+#' path <- file.path(
+#'   "GSED Phase 1 Final Analysis",
+#'   "GSED Final Collated Phase 1 Data Files 18_05_22")
+#' phase1 <- read_gsed_fixed(onedrive, path)
+#' @export
+read_gsed_fixed <- function(onedrive, path) {
 
   # Read data
   sf <- read_sf(onedrive = onedrive, path = path, adm = "fixed", warnings = TRUE)
   lf <- read_lf(onedrive = onedrive, path = path, adm = "fixed", warnings = TRUE)
-  #if (phase == 1) {
-    bsid <- read_bsid(onedrive = onedrive, path = path, warnings = TRUE)
-  #}
+  bsid <- read_bsid(onedrive = onedrive, path = path, warnings = TRUE)
 
   # Rename items into gsed2 lexicon
-  lexin <- ifelse(phase == 1, "original", "original_phase2")
-  colnames(sf) <- rename_vector(colnames(sf), lexin = lexin, trim = "Ma_SF_",
-                                force_subjid_agedays = TRUE)
-  colnames(lf) <- rename_vector(colnames(lf), lexin = lexin, trim = "Ma_LF_",
-                                force_subjid_agedays = TRUE)
- # if (phase == 1) {
+  colnames(sf) <- rename_vector(colnames(sf), lexin = "original",
+                                trim = "Ma_SF_", force_subjid_agedays = TRUE)
+  colnames(lf) <- rename_vector(colnames(lf), lexin = "original",
+                                trim = "Ma_LF_", force_subjid_agedays = TRUE)
   colnames(bsid) <- rename_vector(colnames(bsid), lexin = "original",
                                   contains = "bsid_", force_subjid_agedays = TRUE)
-  #}
 
   # vist_type
   # 1=Part/visit 1;
@@ -38,12 +61,9 @@ read_gsed_fixed <- function(onedrive, path, phase) {
     mutate(agedays = as.integer(.data$agedays),
            vist_type = as.integer(.data$vist_type),
            ins = "lf")
-
- # if (phase == 1) {
   bsid <- bsid |>
     mutate(agedays = as.integer(.data$agedays),
            ins = "bsid")
-  #}
 
   # Remove duplicates and sort
   sf <- sf |>
@@ -52,17 +72,9 @@ read_gsed_fixed <- function(onedrive, path, phase) {
   lf <- lf |>
     distinct(across(-file), .keep_all = TRUE) |>
     arrange(.data$subjid, .data$agedays, .data$vist_type)
-
- # if (phase == 1) {
   bsid <- bsid |>
     distinct(across(-file), .keep_all = TRUE)  |>
     arrange(.data$subjid, .data$agedays)
-  #}
-
- # if (phase == 2) {
-  #  bsid_responses <- NULL
-   # bsid_visits <- NULL
-  #}
 
   # Extract item responses
   sf_responses <- sf |>
@@ -81,7 +93,6 @@ read_gsed_fixed <- function(onedrive, path, phase) {
       values_drop_na = TRUE
     ) |>
     select(.data$subjid, .data$agedays, .data$vist_type, .data$item, .data$response)
-  #if (phase == 1) {
   bsid_responses <- bsid |>
     pivot_longer(
       cols = starts_with("by3"),
@@ -90,18 +101,14 @@ read_gsed_fixed <- function(onedrive, path, phase) {
       values_drop_na = TRUE
     ) |>
     select(.data$subjid, .data$agedays, .data$item, .data$response)
-  #}
 
   # Extact visit tables
   sf_visits <- sf |>
     select(-starts_with("gpa"))
   lf_visits <- lf |>
     select(-starts_with("gto"))
-
- # if (phase == 1) {
   bsid_visits <- bsid |>
-    select(-starts_with("by3"))
-  #}
+    select(-starts_with("bsid"), -starts_with("by3"))
 
   # Combine all responses
   responses <- bind_rows(
