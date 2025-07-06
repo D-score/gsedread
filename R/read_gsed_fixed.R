@@ -18,15 +18,16 @@
 #'
 #' @param onedrive The OneDrive path where the data is stored.
 #' @param path The path to the GSED fixed administration data.
+#' @param phase Either 1 or 2, indicating the phase of the GSED data to read.
 #' @return A list containing two data frames: `responses` and `visits`.
 #' @examples
 #' onedrive <- Sys.getenv("ONEDRIVE_GSED")
 #' path <- file.path(
 #'   "GSED Phase 1 Final Analysis",
 #'   "GSED Final Collated Phase 1 Data Files 18_05_22")
-#' phase1 <- read_gsed_fixed(onedrive, path)
+#' phase1 <- read_gsed_fixed(onedrive, path, phase = 1)
 #' @export
-read_gsed_fixed <- function(onedrive, path) {
+read_gsed_fixed <- function(onedrive, path, phase) {
 
   # Read data
   sf <- read_sf(onedrive = onedrive, path = path, adm = "fixed", warnings = TRUE)
@@ -34,10 +35,15 @@ read_gsed_fixed <- function(onedrive, path) {
   bsid <- read_bsid(onedrive = onedrive, path = path, warnings = TRUE)
 
   # Rename items into gsed2 lexicon
-  colnames(sf) <- rename_vector(colnames(sf), lexin = "original",
-                                trim = "Ma_SF_", force_subjid_agedays = TRUE)
-  colnames(lf) <- rename_vector(colnames(lf), lexin = "original",
-                                trim = "Ma_LF_", force_subjid_agedays = TRUE)
+  lexin <- switch(as.character(phase),
+                  "1" = "original",
+                  "2" = "original_phase2",
+                  stop("Invalid phase. Use 1 or 2.")
+  )
+  colnames(sf) <- rename_vector(colnames(sf), lexin = lexin, trim = "Ma_SF_",
+                                force_subjid_agedays = TRUE)
+  colnames(lf) <- rename_vector(colnames(lf), lexin = lexin, trim = "Ma_LF_",
+                                force_subjid_agedays = TRUE)
   colnames(bsid) <- rename_vector(colnames(bsid), lexin = "original",
                                   contains = "bsid_", force_subjid_agedays = TRUE)
 

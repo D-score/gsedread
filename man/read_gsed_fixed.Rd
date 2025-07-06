@@ -4,12 +4,14 @@
 \alias{read_gsed_fixed}
 \title{Read the GSED data for SF, LF and BSID (fixed form)}
 \usage{
-read_gsed_fixed(onedrive, path)
+read_gsed_fixed(onedrive, path, phase)
 }
 \arguments{
 \item{onedrive}{The OneDrive path where the data is stored.}
 
 \item{path}{The path to the GSED fixed administration data.}
+
+\item{phase}{Either 1 or 2, indicating the phase of the GSED data to read.}
 }
 \value{
 A list containing two data frames: \code{responses} and \code{visits}.
@@ -35,5 +37,5 @@ onedrive <- Sys.getenv("ONEDRIVE_GSED")
 path <- file.path(
   "GSED Phase 1 Final Analysis",
   "GSED Final Collated Phase 1 Data Files 18_05_22")
-phase1 <- read_gsed_fixed(onedrive, path)
+phase1 <- read_gsed_fixed(onedrive, path, phase = 1)
 }
