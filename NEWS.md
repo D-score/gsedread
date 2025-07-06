@@ -2,6 +2,7 @@
 * Expands `read_gsed_fixed()` to read Phase 2 BSID data
 * Adds definitions for reading Phase 2 BSID data
 * Adds harmonization code for Phase 2 BSID in `data-raw/R/patch_phase2_files.R`
+* Moves argument `adm` in `read_lf()` and `read_sf()` to the third position
 
 # gsedread 0.14.0
 

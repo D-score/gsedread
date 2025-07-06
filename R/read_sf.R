@@ -7,9 +7,9 @@
 #' columns, with one test administration per row. If `adm == "adaptive"`, a tibble
 #' with 14 columns, with one item administration per row.
 #' @export
-read_sf <- function(adm = c("fixed", "adaptive"),
-                    onedrive = Sys.getenv("ONEDRIVE_GSED"),
+read_sf <- function(onedrive = Sys.getenv("ONEDRIVE_GSED"),
                     path = NULL,
+                    adm = c("fixed", "adaptive"),
                     verbose = FALSE,
                     progress = FALSE,
                     warnings = FALSE) {

@@ -5,20 +5,20 @@
 \title{Read lf data}
 \usage{
 read_lf(
-  adm = c("fixed", "adaptive"),
   onedrive = Sys.getenv("ONEDRIVE_GSED"),
   path = NULL,
+  adm = c("fixed", "adaptive"),
   verbose = FALSE,
   progress = FALSE,
   warnings = FALSE
 )
 }
 \arguments{
-\item{adm}{Character, either "fixed" or "adaptive" administration type}
-
 \item{onedrive}{Character, the location of the local OneDrive sync}
 
 \item{path}{Character, path name within the OneDrive}
+
+\item{adm}{Character, either "fixed" or "adaptive" administration type}
 
 \item{verbose}{Logical. Print diagnostic info? Defaults to `FALSE`.}
 

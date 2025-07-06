@@ -19,9 +19,9 @@
 #' dim(d)
 #' }
 #' @export
-read_lf <- function(adm = c("fixed", "adaptive"),
-                    onedrive = Sys.getenv("ONEDRIVE_GSED"),
+read_lf <- function(onedrive = Sys.getenv("ONEDRIVE_GSED"),
                     path = NULL,
+                    adm = c("fixed", "adaptive"),
                     verbose = FALSE,
                     progress = FALSE,
                     warnings = FALSE) {
