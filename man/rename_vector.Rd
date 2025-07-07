@@ -32,18 +32,18 @@ Needed to prevent double matches. The default ("") does not filter.}
 
 \item{underscore}{Replaces space (" ") and dash ("-") by underscore ("_")}
 
-\item{trim}{A substring to be removed from `input`. Defaults to "Ma_".}
+\item{trim}{A substring to be removed from \code{input}. Defaults to "Ma_".}
 
 \item{lowercase}{Sets all variables in lower case.
-in `lexin`? The default `notfound = "copy"` copies the input values into the
-output value. In other cases (e.g. `""` or `NA_character_`), the function
-uses the string specified in `notfound` as a replacement value.}
+in \code{lexin}? The default \code{notfound = "copy"} copies the input values into the
+output value. In other cases (e.g. \code{""} or \code{NA_character_}), the function
+uses the string specified in \code{notfound} as a replacement value.}
 
-\item{force_subjid_agedays}{If `TRUE`, forces the output to have `"subjid"`
-and `"agedays"` as names for the `"ID"` and `"age"`, respectively.}
+\item{force_subjid_agedays}{If \code{TRUE}, forces the output to have \code{"subjid"}
+and \code{"agedays"} as names for the \code{"ID"} and \code{"age"}, respectively.}
 }
 \value{
-A character vector of the same length as `input` with processed
+A character vector of the same length as \code{input} with processed
 names.
 }
 \description{
