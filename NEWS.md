@@ -1,4 +1,12 @@
+# gsedread 0.15.0
+
+* Updates README
+* Updates package authors
+* Updates LICENSE
 * Documents and exports the `read_gsed_fixed()` function
+* Adds the `repair_visits()` and `repair_responses()` functions to repair 
+`visits` and `responses` data after these have been read and combined
+* Shortens the main data reading script `data-raw/R/build_database_fixed.R`
 * Expands `read_gsed_fixed()` to read Phase 2 BSID data
 * Adds definitions for reading Phase 2 BSID data
 * Adds harmonization code for Phase 2 BSID in `data-raw/R/patch_phase2_files.R`
