@@ -22,9 +22,9 @@ read_bsid <- function(onedrive = Sys.getenv("ONEDRIVE_GSED"),
     "pak/pak_bsid-iii_2022_05_17.csv",
     "ban/ban-bsid-iii-2022-05-17.csv",
     "BRA/br-bsid-2025-07-04.csv",
-    "civ/cdi-bsid-2025-07-04.csv",
+    "CIV/cdi-bsid-2025-07-04.csv",
     # "Griffiths.xlsx",
-    "NLD/nl-bsid-2025-07-04.csv")
+    "NLD/nl-bsid-2025-07-07.csv")
 
   # read
   files <- file.path(onedrive, path, files_fixed)
