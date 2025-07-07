@@ -1,3 +1,7 @@
+# gsedread 0.16.0
+
+* Rereads `nl-bsid-2025-07-07.csv` after manually adding `GSED_ID` field
+
 # gsedread 0.15.0
 
 * Updates README
