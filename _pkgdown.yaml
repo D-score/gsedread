@@ -11,16 +11,17 @@ development:
   mode: auto
 
 reference:
-  - title: "Main user functions"
-    desc: >
-      Functions to read and process GSED validation data.
+  - title: "High-level functions"
+    contents:
+      - read_gsed_fixed
+      - repair_responses
+      - repair_visits
+  - title: "Low-level functions"
     contents:
       - read_bsid
       - read_lf
       - read_sf
   - title: "Helper functions"
-    desc: >
-      Functions to set details of the data set.
     contents:
       - define_col
       - rename_vector

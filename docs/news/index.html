@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">gsedread</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.14.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.15.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,6 +33,21 @@
     </div>
 
     <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.15.0" id="gsedread-0150">gsedread 0.15.0<a class="anchor" aria-label="anchor" href="#gsedread-0150"></a></h2>
+<ul><li>Updates README</li>
+<li>Updates package authors</li>
+<li>Updates LICENSE</li>
+<li>Documents and exports the <code><a href="../reference/read_gsed_fixed.html">read_gsed_fixed()</a></code> function</li>
+<li>Adds the <code><a href="../reference/repair_visits.html">repair_visits()</a></code> and <code><a href="../reference/repair_responses.html">repair_responses()</a></code> functions to repair <code>visits</code> and <code>responses</code> data after these have been read and combined</li>
+<li>Shortens the main data reading script <code>data-raw/R/build_database_fixed.R</code>
+</li>
+<li>Expands <code><a href="../reference/read_gsed_fixed.html">read_gsed_fixed()</a></code> to read Phase 2 BSID data</li>
+<li>Adds definitions for reading Phase 2 BSID data</li>
+<li>Adds harmonization code for Phase 2 BSID in <code>data-raw/R/patch_phase2_files.R</code>
+</li>
+<li>Moves argument <code>adm</code> in <code><a href="../reference/read_lf.html">read_lf()</a></code> and <code><a href="../reference/read_sf.html">read_sf()</a></code> to the third position</li>
+</ul></div>
+    <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.14.0" id="gsedread-0140">gsedread 0.14.0<a class="anchor" aria-label="anchor" href="#gsedread-0140"></a></h2>
 <ul><li>Adds <code>cohort</code> and <code>cohortn</code> variables to <code>visits</code>
 </li>
@@ -51,7 +66,7 @@
 <h2 class="pkg-version" data-toc-text="0.12.0" id="gsedread-0120">gsedread 0.12.0<a class="anchor" aria-label="anchor" href="#gsedread-0120"></a></h2>
 <ul><li>Adds script <code>data-raw/R/build_database_fixed.R</code> to create duckDB datasets with fixed LF, SF and BSID administration</li>
 <li>Adds script <code>data-raw/R/build_database_adaptive.R</code> to store adaptive SF and LF (Phase 1 only)</li>
-<li>Adds internal <code>read_gsed_fixed()</code> function to read fixed LF, SF and BSID (Phase 1 and Phase 2) data</li>
+<li>Adds internal <code><a href="../reference/read_gsed_fixed.html">read_gsed_fixed()</a></code> function to read fixed LF, SF and BSID (Phase 1 and Phase 2) data</li>
 <li>Removes outdated <code>data-raw/data/Data_File_Guide.xlsx</code>
 </li>
 <li>Adds script <code>data-raw/R/patch_phase2_files.R</code> to identify and repair problem with Phase 2 LF and SF data</li>
@@ -148,7 +163,7 @@
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by <a href="https://stefvanbuuren.name" class="external-link">Stef van Buuren</a>.</p>
+  <p>Developed by <a href="https://stefvanbuuren.name" class="external-link">Stef van Buuren</a>, Iris Eekhout, Gareth McCray.</p>
 </div>
 
 <div class="pkgdown-footer-right">
