@@ -13,10 +13,11 @@ Imports:
     dplyr,
     readr,
     rlang,
+    stringr,
     tidyr
 Suggests: 
-    duckdb,
-    stringr
+    duckdb
+Roxygen: list(markdown = TRUE)
 URL: https://github.com/D-score/gsedread
 BugReports: https://github.com/D-score/gsedread/issues
 RoxygenNote: 7.3.2

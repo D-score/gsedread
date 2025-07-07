@@ -19,6 +19,8 @@
 #' @param onedrive The OneDrive path where the data is stored.
 #' @param path The path to the GSED fixed administration data.
 #' @param phase Either 1 or 2, indicating the phase of the GSED data to read.
+#' It is important to specify this correctly as it accounts for the different
+#' item orders between phase 1 and phase 2 for SF and LF.
 #' @return A list containing two data frames: `responses` and `visits`.
 #' @examples
 #' onedrive <- Sys.getenv("ONEDRIVE_GSED")
