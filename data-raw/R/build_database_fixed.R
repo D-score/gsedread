@@ -4,11 +4,13 @@
 # Assumed environmental variables, specified in .Renviron:
 # - ONEDRIVE_GSED
 #   Must point to 'CAVALLERA, Vanessa - GSED Validation 2021_phase I'
-# - LOCAL_DUCKDB
-#   Must point to a directory where the DuckDB database will be written
+# - GSED_PHASE2
+#   Must point to a local directory where the PHASE2 analysis results will
+#   be written. This script will create a file called 'data/fixed.duckdb'
+#   in this directory.
 #
 # Created: Stef van Buuren, June 20, 2025
-# Last modified: July 7, 2025
+# Last modified: July 15, 2025
 #
 # TODO:
 # - Update as soon as China data is cleaned
@@ -18,7 +20,7 @@
 if (nchar(Sys.getenv("ONEDRIVE_GSED")) == 0L) {
   stop("Environmental variable ONEDRIVE_GSED not set.", call. = FALSE)
 }
-if (nchar(Sys.getenv("LOCAL_DUCKDB")) == 0L) {
+if (nchar(Sys.getenv("GSED_PHASE2")) == 0L) {
   stop("Environmental variable LOCAL_DUCKDB not set.", call. = FALSE)
 }
 
@@ -35,14 +37,17 @@ if (!requireNamespace(pkg, quietly = TRUE) && interactive()) {
   if (answer) remotes::install_github("d-score/gsedread")
 }
 require(gsedread, quietly = TRUE, warn.conflicts = FALSE)
-if (packageVersion("gsedread") < "0.15.0") stop("Needs gsedread 0.15.0")
+if (packageVersion("gsedread") < "0.17.0") stop("Needs gsedread 0.17.0")
 
 # Set paths and filenames
 onedrive <- Sys.getenv("ONEDRIVE_GSED")
 path_phase1 <- file.path("GSED Phase 1 Final Analysis",
                          "GSED Final Collated Phase 1 Data Files 18_05_22")
 path_phase2 <- "GSED Final Collated Phase 2 Files 02_06_25/Temp Clean LF_ SF_ to add once China data is cleaned" # temporary
-output_fixed <- file.path(Sys.getenv("LOCAL_DUCKDB"), "fixed.duckdb")
+if (!dir.exists(file.path(Sys.getenv("GSED_PHASE2"), "data"))) {
+  dir.create(file.path(Sys.getenv("GSED_PHASE2"), "data"), recursive = TRUE)
+}
+output_fixed <- file.path(Sys.getenv("GSED_PHASE2"), "data/fixed.duckdb")
 
 # Read Phase 1 and Phase 2 data
 phase1 <- read_gsed_fixed(onedrive = onedrive, path = path_phase1, phase = 1)
