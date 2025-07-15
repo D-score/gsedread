@@ -86,8 +86,8 @@ Ma_SF_C84	Ma_SF_C89	iyomoc032	gpamoc084	C84	SF	84	89	Can your child run well, wi
 Ma_SF_C85	Ma_SF_C82	mdtsed017	gpasec085	C85	SF	85	82	Can your child greet people either by giving his/her hand or saying Hello?	Can your child greet people either by giving his/her hand or saying Hello?
 Ma_SF_C86	Ma_SF_C73	mdtsed018	gpasec086	C86	SF	86	73	Does your child share with others?	Does your child share with others (e.g., food)?
 Ma_SF_C87	Ma_SF_C92	vinxxc021	gpaxxc087	C87	SF	87	92	Does your child dry hands by herself/himself after you have washed them?	Does your child dry hands by herself/himself after you have washed them?
-Ma_SF_C89	Ma_SF_C103	croclc023	gpaclc088	C89	SF	88	103	Can your child say five or more separate words?	Can your child say five or more separate words (e.g., names like 'Mama' or objects like 'ball')?
-Ma_SF_C88	Ma_SF_C84	mdtsed019	gpasec089	C88	SF	89	84	Is your child able to go poo or pee without having accidents?	Is your child able to go poo or pee without having accidents (wetting or soiling themselves)?
+Ma_SF_C88	Ma_SF_C103	mdtsed019	gpasec088	C88	SF	89	84	Is your child able to go poo or pee without having accidents?	Is your child able to go poo or pee without having accidents (wetting or soiling themselves)?
+Ma_SF_C89	Ma_SF_C84	croclc023	gpaclc089	C89	SF	88	103	Can your child say five or more separate words?	Can your child say five or more separate words (e.g., names like 'Mama' or objects like 'ball')?
 Ma_SF_C90	Ma_SF_C98	aqicmc033	gpacmc090	C90	SF	90	98	Can your child say ten or more words in addition to 'Mama' and 'Dada'?	Can your child say ten or more words in addition to 'Mama' and 'Dada'?
 Ma_SF_C91	Ma_SF_C100	croclc024	gpaclc091	C91	SF	91	100	Can your child speak using short sentences of two words that go together?	Can your child speak using short sentences of two words that go together (e.g., 'Mama go' or 'Dada eat'?
 Ma_SF_C92	Ma_SF_C90	vinxxc048	gpaxxc092	C92	SF	92	90	Can your child wash hands by him/herself?	Can your child wash hands by him/herself?
