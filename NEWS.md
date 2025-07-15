@@ -1,3 +1,9 @@
+# gsedread 0.17.0
+
+* Solves an error in the item name matching between phase1 and phase2 related to the reversal of items `gpaclc089` (was `gpaclc088`) and `gpasec088` (was `gpasec089`).
+* Updates the item name conversion table `inst/extdata/itemnames_translate.tsv` to reflect the above change.
+* Replaces the `LOCAL_DUCKDB` environmental variable by `GSED_PHASE2` in `data-raw/R/build_database_fixed.R` to increase consistency with downstream scripts.
+
 # gsedread 0.16.0
 
 * Rereads `nl-bsid-2025-07-07.csv` after manually adding `GSED_ID` field
