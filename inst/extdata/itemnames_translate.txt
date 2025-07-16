@@ -138,11 +138,11 @@ Ma_SF_C136	Ma_SF_C139	crosec051	gpasec136	C136	SF	136	139	Can your child say wha
 Ma_SF_C137	Ma_SF_C111	mdtsed032	gpasec137	C137	SF	137	111	Does your child show respect around elders?	Does your child show respect around elders?
 Ma_SF_C138	Ma_SF_C129	croclc045	gpaclc138	C138	SF	138	129	Can your child talk about things that have happened in the past using correct language?	Can your child talk about things that have happened in the past using correct language (e.g., 'Yesterday I played with my friend' or 'Last week she went to the market')?
 Ma_SF_C139	Ma_SF_C136	croclc048	gpaclc139	C139	SF	139	136	Can your child talk about things that will happen in the future using correct language?	Can your child talk about things that will happen in the future using correct language (e.g., 'Tomorrow he will attend school' or 'Next week we will go to the market')?
-Ma_LF_A01	Ma_LF_A04	ddigmd057	gtogmd001	A01	LF	1	4	A1. Lifts head in prone 45 degrees	Lifts head in prone 45 degrees
-Ma_LF_A02	Ma_LF_A02	mdtsed004	gtogmd002	A02	LF	2	2	A2. Frolics alone - moving body, kicking legs	Frolics alone - moving body, kicking legs.
-Ma_LF_A03	Ma_LF_A01	mdtsed003	gtogmd003	A03	LF	3	1	A3. Frolics with mother or caregiver responsively	Frolics with mother or caregiver responsively
-Ma_LF_A04	Ma_LF_A06	mdtfmd003	gtogmd004	A04	LF	4	6	A4. Hands together in front of face	Hands together in front of face
-Ma_LF_A05	Ma_LF_A10	ddigmd061	gtogmd005	A05	LF	5	10	A5. Balances head well while suppported	Balances head well while sitting
+Ma_LF_A01	Ma_LF_A04	ddigmd057	gtogmd001	A01	LF	1	4	A1. Lifts head in prone 45 degrees	Lifts head in prone 45 degrees (2X)
+Ma_LF_A02	Ma_LF_A02	mdtsed004	gtogmd002	A02	LF	2	2	A2. Frolics alone - moving body, kicking legs	Moves body, kicking legs and moving arms equally on his/her own
+Ma_LF_A03	Ma_LF_A01	mdtsed003	gtogmd003	A03	LF	3	1	A3. Frolics with mother or caregiver responsively	Moves body in reaction to caregiver
+Ma_LF_A04	Ma_LF_A06	mdtfmd003	gtogmd004	A04	LF	4	6	A4. Hands together in front of face	Puts hands together in front of face
+Ma_LF_A05	Ma_LF_A10	ddigmd061	gtogmd005	A05	LF	5	10	A5. Balances head well while suppported	Balances head while supported
 Ma_LF_A06	Ma_LF_A03	mdtgmd004	gtogmd006	A06	LF	6	3	A6. Pulls to sit - no head lag	Pulls to sit - no head lag
 Ma_LF_A07	Ma_LF_A05	mdtgmd005	gtogmd007	A07	LF	7	5	A7. Lifts head, shoulders, chest when prone	Lifts head, shoulders, chest when prone
 Ma_LF_A08	Ma_LF_A08	by1mdd051	gtogmd008	A08	LF	8	8	A8. Reach for an object	Reach for an object
@@ -175,17 +175,17 @@ Ma_LF_A34	Ma_LF_A34	mdtgmd017	gtogmd034	A34	LF	34	34	A34. Stoops and recovers	St
 Ma_LF_A35	Ma_LF_A47	kdigmd034	gtogmd035	A35	LF	35	47	A35. Moves from sitting to standing not using hands	Moves from sitting to standing not using hands
 Ma_LF_A36	Ma_LF_A32	mdtgmd018	gtogmd036	A36	LF	36	32	A36. Walks well	Walks well
 Ma_LF_A37	Ma_LF_A33	mdtgmd019	gtogmd037	A37	LF	37	33	A37. Basic running, may fall over	Basic running, may fall over
-Ma_LF_A48	Ma_LF_A36	mdtgmd021	gtogmd038	A48	LF	38	36	A38. Runs well	Runs well
-Ma_LF_A38	Ma_LF_A38	mdtgmd024	gtogmd039	A38	LF	39	38	A39. Runs and kicks a ball well	Runs and kicks a ball well
-Ma_LF_A39	Ma_LF_A39	mdtgmd022	gtogmd040	A39	LF	40	39	A40. Kneels and gets to standing without using hands	Kneels and gets to standing without using hands
-Ma_LF_A40	Ma_LF_A44	mdtgmd023	gtogmd041	A40	LF	41	44	A41. Throws beanbag on to a cloth	Throws beanbag on to a cloth
-Ma_LF_A41	Ma_LF_A41	kdigmd008	gtogmd042	A41	LF	42	41	A42. Jumps with two feet together	Jumps with two feet together
-Ma_LF_A42	Ma_LF_A42	mdtgmd029	gtogmd043	A42	LF	43	42	A43. Jumps over a piece of paper (widthways)	Jumps over a piece of paper (widthways)
-Ma_LF_A43	Ma_LF_A45	mdtgmd027	gtogmd044	A43	LF	44	45	A44. Stands on one foot <= 5 secs	Stands on one foot ≤ 5 secs
-Ma_LF_A44	Ma_LF_A40	mdtgmd031	gtogmd045	A44	LF	45	40	A45. Hops forward on one foot 3 steps	Hops forward on one foot 3 steps
-Ma_LF_A45	Ma_LF_A48	mdtgmd032	gtogmd046	A45	LF	46	48	A46. Stands on one foot > 5 seconds	Stands on one foot > 5 seconds
-Ma_LF_A46	Ma_LF_A46	mdtgmd030	gtogmd047	A46	LF	47	46	A47. Walks on tiptoes 6 or more steps	Walks on tiptoes 6 or more steps
-Ma_LF_A47	Ma_LF_A43	kdigmd015	gtogmd048	A47	LF	48	43	A48. Walks along line heel to toe	Walks along line heel to toe
+Ma_LF_A38	Ma_LF_A36	mdtgmd021	gtogmd038	A38	LF	38	36	A38. Runs well	Runs well
+Ma_LF_A39	Ma_LF_A38	mdtgmd024	gtogmd039	A39	LF	39	38	A39. Runs and kicks a ball well	Runs and kicks a ball well
+Ma_LF_A40	Ma_LF_A39	mdtgmd022	gtogmd040	A40	LF	40	39	A40. Kneels and gets to standing without using hands	Kneels and gets to standing without using hands
+Ma_LF_A41	Ma_LF_A44	mdtgmd023	gtogmd041	A41	LF	41	44	A41. Throws beanbag on to a cloth	Throws beanbag on to a cloth
+Ma_LF_A42	Ma_LF_A41	kdigmd008	gtogmd042	A42	LF	42	41	A42. Jumps with two feet together	Jumps with two feet together
+Ma_LF_A43	Ma_LF_A42	mdtgmd029	gtogmd043	A43	LF	43	42	A43. Jumps over a piece of paper (widthways)	Jumps over a piece of paper (widthways)
+Ma_LF_A44	Ma_LF_A45	mdtgmd027	gtogmd044	A44	LF	44	45	A44. Stands on one foot <= 5 secs	Stands on one foot ≤ 5 secs
+Ma_LF_A45	Ma_LF_A40	mdtgmd031	gtogmd045	A45	LF	45	40	A45. Hops forward on one foot 3 steps	Hops forward on one foot 3 steps
+Ma_LF_A46	Ma_LF_A48	mdtgmd032	gtogmd046	A46	LF	46	48	A46. Stands on one foot > 5 seconds	Stands on one foot > 5 seconds
+Ma_LF_A47	Ma_LF_A46	mdtgmd030	gtogmd047	A47	LF	47	46	A47. Walks on tiptoes 6 or more steps	Walks on tiptoes 6 or more steps
+Ma_LF_A48	Ma_LF_A43	kdigmd015	gtogmd048	A48	LF	48	43	A48. Walks along line heel to toe	Walks along line heel to toe
 Ma_LF_A49	Ma_LF_A49	mdtgmd033	gtogmd049	A49	LF	49	49	A49. Throws a ball up into the air and can catch it	Throws a ball up into the air and can catch it
 Ma_LF_B01	Ma_LF_B02	ddicmm029	gtolgd001	B1	LF	50	51	B1. Reacts when spoken to	Reacts when spoken to
 Ma_LF_B02	Ma_LF_B03	ddicmm030	gtolgd002	B2	LF	51	52	B2. Smiles in response	Smiles in response
