@@ -50,8 +50,8 @@ if (!dir.exists(file.path(Sys.getenv("GSED_PHASE2"), "data"))) {
 output_fixed <- file.path(Sys.getenv("GSED_PHASE2"), "data/fixed.duckdb")
 
 # Read Phase 1 and Phase 2 data
-phase1 <- read_gsed_fixed(onedrive = onedrive, path = path_phase1, phase = 1)
-phase2 <- read_gsed_fixed(onedrive = onedrive, path = path_phase2, phase = 2)
+phase1 <- read_gsed_fixed(onedrive = onedrive, path = path_phase1, phase = 1, hard_edits = TRUE)
+phase2 <- read_gsed_fixed(onedrive = onedrive, path = path_phase2, phase = 2, hard_edits = TRUE)
 
 # Combine Phase 1 and Phase 2 data
 responses <- bind_rows(phase1$responses, phase2$responses)

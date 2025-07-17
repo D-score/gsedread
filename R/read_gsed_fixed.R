@@ -148,24 +148,28 @@ read_gsed_fixed <- function(onedrive, path, phase, hard_edits = TRUE) {
   responses <- responses |>
     filter(!.data$item == "gpamoc008")
 
-  # EDIT 2 Remove responses not relevant for children > 6,12,18 mo
+  # EDIT 2 Remove responses not relevant for children > 6,12,9,18 mo
   #
+  # gtolgd001	 1, 2	B1. Reacts when spoken to
   # gtolgd002	13,22	B2. Smiles in response
   # gtolgd003	 5,33 B3. Calms and quiets with caregivers
   # gtolgd004	19,12	B4. Happy vocalizing or making sounds
+  #
   # gtolgd006	24,62	B6. Laughs
   # gtolgd007	23,47	B7. Vocalises when spoken to
+  #
   # gtolgd008	35,25	B8. Repeats syllables
   # gtofmd009 trunc at 12 mo Pulls string to get object
-  # gtolgd009 trunc at 12 mo Babbles while playing
+  #
   # gtolgd012 trunc at 18 mo Uses gestures to communicate
 
-  vars <- c("gtolgd002", "gtolgd003",
-            "gtolgd004", "gtolgd006",
-            "gtolgd007", "gtolgd008")
+  vars <- c("gtolgd001", "gtolgd002", "gtolgd003", "gtolgd004")
   responses <- responses |>
     filter(!(.data$agedays > 182 & .data$item %in% vars))
-  vars <- c("gtofmd009", "gtolgd009")
+  vars <- c("gtolgd006", "gtolgd007")
+  responses <- responses |>
+    filter(!(.data$agedays > 274 & .data$item %in% vars))
+  vars <- c("gtolgd008", "gtofmd009")
   responses <- responses |>
     filter(!(.data$agedays > 365 & .data$item %in% vars))
   vars <- c("gtolgd012")
