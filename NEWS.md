@@ -2,6 +2,7 @@
 
 * Extends hard trunction with three items at 12 and 18 months
 * Add `hard_edits` argument to `read_gsed_fixed()`
+* Repairs an error in `itemnames_translate.tsv` for "Runs well" item
 
 # gsedread 0.17.0
 
