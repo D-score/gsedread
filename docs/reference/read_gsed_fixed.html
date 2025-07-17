@@ -13,7 +13,7 @@ also applies specific data edits to ensure the integrity of the dataset."></head
 
     <a class="navbar-brand me-2" href="../index.html">gsedread</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.17.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.18.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@ also applies specific data edits to ensure the integrity of the dataset.</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">read_gsed_fixed</span><span class="op">(</span><span class="va">onedrive</span>, <span class="va">path</span>, <span class="va">phase</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">read_gsed_fixed</span><span class="op">(</span><span class="va">onedrive</span>, <span class="va">path</span>, <span class="va">phase</span>, hard_edits <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -67,6 +67,10 @@ also applies specific data edits to ensure the integrity of the dataset.</p>
 <dd><p>Either 1 or 2, indicating the phase of the GSED data to read.
 It is important to specify this correctly as it accounts for the different
 item orders between phase 1 and phase 2 for SF and LF.</p></dd>
+
+
+<dt id="arg-hard-edits">hard_edits<a class="anchor" aria-label="anchor" href="#arg-hard-edits"></a></dt>
+<dd><p>Logical, if <code>TRUE</code>, applies hard edits to the data.</p></dd>
 
 </dl></div>
     <div class="section level2">
