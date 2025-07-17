@@ -1,3 +1,8 @@
+# gsedread 0.18.0
+
+* Extends hard trunction with three items at 12 and 18 months
+* Add `hard_edits` argument to `read_gsed_fixed()`
+
 # gsedread 0.17.0
 
 * Solves an error in the item name matching between phase1 and phase2 related to the reversal of items `gpaclc089` (was `gpaclc088`) and `gpasec088` (was `gpasec089`).

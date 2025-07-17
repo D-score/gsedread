@@ -21,6 +21,7 @@
 #' @param phase Either 1 or 2, indicating the phase of the GSED data to read.
 #' It is important to specify this correctly as it accounts for the different
 #' item orders between phase 1 and phase 2 for SF and LF.
+#' @param hard_edits Logical, if `TRUE`, applies hard edits to the data.
 #' @return A list containing two data frames: `responses` and `visits`.
 #' @examples
 #' onedrive <- Sys.getenv("ONEDRIVE_GSED")
@@ -29,7 +30,7 @@
 #'   "GSED Final Collated Phase 1 Data Files 18_05_22")
 #' phase1 <- read_gsed_fixed(onedrive, path, phase = 1)
 #' @export
-read_gsed_fixed <- function(onedrive, path, phase) {
+read_gsed_fixed <- function(onedrive, path, phase, hard_edits = TRUE) {
 
   # Read data
   sf <- read_sf(onedrive = onedrive, path = path, adm = "fixed", warnings = TRUE)
@@ -130,6 +131,15 @@ read_gsed_fixed <- function(onedrive, path, phase) {
     lf_visits,
     bsid_visits)
 
+  # Remove responses that are not 0 or 1
+  responses <- responses |>
+    filter(.data$response %in% c(0, 1))
+
+  # Return if no hard edits are required
+  if (!hard_edits) {
+    return(list(responses = responses, visits = visits))
+  }
+
   # Hard data edits
 
   # EDIT 1 Remove item because it identifies abnormality (Melissa 22020807)
@@ -138,7 +148,7 @@ read_gsed_fixed <- function(onedrive, path, phase) {
   responses <- responses |>
     filter(!.data$item == "gpamoc008")
 
-  # EDIT 2 Remove responses not relevant for older children
+  # EDIT 2 Remove responses not relevant for children > 6,12,18 mo
   #
   # gtolgd002	13,22	B2. Smiles in response
   # gtolgd003	 5,33 B3. Calms and quiets with caregivers
@@ -146,15 +156,21 @@ read_gsed_fixed <- function(onedrive, path, phase) {
   # gtolgd006	24,62	B6. Laughs
   # gtolgd007	23,47	B7. Vocalises when spoken to
   # gtolgd008	35,25	B8. Repeats syllables
+  # gtofmd009 trunc at 12 mo Pulls string to get object
+  # gtolgd009 trunc at 12 mo Babbles while playing
+  # gtolgd012 trunc at 18 mo Uses gestures to communicate
 
-  vars <- c("gtolgd002", "gtolgd003", "gtolgd004", "gtolgd006",
+  vars <- c("gtolgd002", "gtolgd003",
+            "gtolgd004", "gtolgd006",
             "gtolgd007", "gtolgd008")
   responses <- responses |>
     filter(!(.data$agedays > 182 & .data$item %in% vars))
-
-  # EDIT 3 Remove responses that are not 0 or 1
+  vars <- c("gtofmd009", "gtolgd009")
   responses <- responses |>
-    filter(.data$response %in% c(0, 1))
+    filter(!(.data$agedays > 365 & .data$item %in% vars))
+  vars <- c("gtolgd012")
+  responses <- responses |>
+    filter(!(.data$agedays > 548 & .data$item %in% vars))
 
   return(list(responses = responses, visits = visits))
 }

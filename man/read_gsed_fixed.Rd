@@ -4,7 +4,7 @@
 \alias{read_gsed_fixed}
 \title{Read the GSED data for SF, LF and BSID (fixed form)}
 \usage{
-read_gsed_fixed(onedrive, path, phase)
+read_gsed_fixed(onedrive, path, phase, hard_edits = TRUE)
 }
 \arguments{
 \item{onedrive}{The OneDrive path where the data is stored.}
@@ -14,6 +14,8 @@ read_gsed_fixed(onedrive, path, phase)
 \item{phase}{Either 1 or 2, indicating the phase of the GSED data to read.
 It is important to specify this correctly as it accounts for the different
 item orders between phase 1 and phase 2 for SF and LF.}
+
+\item{hard_edits}{Logical, if \code{TRUE}, applies hard edits to the data.}
 }
 \value{
 A list containing two data frames: \code{responses} and \code{visits}.
