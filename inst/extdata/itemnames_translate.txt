@@ -237,7 +237,7 @@ Ma_SF_C77	Ma_SF_C80	iyomoc027	gpamoc077	gs1moc080	SF077	SF080	SF	77	80	Can your 
 Ma_SF_C78	Ma_SF_C81	iyomoc030	gpamoc078	gs1moc081	SF078	SF081	SF	78	81	Can your child stack at least two objects on top of each other, such as bottle tops, blocks, stones, etc.?
 Ma_SF_C85	Ma_SF_C82	mdtsed017	gpasec085	gs1sec082	SF085	SF082	SF	85	82	"Can your child greet people either by giving his/her hand or saying ""hello""? (use local examples of greeting)"
 Ma_SF_C79	Ma_SF_C83	cromoc025	gpamoc079	gs1moc083	SF079	SF083	SF	79	83	Can your child kick a ball or other round object forward using his/her foot? 
-Ma_SF_C88	Ma_SF_C84	croclc023	gpaclc089	gs1lgc084	SF089	SF084	SF	89	84	"Can your child say five or more separate words (e.g., names like ""Mama"" or objects like ""ball"")?"
+Ma_SF_C89	Ma_SF_C84	croclc023	gpaclc089	gs1lgc084	SF089	SF084	SF	89	84	"Can your child say five or more separate words (e.g., names like ""Mama"" or objects like ""ball"")?"
 Ma_SF_C81	Ma_SF_C85	iyolgc017	gpalgc081	gs1cgc085	SF081	SF085	SF	81	85	Can your child follow directions with more than one step? For example, 'Go to the kitchen and bring me a spoon'?
 Ma_SF_C96	Ma_SF_C86	croclc028	gpaclc096	gs1lgc086	SF096	SF086	SF	96	86	Can your child correctly name at least one family member other than mom and dad (e.g., name of brother, sister, aunt, uncle)? 
 Ma_SF_C99	Ma_SF_C87	iyolgc022	gpalgc099	gs1lgc087	SF099	SF087	SF	99	87	Can your child identify at least seven objects? For example, when you ask 'where is the ball/spoon/cup/cloth/door/plate/bucket etc.' does your child look at or point to (or even name) the objects?
@@ -256,7 +256,7 @@ Ma_SF_C98	Ma_SF_C99	iyolgc021	gpalgc098	gs1lgc099	SF098	SF099	SF	98	99	"When loo
 Ma_SF_C91	Ma_SF_C100	croclc024	gpaclc091	gs1lgc100	SF091	SF100	SF	91	100	Can your child speak using short sentences of two words that go together (e.g., 'Mama go' or 'Dada eat'?
 Ma_SF_C110	Ma_SF_C101	cromoc033	gpamoc110	gs1moc101	SF110	SF101	SF	110	101	Can your child unscrew the lid from a bottle or jar? 
 Ma_SF_C130	Ma_SF_C102	mdtsed029	gpasec130	gs1sec102	SF130	SF102	SF	130	102	Does your child help out around the house with simple chores, even if he/she doesn't do them well? (use local examples of chores)
-Ma_SF_C89	Ma_SF_C103	mdtsed019	gpasec088	gs1lic103	SF088	SF103	SF	88	103	Is your child able to go poo or pee without having accidents (wetting or soiling themselves)?
+Ma_SF_C88	Ma_SF_C103	mdtsed019	gpasec088	gs1lic103	SF088	SF103	SF	88	103	Is your child able to go poo or pee without having accidents (wetting or soiling themselves)?
 Ma_SF_C112	Ma_SF_C104	croclc029	gpaclc112	gs1lgc104	SF112	SF104	SF	112	104	"Can your child speak using sentences of three or more words that go together (e.g., ""I want water"" or ""The house is big"")?"
 Ma_SF_C100	Ma_SF_C105	croclc038	gpaclc100	gs1lgc105	SF100	SF105	SF	100	105	Can your child name at least two body parts (e.g., arm, eye, or nose)? 
 Ma_SF_C104	Ma_SF_C106	cromoc035	gpamoc104	gs1lic106	SF104	SF106	SF	104	106	Can your child remove an item of clothing (e.g., take off his/her shirt)? 
