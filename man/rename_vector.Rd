@@ -6,8 +6,8 @@
 \usage{
 rename_vector(
   input,
-  lexin = c("original", "original_phase2", "sequential", "gsed", "gsed2"),
-  lexout = c("gsed2", "original", "original_phase2", "sequential", "gsed"),
+  lexin = c("phase2", "phase1", "short1", "short2", "gsed", "gsed2", "gsed3"),
+  lexout = c("gsed3", "gsed2", "gsed", "short2", "short1", "phase1", "phase2"),
   notfound = "copy",
   contains = c("", "Ma_SF_", "Ma_LF_", "bsid_"),
   underscore = TRUE,
@@ -19,11 +19,16 @@ rename_vector(
 \arguments{
 \item{input}{A character vector with names to be translated}
 
-\item{lexin}{A string indicating the input lexicon. One of "original",
-"original_phase2", "sequential", "gsed" or "gsed2". Default is "original".}
+\item{lexin}{A string indicating the input lexicon. One of \code{"phase1"},
+\code{"phase2"}, \code{"short1"}, \code{"short2"}, \code{"gsed"}, \code{"gsed2"} or \code{"gsed3"}.
+Default is \code{"phase2"}, which orders item names according to the
+published 2023 version of the SF and LF instruments.}
 
-\item{lexout}{A string indicating the output lexicon. One of "original",
-"original_phase2", "sequential", "gsed" or "gsed2". Default is "gsed2".}
+\item{lexout}{A string indicating the output lexicon. One of \code{"phase1"},
+\code{"phase2"}, \code{"short1"}, \code{"short2"}, \code{"gsed"}, \code{"gsed2"} or \code{"gsed3"}.
+Default is \code{"gsed3"}. The default output \code{"gsed3"} applies instrument
+codes \code{gs1} and \code{gl1} to each name, and output names that are understood
+by the \code{dscore} package.}
 
 \item{notfound}{A string indicating what to do some input value is not found}
 
@@ -49,13 +54,23 @@ names.
 \description{
 Translates names between different lexicons (naming schema).
 }
+\details{
+The recommended approach for reading new data is to name the columns
+according to the names defined by \code{"short2"} and the apply \code{rename_vector()}
+to translate the names to the \code{"gsed3"} lexicon.
+
+The lexicons \code{"phase1"}, \code{"short1"}, \code{"gsed"} and \code{"gsed2"} are included
+for backward compatibility, and are not recommended for use with new
+data.
+}
 \examples{
+# Using Ma_SF_Cxx as input names, 2023 SF/LF version
 input <- c("file", "GSED_ID", "Ma_SF_Parent ID", "Ma_SF_C01", "Ma_SF_C02")
 rename_vector(input)
-rename_vector(input, lexout = "sequential", lowercase = FALSE)
-rename_vector(input, lexout = "gsed", trim = "Ma_SF_")
+rename_vector(input, lexout = "short2", lowercase = FALSE)
+rename_vector(input, lexout = "gsed2", trim = "Ma_SF_")
 
-# SF/LF phase 2 names to default names
-input <- c("file", "GSED_ID", "Ma_SF_Parent ID", paste0("Ma_SF_C00", 1:9))
-rename_vector(input, lexin = "original_phase2", lowercase = TRUE)
+# Convert short names to gsed names
+input <- c("file", "GSED_ID", "Ma_SF_Parent ID", paste0("SF00", 1:3))
+rename_vector(input, lexin = "short2", lowercase = TRUE)
 }

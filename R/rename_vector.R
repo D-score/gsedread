@@ -2,10 +2,15 @@
 #'
 #' Translates names between different lexicons (naming schema).
 #' @param input    A character vector with names to be translated
-#' @param lexin    A string indicating the input lexicon. One of "original",
-#' "original_phase2", "sequential", "gsed" or "gsed2". Default is "original".
-#' @param lexout   A string indicating the output lexicon. One of "original",
-#' "original_phase2", "sequential", "gsed" or "gsed2". Default is "gsed2".
+#' @param lexin    A string indicating the input lexicon. One of `"phase1"`,
+#' `"phase2"`, `"short1"`, `"short2"`, `"gsed"`, `"gsed2"` or `"gsed3"`.
+#' Default is `"phase2"`, which orders item names according to the
+#' published 2023 version of the SF and LF instruments.
+#' @param lexout   A string indicating the output lexicon. One of `"phase1"`,
+#' `"phase2"`, `"short1"`, `"short2"`, `"gsed"`, `"gsed2"` or `"gsed3"`.
+#' Default is `"gsed3"`. The default output `"gsed3"` applies instrument
+#' codes `gs1` and `gl1` to each name, and output names that are understood
+#' by the `dscore` package.
 #' @param notfound A string indicating what to do some input value is not found
 #' @param contains A string to filter the translation table prior to matching.
 #' Needed to prevent double matches. The default ("") does not filter.
@@ -19,21 +24,32 @@
 #' and `"agedays"` as names for the `"ID"` and `"age"`, respectively.
 #' @return A character vector of the same length as `input` with processed
 #' names.
+#' @details
+#' The recommended approach for reading new data is to name the columns
+#' according to the names defined by `"short2"` and the apply `rename_vector()`
+#' to translate the names to the `"gsed3"` lexicon.
+#'
+#' The lexicons `"phase1"`, `"short1"`, `"gsed"` and `"gsed2"` are included
+#' for backward compatibility, and are not recommended for use with new
+#' data.
 #' @examples
+#' # Using Ma_SF_Cxx as input names, 2023 SF/LF version
 #' input <- c("file", "GSED_ID", "Ma_SF_Parent ID", "Ma_SF_C01", "Ma_SF_C02")
 #' rename_vector(input)
-#' rename_vector(input, lexout = "sequential", lowercase = FALSE)
-#' rename_vector(input, lexout = "gsed", trim = "Ma_SF_")
+#' rename_vector(input, lexout = "short2", lowercase = FALSE)
+#' rename_vector(input, lexout = "gsed2", trim = "Ma_SF_")
 #'
-#' # SF/LF phase 2 names to default names
-#' input <- c("file", "GSED_ID", "Ma_SF_Parent ID", paste0("Ma_SF_C00", 1:9))
-#' rename_vector(input, lexin = "original_phase2", lowercase = TRUE)
+#' # Convert short names to gsed names
+#' input <- c("file", "GSED_ID", "Ma_SF_Parent ID", paste0("SF00", 1:3))
+#' rename_vector(input, lexin = "short2", lowercase = TRUE)
 #' @export
 rename_vector <- function(input,
-                          lexin = c("original", "original_phase2", "sequential",
-                                    "gsed", "gsed2"),
-                          lexout = c("gsed2", "original", "original_phase2",
-                                     "sequential", "gsed"),
+                          lexin = c("phase2", "phase1",
+                                    "short1", "short2",
+                                    "gsed", "gsed2", "gsed3"),
+                          lexout = c("gsed3", "gsed2", "gsed",
+                                     "short2", "short1",
+                                     "phase1", "phase2"),
                           notfound = "copy",
                           contains = c("", "Ma_SF_", "Ma_LF_", "bsid_"),
                           underscore = TRUE,
@@ -46,21 +62,24 @@ rename_vector <- function(input,
 
   # rename itemnames
   fn <- system.file("extdata", "itemnames_translate.txt", package = "gsedread")
-  mt <- readr::read_tsv(fn, col_types = "cccccciicc", progress = FALSE) |>
-    filter(grepl(contains, .data$original))
+  mt <- readr::read_tsv(fn, col_types = "cccccccciic", progress = FALSE)
   colin <- switch(lexin,
-                  original = "original",
-                  original_phase2 = "original_phase2",
-                  sequential = "sequential",
-                   gsed = "gsed",
-                   gsed2 = "gsed2",
-                   "notfound")
+                  phase1 = "phase1",
+                  phase2 = "phase2",
+                  short1 = "short1",
+                  short2 = "short2",
+                  gsed = "gsed",
+                  gsed2 = "gsed2",
+                  gsed3 = "gsed3",
+                  "notfound")
   colout <- switch(lexout,
-                   original = "original",
-                   original_phase2 = "original_phase2",
-                   sequential = "sequential",
+                   phase1 = "phase1",
+                   phase2 = "phase2",
+                   short1 = "short1",
+                   short2 = "short2",
                    gsed = "gsed",
                    gsed2 = "gsed2",
+                   gsed3 = "gsed3",
                    "notfound")
   if (colin  == "notfound") stop("Lexicon not found: ", lexin)
   if (colout == "notfound") stop("Lexicon not found: ", lexout)
