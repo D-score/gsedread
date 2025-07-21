@@ -111,15 +111,15 @@ following structure:
 
 ``` r
 str(phase1$responses)
-#> tibble [566,504 × 5] (S3: tbl_df/tbl/data.frame)
-#>  $ subjid   : chr [1:566504] "11-GSED-0001" "11-GSED-0001" "11-GSED-0001" "11-GSED-0001" ...
-#>  $ agedays  : int [1:566504] 421 421 421 421 421 421 421 421 421 421 ...
-#>  $ vist_type: int [1:566504] 1 1 1 1 1 1 1 1 1 1 ...
-#>  $ item     : chr [1:566504] "gpamoc058" "gpalgc059" "gpamoc060" "gpamoc061" ...
-#>  $ response : int [1:566504] 1 1 1 1 1 1 1 1 1 1 ...
+#> tibble [568,046 × 5] (S3: tbl_df/tbl/data.frame)
+#>  $ subjid   : chr [1:568046] "11-GSED-0001" "11-GSED-0001" "11-GSED-0001" "11-GSED-0001" ...
+#>  $ agedays  : int [1:568046] 421 421 421 421 421 421 421 421 421 421 ...
+#>  $ vist_type: int [1:568046] 1 1 1 1 1 1 1 1 1 1 ...
+#>  $ item     : chr [1:568046] "gs1moc054" "gs1lgc058" "gs1moc059" "gs1moc064" ...
+#>  $ response : int [1:568046] 1 1 1 1 1 1 1 1 1 1 ...
 ```
 
-There are 566504 responses in the data, with 4374 unique GSED IDs. A
+There are 568046 responses in the data, with 4374 unique GSED IDs. A
 response is defined by a combination of `subjid`, `agedays`, `vist_type`
 and `item`. The column named `response` is the 0/1 score on the item.
 
@@ -166,12 +166,14 @@ actions:
 11. Transform the data for consistency, efficiency and clarity
 12. Remove duplicates and sorts the data
 13. Rename all item names to conform to the 9-position GSED convention
+    using the `gsed3` lexicon. This produces item names that start with
+    `gl1` and `gs1` (was `gto` and `gpa`).
 14. Split the data into `visits` and `responses` data frames, where
     `visits` contains the visit information and `responses` contains the
     item responses.
-15. Remove `gpamoc008` (Clench fist)
-16. Remove responses for `gtolgd002`, `gtolgd003`, `gtolgd004`,
-    `gtolgd006`, `gtolgd007` and `gtolgd008` after the age of six months
+15. Remove `gs1moc028` (Clench fist)
+16. Remove responses for several language items after the age of 6, 9,
+    12 or 18 months, because the meaning changes with age.
 17. Make sure that all responses are coded as 0 or 1.
 
 Item renaming with `rename_variables()` relies on the item translation

@@ -1,3 +1,13 @@
+# gsedread 0.19.0
+
+* -- CONTAINS BREAKING CHANGES
+
+* Repairs an error in `itemnames_translate.txt` in the B43-B51 range, updates the labels
+* Renames the column headers in `itemnames_translate.txt` to a more consistent set
+* Adds the new lexicon `gsed3` to `itemnames_translate.txt`. The main advantage of `gsed3` is that the item order conforms to the published LF and SF order (this was not the case in the `gsed` and `gsed2` lexicons). 
+* Changes the default lexicons in `rename_vector()`. The `lexin` is `phase2` (was 'original') and `lexout` is `gsed3` (was 'gsed2'). You may revert to previous default by setting `lexin = "phase1"` and `lexout = "gsed2"` in calls to `rename_vector()`. The new lexicon follows the published item order, which should prevent errors in data entry and reading.
+* Updates `read_gsed_fixed()` to use the new lexicon `gsed3`.
+
 # gsedread 0.18.0
 
 * Extends hard trunction with three items at 12 and 18 months

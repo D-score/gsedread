@@ -109,10 +109,10 @@ In addition, the `read_gsed_fixed()` function performs the following actions:
 10. Add the `ins` field to `visits`, providing a short hand for instrument (`"sf"`, `"lf"`, `"bsid"`)
 11. Transform the data for consistency, efficiency and clarity
 12. Remove duplicates and sorts the data
-13. Rename all item names to conform to the 9-position GSED convention
+13. Rename all item names to conform to the 9-position GSED convention using the `gsed3` lexicon. This produces item names that start with `gl1` and `gs1` (was `gto` and `gpa`).
 14. Split the data into `visits` and `responses` data frames, where `visits` contains the visit information and `responses` contains the item responses.
-15. Remove `gpamoc008` (Clench fist)
-16. Remove responses for `gtolgd002`, `gtolgd003`, `gtolgd004`, `gtolgd006`, `gtolgd007` and `gtolgd008` after the age of six months
+15. Remove `gs1moc028` (Clench fist)
+16. Remove responses for several language items after the age of 6, 9, 12 or 18 months, because the meaning changes with age.
 17. Make sure that all responses are coded as 0 or 1.
 
 Item renaming with `rename_variables()` relies on the item translation table at 
