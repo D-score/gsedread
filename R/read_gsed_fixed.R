@@ -33,7 +33,7 @@
 #' phase1 <- read_gsed_fixed(onedrive, path, phase = 1)
 #' @export
 read_gsed_fixed <- function(onedrive, path, phase,
-                            lexout = "gsed3", hard_edits = TRUE) {
+                            lexout = "gsed4", hard_edits = TRUE) {
 
   # Read data
   sf <- read_sf(onedrive = onedrive, path = path, adm = "fixed", warnings = TRUE)
@@ -91,7 +91,7 @@ read_gsed_fixed <- function(onedrive, path, phase,
   # Extract item responses
   sf_responses <- sf |>
     pivot_longer(
-      cols = starts_with("gs1"),
+      cols = starts_with("sf"),
       names_to = "item",
       values_to = "response",
       values_drop_na = TRUE
@@ -99,7 +99,7 @@ read_gsed_fixed <- function(onedrive, path, phase,
     select(.data$subjid, .data$agedays, .data$vist_type, .data$item, .data$response)
   lf_responses <- lf |>
     pivot_longer(
-      cols = starts_with("gl1"),
+      cols = starts_with("lf"),
       names_to = "item",
       values_to = "response",
       values_drop_na = TRUE
@@ -116,9 +116,9 @@ read_gsed_fixed <- function(onedrive, path, phase,
 
   # Extact visit tables
   sf_visits <- sf |>
-    select(-starts_with("gs1"))
+    select(-starts_with("sf"))
   lf_visits <- lf |>
-    select(-starts_with("gl1"))
+    select(-starts_with("lf"))
   bsid_visits <- bsid |>
     select(-starts_with("bsid"), -starts_with("by3"))
 
@@ -150,7 +150,8 @@ read_gsed_fixed <- function(onedrive, path, phase,
   # cromoc001	gpamoc008 Clench fist
   responses <- responses |>
   #  filter(!.data$item == "gpamoc008")
-    filter(!.data$item == "gs1moc028")
+  #  filter(!.data$item == "gs1moc028")
+  filter(!.data$item == "sf_moc028")
 
   # EDIT 2 Remove responses not relevant for children > 6,12,9,18 mo
   #
@@ -168,19 +169,23 @@ read_gsed_fixed <- function(onedrive, path, phase,
   # gtolgd012 trunc at 18 mo Uses gestures to communicate
 
   # vars <- c("gtolgd001", "gtolgd002", "gtolgd003", "gtolgd004")
-  vars <- c("gl1lgd002", "gl1lgd003", "gl1lgd005", "gl1lgd001")
+  # vars <- c("gl1lgd002", "gl1lgd003", "gl1lgd005", "gl1lgd001")
+  vars <- c("lfblgd002", "lfblgd003", "lfblgd005", "lfblgd001")
   responses <- responses |>
     filter(!(.data$agedays > 182 & .data$item %in% vars))
   # vars <- c("gtolgd006", "gtolgd007")
-  vars <- c("gl1lgd004", "gl1lgd006")
+  # vars <- c("gl1lgd004", "gl1lgd006")
+  vars <- c("lfblgd004", "lfblgd006")
   responses <- responses |>
     filter(!(.data$agedays > 274 & .data$item %in% vars))
   # vars <- c("gtolgd008", "gtofmd009")
-  vars <- c("gl1lgd009", "gl1fmd010")
+  # vars <- c("gl1lgd009", "gl1fmd010")
+  vars <- c("lfblgd009", "lfcfmd010")
   responses <- responses |>
     filter(!(.data$agedays > 365 & .data$item %in% vars))
   # vars <- c("gtolgd012")
-  vars <- c("gl1lgd010")
+  # vars <- c("gl1lgd010")
+  vars <- c("lfblgd010")
   responses <- responses |>
     filter(!(.data$agedays > 548 & .data$item %in% vars))
 

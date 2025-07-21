@@ -6,8 +6,8 @@
 \usage{
 rename_vector(
   input,
-  lexin = c("phase2", "phase1", "short1", "short2", "gsed", "gsed2", "gsed3"),
-  lexout = c("gsed3", "gsed2", "gsed", "short2", "short1", "phase1", "phase2"),
+  lexin = c("phase2", "phase1", "short1", "short2", "gsed", "gsed2", "gsed3", "gsed4"),
+  lexout = c("gsed4", "gsed3", "gsed2", "gsed", "short2", "short1", "phase1", "phase2"),
   notfound = "copy",
   contains = c("", "Ma_SF_", "Ma_LF_", "bsid_"),
   underscore = TRUE,
@@ -20,15 +20,16 @@ rename_vector(
 \item{input}{A character vector with names to be translated}
 
 \item{lexin}{A string indicating the input lexicon. One of \code{"phase1"},
-\code{"phase2"}, \code{"short1"}, \code{"short2"}, \code{"gsed"}, \code{"gsed2"} or \code{"gsed3"}.
+\code{"phase2"}, \code{"short1"}, \code{"short2"}, \code{"gsed"}, \code{"gsed2"}, \code{"gsed3"} or
+\code{"gsed4"}
 Default is \code{"phase2"}, which orders item names according to the
 published 2023 version of the SF and LF instruments.}
 
 \item{lexout}{A string indicating the output lexicon. One of \code{"phase1"},
-\code{"phase2"}, \code{"short1"}, \code{"short2"}, \code{"gsed"}, \code{"gsed2"} or \code{"gsed3"}.
-Default is \code{"gsed3"}. The default output \code{"gsed3"} applies instrument
-codes \code{gs1} and \code{gl1} to each name, and output names that are understood
-by the \code{dscore} package.}
+\code{"phase2"}, \code{"short1"}, \code{"short2"}, \code{"gsed"}, \code{"gsed2"}, \code{"gsed3"} or
+\code{"gsed4"}.
+Default is \code{"gsed4"}. The default output \code{"gsed4"} applies instrument
+codes \code{sf_} and \code{lf_}, which can be understood by the \code{dscore} package.}
 
 \item{notfound}{A string indicating what to do some input value is not found}
 
@@ -57,7 +58,7 @@ Translates names between different lexicons (naming schema).
 \details{
 The recommended approach for reading new data is to name the columns
 according to the names defined by \code{"short2"} and the apply \code{rename_vector()}
-to translate the names to the \code{"gsed3"} lexicon.
+to translate the names to the \code{"gsed4"} lexicon.
 
 The lexicons \code{"phase1"}, \code{"short1"}, \code{"gsed"} and \code{"gsed2"} are included
 for backward compatibility, and are not recommended for use with new
@@ -68,7 +69,7 @@ data.
 input <- c("file", "GSED_ID", "Ma_SF_Parent ID", "Ma_SF_C01", "Ma_SF_C02")
 rename_vector(input)
 rename_vector(input, lexout = "short2", lowercase = FALSE)
-rename_vector(input, lexout = "gsed2", trim = "Ma_SF_")
+rename_vector(input, lexout = "gsed3", trim = "Ma_SF_")
 
 # Convert short names to gsed names
 input <- c("file", "GSED_ID", "Ma_SF_Parent ID", paste0("SF00", 1:3))
