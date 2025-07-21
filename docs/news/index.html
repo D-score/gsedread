@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">gsedread</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.18.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.19.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,6 +32,15 @@
       <small>Source: <a href="https://github.com/D-score/gsedread/blob/HEAD/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.19.0" id="gsedread-0190">gsedread 0.19.0<a class="anchor" aria-label="anchor" href="#gsedread-0190"></a></h2>
+<ul><li><p>– CONTAINS BREAKING CHANGES</p></li>
+<li><p>Repairs an error in <code>itemnames_translate.txt</code> in the B43-B51 range, updates the labels</p></li>
+<li><p>Renames the column headers in <code>itemnames_translate.txt</code> to a more consistent set</p></li>
+<li><p>Adds the new lexicon <code>gsed3</code> to <code>itemnames_translate.txt</code>. The main advantage of <code>gsed3</code> is that the item order conforms to the published LF and SF order (this was not the case in the <code>gsed</code> and <code>gsed2</code> lexicons).</p></li>
+<li><p>Changes the default lexicons in <code><a href="../reference/rename_vector.html">rename_vector()</a></code>. The <code>lexin</code> is <code>phase2</code> (was ‘original’) and <code>lexout</code> is <code>gsed3</code> (was ‘gsed2’). You may revert to previous default by setting <code>lexin = "phase1"</code> and <code>lexout = "gsed2"</code> in calls to <code><a href="../reference/rename_vector.html">rename_vector()</a></code>. The new lexicon follows the published item order, which should prevent errors in data entry and reading.</p></li>
+<li><p>Updates <code><a href="../reference/read_gsed_fixed.html">read_gsed_fixed()</a></code> to use the new lexicon <code>gsed3</code>.</p></li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.18.0" id="gsedread-0180">gsedread 0.18.0<a class="anchor" aria-label="anchor" href="#gsedread-0180"></a></h2>
 <ul><li>Extends hard trunction with three items at 12 and 18 months</li>

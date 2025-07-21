@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="index.html">gsedread</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.18.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.19.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -119,13 +119,13 @@
 <p>The <code>responses</code> element is a data frame with the responses, with the following structure:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">phase1</span><span class="op">$</span><span class="va">responses</span><span class="op">)</span></span>
-<span><span class="co">#&gt; tibble [566,504 × 5] (S3: tbl_df/tbl/data.frame)</span></span>
-<span><span class="co">#&gt;  $ subjid   : chr [1:566504] "11-GSED-0001" "11-GSED-0001" "11-GSED-0001" "11-GSED-0001" ...</span></span>
-<span><span class="co">#&gt;  $ agedays  : int [1:566504] 421 421 421 421 421 421 421 421 421 421 ...</span></span>
-<span><span class="co">#&gt;  $ vist_type: int [1:566504] 1 1 1 1 1 1 1 1 1 1 ...</span></span>
-<span><span class="co">#&gt;  $ item     : chr [1:566504] "gpamoc058" "gpalgc059" "gpamoc060" "gpamoc061" ...</span></span>
-<span><span class="co">#&gt;  $ response : int [1:566504] 1 1 1 1 1 1 1 1 1 1 ...</span></span></code></pre></div>
-<p>There are 566504 responses in the data, with 4374 unique GSED IDs. A response is defined by a combination of <code>subjid</code>, <code>agedays</code>, <code>vist_type</code> and <code>item</code>. The column named <code>response</code> is the 0/1 score on the item.</p>
+<span><span class="co">#&gt; tibble [568,046 × 5] (S3: tbl_df/tbl/data.frame)</span></span>
+<span><span class="co">#&gt;  $ subjid   : chr [1:568046] "11-GSED-0001" "11-GSED-0001" "11-GSED-0001" "11-GSED-0001" ...</span></span>
+<span><span class="co">#&gt;  $ agedays  : int [1:568046] 421 421 421 421 421 421 421 421 421 421 ...</span></span>
+<span><span class="co">#&gt;  $ vist_type: int [1:568046] 1 1 1 1 1 1 1 1 1 1 ...</span></span>
+<span><span class="co">#&gt;  $ item     : chr [1:568046] "gs1moc054" "gs1lgc058" "gs1moc059" "gs1moc064" ...</span></span>
+<span><span class="co">#&gt;  $ response : int [1:568046] 1 1 1 1 1 1 1 1 1 1 ...</span></span></code></pre></div>
+<p>There are 568046 responses in the data, with 4374 unique GSED IDs. A response is defined by a combination of <code>subjid</code>, <code>agedays</code>, <code>vist_type</code> and <code>item</code>. The column named <code>response</code> is the 0/1 score on the item.</p>
 </div>
 <div class="section level2">
 <h2 id="lower-level-functions">Lower-level functions<a class="anchor" aria-label="anchor" href="#lower-level-functions"></a>
@@ -158,10 +158,10 @@
 <li>Add the <code>ins</code> field to <code>visits</code>, providing a short hand for instrument (<code>"sf"</code>, <code>"lf"</code>, <code>"bsid"</code>)</li>
 <li>Transform the data for consistency, efficiency and clarity</li>
 <li>Remove duplicates and sorts the data</li>
-<li>Rename all item names to conform to the 9-position GSED convention</li>
+<li>Rename all item names to conform to the 9-position GSED convention using the <code>gsed3</code> lexicon. This produces item names that start with <code>gl1</code> and <code>gs1</code> (was <code>gto</code> and <code>gpa</code>).</li>
 <li>Split the data into <code>visits</code> and <code>responses</code> data frames, where <code>visits</code> contains the visit information and <code>responses</code> contains the item responses.</li>
-<li>Remove <code>gpamoc008</code> (Clench fist)</li>
-<li>Remove responses for <code>gtolgd002</code>, <code>gtolgd003</code>, <code>gtolgd004</code>, <code>gtolgd006</code>, <code>gtolgd007</code> and <code>gtolgd008</code> after the age of six months</li>
+<li>Remove <code>gs1moc028</code> (Clench fist)</li>
+<li>Remove responses for several language items after the age of 6, 9, 12 or 18 months, because the meaning changes with age.</li>
 <li>Make sure that all responses are coded as 0 or 1.</li>
 </ol>
 <p>Item renaming with <code>rename_variables()</code> relies on the item translation table at <a href="https://github.com/D-score/gsedread/blob/main/inst/extdata/itemnames_translate.txt" class="external-link uri">https://github.com/D-score/gsedread/blob/main/inst/extdata/itemnames_translate.txt</a>.</p>
