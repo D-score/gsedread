@@ -10,18 +10,17 @@
 #   in this directory.
 #
 # Created: Stef van Buuren, June 20, 2025
-# Last modified: July 15, 2025
+# Last modified: July 21, 2025
 #
 # TODO:
 # - Update as soon as China data is cleaned
-# - Add Phase 2 BSID data
 # - Add covariate data (e.g. child factors, antropometry)
 
 if (nchar(Sys.getenv("ONEDRIVE_GSED")) == 0L) {
   stop("Environmental variable ONEDRIVE_GSED not set.", call. = FALSE)
 }
 if (nchar(Sys.getenv("GSED_PHASE2")) == 0L) {
-  stop("Environmental variable LOCAL_DUCKDB not set.", call. = FALSE)
+  stop("Environmental variable GSED_PHASE2 not set.", call. = FALSE)
 }
 
 # Load required CRAN packages
