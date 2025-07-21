@@ -21,6 +21,8 @@
 #' @param phase Either 1 or 2, indicating the phase of the GSED data to read.
 #' It is important to specify this correctly as it accounts for the different
 #' item orders between phase 1 and phase 2 for SF and LF.
+#' @param lexout The lexicon to use for renaming columns. Default is `"gsed3"`.
+#' See `rename_vector()` for available lexicons.
 #' @param hard_edits Logical, if `TRUE`, applies hard edits to the data.
 #' @return A list containing two data frames: `responses` and `visits`.
 #' @examples
@@ -30,7 +32,8 @@
 #'   "GSED Final Collated Phase 1 Data Files 18_05_22")
 #' phase1 <- read_gsed_fixed(onedrive, path, phase = 1)
 #' @export
-read_gsed_fixed <- function(onedrive, path, phase, hard_edits = TRUE) {
+read_gsed_fixed <- function(onedrive, path, phase,
+                            lexout = "gsed3", hard_edits = TRUE) {
 
   # Read data
   sf <- read_sf(onedrive = onedrive, path = path, adm = "fixed", warnings = TRUE)
@@ -39,15 +42,15 @@ read_gsed_fixed <- function(onedrive, path, phase, hard_edits = TRUE) {
 
   # Rename items into gsed2 lexicon
   lexin <- switch(as.character(phase),
-                  "1" = "original",
-                  "2" = "original_phase2",
+                  "1" = "phase1",
+                  "2" = "phase2",
                   stop("Invalid phase. Use 1 or 2.")
   )
-  colnames(sf) <- rename_vector(colnames(sf), lexin = lexin, trim = "Ma_SF_",
-                                force_subjid_agedays = TRUE)
-  colnames(lf) <- rename_vector(colnames(lf), lexin = lexin, trim = "Ma_LF_",
-                                force_subjid_agedays = TRUE)
-  colnames(bsid) <- rename_vector(colnames(bsid), lexin = "original",
+  colnames(sf) <- rename_vector(colnames(sf), lexin = lexin, lexout = lexout,
+                                trim = "Ma_SF_", force_subjid_agedays = TRUE)
+  colnames(lf) <- rename_vector(colnames(lf), lexin = lexin, lexout = lexout,
+                                trim = "Ma_LF_", force_subjid_agedays = TRUE)
+  colnames(bsid) <- rename_vector(colnames(bsid), lexin = lexin, lexout = lexout,
                                   contains = "bsid_", force_subjid_agedays = TRUE)
 
   # vist_type
@@ -88,7 +91,7 @@ read_gsed_fixed <- function(onedrive, path, phase, hard_edits = TRUE) {
   # Extract item responses
   sf_responses <- sf |>
     pivot_longer(
-      cols = starts_with("gpa"),
+      cols = starts_with("gs1"),
       names_to = "item",
       values_to = "response",
       values_drop_na = TRUE
@@ -96,7 +99,7 @@ read_gsed_fixed <- function(onedrive, path, phase, hard_edits = TRUE) {
     select(.data$subjid, .data$agedays, .data$vist_type, .data$item, .data$response)
   lf_responses <- lf |>
     pivot_longer(
-      cols = starts_with("gto"),
+      cols = starts_with("gl1"),
       names_to = "item",
       values_to = "response",
       values_drop_na = TRUE
@@ -113,9 +116,9 @@ read_gsed_fixed <- function(onedrive, path, phase, hard_edits = TRUE) {
 
   # Extact visit tables
   sf_visits <- sf |>
-    select(-starts_with("gpa"))
+    select(-starts_with("gs1"))
   lf_visits <- lf |>
-    select(-starts_with("gto"))
+    select(-starts_with("gl1"))
   bsid_visits <- bsid |>
     select(-starts_with("bsid"), -starts_with("by3"))
 
@@ -146,7 +149,8 @@ read_gsed_fixed <- function(onedrive, path, phase, hard_edits = TRUE) {
   #
   # cromoc001	gpamoc008 Clench fist
   responses <- responses |>
-    filter(!.data$item == "gpamoc008")
+  #  filter(!.data$item == "gpamoc008")
+    filter(!.data$item == "gs1moc028")
 
   # EDIT 2 Remove responses not relevant for children > 6,12,9,18 mo
   #
@@ -163,16 +167,20 @@ read_gsed_fixed <- function(onedrive, path, phase, hard_edits = TRUE) {
   #
   # gtolgd012 trunc at 18 mo Uses gestures to communicate
 
-  vars <- c("gtolgd001", "gtolgd002", "gtolgd003", "gtolgd004")
+  # vars <- c("gtolgd001", "gtolgd002", "gtolgd003", "gtolgd004")
+  vars <- c("gl1lgd002", "gl1lgd003", "gl1lgd005", "gl1lgd001")
   responses <- responses |>
     filter(!(.data$agedays > 182 & .data$item %in% vars))
-  vars <- c("gtolgd006", "gtolgd007")
+  # vars <- c("gtolgd006", "gtolgd007")
+  vars <- c("gl1lgd004", "gl1lgd006")
   responses <- responses |>
     filter(!(.data$agedays > 274 & .data$item %in% vars))
-  vars <- c("gtolgd008", "gtofmd009")
+  # vars <- c("gtolgd008", "gtofmd009")
+  vars <- c("gl1lgd009", "gl1fmd010")
   responses <- responses |>
     filter(!(.data$agedays > 365 & .data$item %in% vars))
-  vars <- c("gtolgd012")
+  # vars <- c("gtolgd012")
+  vars <- c("gl1lgd010")
   responses <- responses |>
     filter(!(.data$agedays > 548 & .data$item %in% vars))
 
