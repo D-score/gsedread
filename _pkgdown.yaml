@@ -24,4 +24,3 @@ reference:
   - title: "Helper functions"
     contents:
       - define_col
-      - rename_vector

@@ -1,3 +1,4 @@
+#' @importFrom dscore    rename_vector
 #' @importFrom dplyr     across all_of arrange bind_rows case_when
 #'                       contains distinct filter group_by mutate pull
 #'                       rename select slice_head starts_with

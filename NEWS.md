@@ -1,3 +1,7 @@
+# gsedread 0.20.0
+
+* Transfers `gsedread::rename_vector()` to the `dscore` (>= 1.10.4) package
+
 # gsedread 0.19.0
 
 * -- CONTAINS BREAKING CHANGES
