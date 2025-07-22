@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">gsedread</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.19.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.20.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,12 +33,16 @@
     </div>
 
     <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.20.0" id="gsedread-0200">gsedread 0.20.0<a class="anchor" aria-label="anchor" href="#gsedread-0200"></a></h2>
+<ul><li>Transfers <code>gsedread::rename_vector()</code> to the <code>dscore</code> (&gt;= 1.10.4) package</li>
+</ul></div>
+    <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.19.0" id="gsedread-0190">gsedread 0.19.0<a class="anchor" aria-label="anchor" href="#gsedread-0190"></a></h2>
 <ul><li><p>– CONTAINS BREAKING CHANGES</p></li>
 <li><p>Repairs an error in <code>itemnames_translate.txt</code> in the B43-B51 range, updates the labels</p></li>
 <li><p>Renames the column headers in <code>itemnames_translate.txt</code> to a more consistent set</p></li>
 <li><p>Adds the new lexicon <code>gsed3</code> to <code>itemnames_translate.txt</code>. The main advantage of <code>gsed3</code> is that the item order conforms to the published LF and SF order (this was not the case in the <code>gsed</code> and <code>gsed2</code> lexicons).</p></li>
-<li><p>Changes the default lexicons in <code><a href="../reference/rename_vector.html">rename_vector()</a></code>. The <code>lexin</code> is <code>phase2</code> (was ‘original’) and <code>lexout</code> is <code>gsed3</code> (was ‘gsed2’). You may revert to previous default by setting <code>lexin = "phase1"</code> and <code>lexout = "gsed2"</code> in calls to <code><a href="../reference/rename_vector.html">rename_vector()</a></code>. The new lexicon follows the published item order, which should prevent errors in data entry and reading.</p></li>
+<li><p>Changes the default lexicons in <code>rename_vector()</code>. The <code>lexin</code> is <code>phase2</code> (was ‘original’) and <code>lexout</code> is <code>gsed3</code> (was ‘gsed2’). You may revert to previous default by setting <code>lexin = "phase1"</code> and <code>lexout = "gsed2"</code> in calls to <code>rename_vector()</code>. The new lexicon follows the published item order, which should prevent errors in data entry and reading.</p></li>
 <li><p>Updates <code><a href="../reference/read_gsed_fixed.html">read_gsed_fixed()</a></code> to use the new lexicon <code>gsed3</code>.</p></li>
 </ul></div>
     <div class="section level2">
@@ -98,7 +102,7 @@
 <li>Adds script <code>data-raw/R/patch_phase2_files.R</code> to identify and repair problem with Phase 2 LF and SF data</li>
 <li>Specify <code>Latin1</code> format to read CSV files in <code><a href="../reference/read_sf.html">read_sf()</a></code>
 </li>
-<li>Extends <code><a href="../reference/rename_vector.html">rename_vector()</a></code> with an option to translate SF/LF phase 2 names</li>
+<li>Extends <code>rename_vector()</code> with an option to translate SF/LF phase 2 names</li>
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.11.0" id="gsedread-0110">gsedread 0.11.0<a class="anchor" aria-label="anchor" href="#gsedread-0110"></a></h2>
@@ -106,7 +110,7 @@
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.10.0" id="gsedread-0100">gsedread 0.10.0<a class="anchor" aria-label="anchor" href="#gsedread-0100"></a></h2>
-<ul><li>Adds <code>force_subjid_agedays</code> option to <code><a href="../reference/rename_vector.html">rename_vector()</a></code>
+<ul><li>Adds <code>force_subjid_agedays</code> option to <code>rename_vector()</code>
 </li>
 </ul></div>
     <div class="section level2">
@@ -132,12 +136,12 @@
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.6.1" id="gsedread-061">gsedread 0.6.1<a class="anchor" aria-label="anchor" href="#gsedread-061"></a></h2>
-<ul><li>Adds a new argument <code>contains</code> to <code><a href="../reference/rename_vector.html">rename_vector()</a></code> to pre-select the translation table. This argument should be used if <code>lexin = "gsed"</code> to evade incorrect name matches from duplicate “gsed” item names.</li>
+<ul><li>Adds a new argument <code>contains</code> to <code>rename_vector()</code> to pre-select the translation table. This argument should be used if <code>lexin = "gsed"</code> to evade incorrect name matches from duplicate “gsed” item names.</li>
 <li>Adds a column called <code>type</code> to the reader functions.</li>
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.6.0" id="gsedread-060">gsedread 0.6.0<a class="anchor" aria-label="anchor" href="#gsedread-060"></a></h2>
-<ul><li>Replaces <code>rename_variables()</code> by the more versatile <code><a href="../reference/rename_vector.html">rename_vector()</a></code>
+<ul><li>Replaces <code>rename_variables()</code> by the more versatile <code>rename_vector()</code>
 </li>
 <li>Redefines the column names of the translation table</li>
 </ul></div>
