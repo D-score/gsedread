@@ -63,6 +63,16 @@ repair_responses <- function(responses, quiet = FALSE) {
       )
     )
 
+  # Assign mode self-report to items of the SF measured in NLD
+  responses2 <- responses |>
+    mutate(
+      item = case_when(
+        str_starts(subjid, "528") & str_starts(item, "sf_") ~
+          str_c(str_sub(item, 1, 5), "s", str_sub(item, 7)),
+        TRUE ~ item
+      )
+    )
+
   # Unique response identifier: subjid, agedays, vist_type, item
   nresponses_before <- nrow(responses)
   responses <- responses |>
