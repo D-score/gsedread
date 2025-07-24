@@ -1,3 +1,7 @@
+# gsedread 0.21.0
+
+* Changes mode to "s" (self-report) for SF items collected in the Netherlands
+
 # gsedread 0.20.0
 
 * Transfers `gsedread::rename_vector()` to the `dscore` (>= 1.10.4) package
