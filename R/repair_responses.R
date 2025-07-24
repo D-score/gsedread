@@ -64,7 +64,7 @@ repair_responses <- function(responses, quiet = FALSE) {
     )
 
   # Assign mode self-report to items of the SF measured in NLD
-  responses2 <- responses |>
+  responses <- responses |>
     mutate(
       item = case_when(
         str_starts(subjid, "528") & str_starts(item, "sf_") ~
