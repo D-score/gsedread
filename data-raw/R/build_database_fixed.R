@@ -63,7 +63,7 @@ visits <- bind_rows(
 
 # Repair visits and responses
 visits <- repair_visits(visits)
-responses <- repair_responses(responses)
+responses <- repair_responses(responses, mode_s = FALSE)
 
 #--- Write to DuckDB ---
 message("Writing to DuckDB...")

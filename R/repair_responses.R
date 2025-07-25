@@ -20,10 +20,12 @@
 #' A unique response identifier consists of: `subjid`, `agedays`, `vist_type`, `item`
 #'
 #' @param responses A data frame containing responses data with required columns.
+#' @param mode_s Logical, if `TRUE`, assigns mode self-report to items of the SF
+#' for the Netherlands.
 #' @param quiet Logical, if `TRUE`, suppresses output messages.
 #' @return A data frame with repaired and standardized responses data.
 #' @export
-repair_responses <- function(responses, quiet = FALSE) {
+repair_responses <- function(responses, mode_s = FALSE, quiet = FALSE) {
 
   # Check if required columns are present
   required_columns <- c("subjid", "agedays", "vist_type", "item", "response")
@@ -64,14 +66,16 @@ repair_responses <- function(responses, quiet = FALSE) {
     )
 
   # Assign mode self-report to items of the SF measured in NLD
-  responses <- responses |>
-    mutate(
-      item = case_when(
-        str_starts(subjid, "528") & str_starts(item, "sf_") ~
-          str_c(str_sub(item, 1, 5), "s", str_sub(item, 7)),
-        TRUE ~ item
+  if (mode_s) {
+    responses <- responses |>
+      mutate(
+        item = case_when(
+          str_starts(subjid, "528") & str_starts(item, "sf_") ~
+            str_c(str_sub(item, 1, 5), "s", str_sub(item, 7)),
+          TRUE ~ item
+        )
       )
-    )
+  }
 
   # Unique response identifier: subjid, agedays, vist_type, item
   nresponses_before <- nrow(responses)

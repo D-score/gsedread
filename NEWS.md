@@ -1,3 +1,5 @@
+* Adds `mode_s` argument to `repair_responses()` to make mode s to SF items in The Netherlands optional
+
 # gsedread 0.21.0
 
 * Changes mode to "s" (self-report) for SF items collected in the Netherlands

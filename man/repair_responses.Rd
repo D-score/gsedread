@@ -4,10 +4,13 @@
 \alias{repair_responses}
 \title{Repair and standardize responses data}
 \usage{
-repair_responses(responses, quiet = FALSE)
+repair_responses(responses, mode_s = FALSE, quiet = FALSE)
 }
 \arguments{
 \item{responses}{A data frame containing responses data with required columns.}
+
+\item{mode_s}{Logical, if \code{TRUE}, assigns mode self-report to items of the SF
+for the Netherlands.}
 
 \item{quiet}{Logical, if \code{TRUE}, suppresses output messages.}
 }
