@@ -10,7 +10,7 @@
 #   in this directory.
 #
 # Created: Stef van Buuren, June 20, 2025
-# Last modified: July 21, 2025
+# Last modified: July 25, 2025
 #
 # TODO:
 # - Update as soon as China data is cleaned
@@ -36,7 +36,7 @@ if (!requireNamespace(pkg, quietly = TRUE) && interactive()) {
   if (answer) remotes::install_github("d-score/gsedread")
 }
 require(gsedread, quietly = TRUE, warn.conflicts = FALSE)
-if (packageVersion("gsedread") < "0.17.0") stop("Needs gsedread 0.17.0")
+if (packageVersion("gsedread") < "0.22.0") stop("Needs gsedread 0.22.0")
 
 # Set paths and filenames
 onedrive <- Sys.getenv("ONEDRIVE_GSED")
