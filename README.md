@@ -176,24 +176,22 @@ actions:
     12 or 18 months, because the meaning changes with age.
 17. Make sure that all responses are coded as 0 or 1.
 
-Item renaming with `rename_variables()` relies on the item translation
-table at
-<https://github.com/D-score/gsedread/blob/main/inst/extdata/itemnames_translate.txt>.
+Item renaming with `dscore::rename_variables()` relies on the item name
+translation table `dscore::builtin_translate`.
 
 ## Additional cleaning and data repair
 
-The `read_gsed_fixed()` reads the data per phase. After combining the
-data from the different phases, the functions `repair_visits()` and
-`repair_responses` should be run to ensure that the data are in a
-consistent format.
+The `gsedread::read_gsed_fixed()` function reads the data per phase.
+After combining the data from the different phases, the functions
+`gsedread::repair_visits()` and `gsedread::repair_responses()` should be
+run to ensure that the data are in a consistent format.
 
 ## Data governance
 
 The Global Scales of Early Development (GSED) study is an international
 project coordinated by the World Health Organization (WHO). The data are
 stored in a secure SharePoint site and are shared within the GSED team
-for research purposes only. Team members are not allowed to share the
-data with third parties. See
+for research purposes only. See
 <https://www.who.int/publications/i/item/WHO-MSD-GSED-package-v1.0-2023.1>
 for information on the GSED study.
 

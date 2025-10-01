@@ -1,3 +1,8 @@
+# gsedread 0.23.0
+
+* Reverts default lexicon in `read_gsed_fixed()` from experimental `gsed4` to `gsed3`
+* Updates script `build_database_fixed.R` to produce item names in the `gsed3` lexicon
+
 # gsedread 0.22.0
 
 * Adds `mode_s` argument to `repair_responses()` to make mode s to SF items in The Netherlands optional

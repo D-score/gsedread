@@ -1,6 +1,6 @@
 Package: gsedread
 Title: Tools for reading the GSED validation data
-Version: 0.22.0
+Version: 0.23.0
 Authors@R: c(person("Stef", "van Buuren", 
                     email = "stef.vanbuuren@tno.nl", 
                     role = c("cre", "aut")), 
@@ -17,7 +17,7 @@ Encoding: UTF-8
 Depends: 
     R (>= 4.1.0)
 Imports: 
-    dscore (>= 1.10.4),
+    dscore (>= 1.11.1),
     dplyr,
     readr,
     rlang,
@@ -28,4 +28,4 @@ Suggests:
 Roxygen: list(markdown = TRUE)
 URL: https://github.com/D-score/gsedread
 BugReports: https://github.com/D-score/gsedread/issues
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
