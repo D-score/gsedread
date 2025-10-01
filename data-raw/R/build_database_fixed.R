@@ -10,10 +10,9 @@
 #   in this directory.
 #
 # Created: Stef van Buuren, June 20, 2025
-# Last modified: July 25, 2025
+# Last modified: Oct 1, 2025
 #
 # TODO:
-# - Update as soon as China data is cleaned
 # - Add covariate data (e.g. child factors, antropometry)
 
 if (nchar(Sys.getenv("ONEDRIVE_GSED")) == 0L) {
@@ -36,7 +35,7 @@ if (!requireNamespace(pkg, quietly = TRUE) && interactive()) {
   if (answer) remotes::install_github("d-score/gsedread")
 }
 require(gsedread, quietly = TRUE, warn.conflicts = FALSE)
-if (packageVersion("gsedread") < "0.22.0") stop("Needs gsedread 0.22.0")
+if (packageVersion("gsedread") < "0.23.0") stop("Needs gsedread 0.23.0")
 
 # Set paths and filenames
 onedrive <- Sys.getenv("ONEDRIVE_GSED")
@@ -63,7 +62,7 @@ visits <- bind_rows(
 
 # Repair visits and responses
 visits <- repair_visits(visits)
-responses <- repair_responses(responses, mode_s = FALSE)
+responses <- repair_responses(responses)
 
 #--- Write to DuckDB ---
 message("Writing to DuckDB...")
