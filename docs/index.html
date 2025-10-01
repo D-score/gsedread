@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="index.html">gsedread</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.22.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.23.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -164,17 +164,17 @@
 <li>Remove responses for several language items after the age of 6, 9, 12 or 18 months, because the meaning changes with age.</li>
 <li>Make sure that all responses are coded as 0 or 1.</li>
 </ol>
-<p>Item renaming with <code>rename_variables()</code> relies on the item translation table at <a href="https://github.com/D-score/gsedread/blob/main/inst/extdata/itemnames_translate.txt" class="external-link uri">https://github.com/D-score/gsedread/blob/main/inst/extdata/itemnames_translate.txt</a>.</p>
+<p>Item renaming with <code>dscore::rename_variables()</code> relies on the item name translation table <code><a href="https://d-score.github.io/dscore/reference/builtin_translate.html" class="external-link">dscore::builtin_translate</a></code>.</p>
 </div>
 <div class="section level2">
 <h2 id="additional-cleaning-and-data-repair">Additional cleaning and data repair<a class="anchor" aria-label="anchor" href="#additional-cleaning-and-data-repair"></a>
 </h2>
-<p>The <code><a href="reference/read_gsed_fixed.html">read_gsed_fixed()</a></code> reads the data per phase. After combining the data from the different phases, the functions <code><a href="reference/repair_visits.html">repair_visits()</a></code> and <code>repair_responses</code> should be run to ensure that the data are in a consistent format.</p>
+<p>The <code><a href="reference/read_gsed_fixed.html">gsedread::read_gsed_fixed()</a></code> function reads the data per phase. After combining the data from the different phases, the functions <code><a href="reference/repair_visits.html">gsedread::repair_visits()</a></code> and <code><a href="reference/repair_responses.html">gsedread::repair_responses()</a></code> should be run to ensure that the data are in a consistent format.</p>
 </div>
 <div class="section level2">
 <h2 id="data-governance">Data governance<a class="anchor" aria-label="anchor" href="#data-governance"></a>
 </h2>
-<p>The Global Scales of Early Development (GSED) study is an international project coordinated by the World Health Organization (WHO). The data are stored in a secure SharePoint site and are shared within the GSED team for research purposes only. Team members are not allowed to share the data with third parties. See <a href="https://www.who.int/publications/i/item/WHO-MSD-GSED-package-v1.0-2023.1" class="external-link uri">https://www.who.int/publications/i/item/WHO-MSD-GSED-package-v1.0-2023.1</a> for information on the GSED study.</p>
+<p>The Global Scales of Early Development (GSED) study is an international project coordinated by the World Health Organization (WHO). The data are stored in a secure SharePoint site and are shared within the GSED team for research purposes only. See <a href="https://www.who.int/publications/i/item/WHO-MSD-GSED-package-v1.0-2023.1" class="external-link uri">https://www.who.int/publications/i/item/WHO-MSD-GSED-package-v1.0-2023.1</a> for information on the GSED study.</p>
 </div>
 <div class="section level2">
 <h2 id="acknowledgement">Acknowledgement<a class="anchor" aria-label="anchor" href="#acknowledgement"></a>
