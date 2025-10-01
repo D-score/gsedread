@@ -117,6 +117,8 @@ In addition, the `read_gsed_fixed()` function performs the following actions:
 
 Item renaming with `dscore::rename_variables()` relies on the item name translation table `dscore::builtin_translate`.
 
+The R script `gsedscripts::inst/scripts/phase2/build_database_fixed.R` implements these steps, and builds the duckdb database with Phase 1 + 2 item data.
+
 ## Additional cleaning and data repair
 
 The `gsedread::read_gsed_fixed()` function reads the data per phase. After combining the data from the different phases, the functions `gsedread::repair_visits()` and `gsedread::repair_responses()` should be run to ensure that the data are in a consistent format.

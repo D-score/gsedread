@@ -179,6 +179,10 @@ actions:
 Item renaming with `dscore::rename_variables()` relies on the item name
 translation table `dscore::builtin_translate`.
 
+The R script `gsedscripts::inst/scripts/phase2/build_database_fixed.R`
+implements these steps, and builds the duckdb database with Phase 1 + 2
+item data.
+
 ## Additional cleaning and data repair
 
 The `gsedread::read_gsed_fixed()` function reads the data per phase.

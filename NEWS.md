@@ -1,3 +1,7 @@
+# gsedread 0.24.0
+
+* Moves `data-raw/build_database_fixed.R` to the `gsedscripts` package for better visibility
+
 # gsedread 0.23.0
 
 * Reverts default lexicon in `read_gsed_fixed()` from experimental `gsed4` to `gsed3`
