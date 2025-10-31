@@ -1,3 +1,7 @@
+# gsedread 0.25.0
+
+* Updates Dutch BSID-III data file to `NLD/nl-bsid-2025-10-31.csv` to avoid loss of age information
+
 # gsedread 0.24.0
 
 * Moves `data-raw/build_database_fixed.R` to the `gsedscripts` package for better visibility
