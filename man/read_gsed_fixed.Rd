@@ -4,7 +4,7 @@
 \alias{read_gsed_fixed}
 \title{Read the GSED data for SF, LF and BSID (fixed form)}
 \usage{
-read_gsed_fixed(onedrive, path, phase, lexout = "gsed4", hard_edits = TRUE)
+read_gsed_fixed(onedrive, path, phase, lexout = "gsed3", hard_edits = TRUE)
 }
 \arguments{
 \item{onedrive}{The OneDrive path where the data is stored.}

@@ -31,3 +31,7 @@ A tibble with the original data and two column names: \code{file}
 \description{
 Read data from Bayley Scales of Infant Development III
 }
+\examples{
+onedrive <- Sys.getenv("ONEDRIVE_GSED")
+
+}
